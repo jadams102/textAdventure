@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiko|Press+Start+2P|VT323" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -12,16 +13,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <div id="title" class="jumbotron">
         <h1>Text Adventure</h1>
       </div>
-        <form id="user">
-          <label for="userName">Enter you name</label>
-          <input type="text" id="userName"><br>
-          <button type="button" name="button">Submit</button>
-        </form>
-        
-
+      <div id="userNamePanel" class="panel panel-success">
+        <div class="panel-heading">
+          <h2>Enter Your Name</h2>
+        </div>
+        <div class="panel-body">
+          <form id="user">
+            <input type="text" id="userName"><br>
+            <button type="button" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div id="gameTextPanel" class="panel panel-info">
+        <div class="panel-body">
+          <p><span id="gameText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+          <form>
+            <p id="console">:></p>
+            <input id="userInput" type="text" placeholder="ENTER COMMAND">
+            <button id="userInputSubmit" class="btn btn-info" type="submit" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
