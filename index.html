@@ -42,12 +42,22 @@
           </form>
         </div>
       </div>
-      <div id="gameTextPanel" class="panel panel-info">
+      <div id="gameTextPanel" class="panel">
         <div class="panel-body">
           <h3 id="nameDisplay"></h3>
           <h5 id="textBox" class="systemText"><span id="gameText"></span></h5>
           <div class="logBox systemText">
             <ul id="gameLog">
+            </ul>
+            <ul id="commandsList">
+              <li>Wake up</li>
+              <li>Go to sleep</li>
+              <li>Look in</li>
+              <li>Look at</li>
+              <li>Walk to</li>
+              <li>Open</li>
+              <li>Use</li>
+              <li>Take</li>
             </ul>
           </div>
           <form id="userInput" autocomplete="off">
@@ -57,9 +67,28 @@
           </form>
         </div>
       </div>
-        <button id="logBtn" class="btn btn-danger" type="button" name="Log">LOG</button>
-        <button id="restartBtn" class="btn btn-warning" type="button" name="Log">RESTART</button>
-        <button id="commandsBtn" class="btn btn-danger" type="button" name="Log">COMMANDS</button>
+      <div id="winPanel" class="panel">
+        <div class="panel-body">
+          <h3 id="win">Congratulations, you made it!</h3>
+        </div>
+      </div>
+      <div id="gameOverPanel" class="panel">
+        <div class="panel-body">
+          <h2 id="gameOver">Game Over</h2>
+        </div>
+      </div>
+      <div id="creditsPanel" class="panel">
+        <div class="panel-body">
+          <p class="credits">Credits: Alienoid was created by: Chris Swanner, Hannah Lee, Joel Adams, and Mariah Shipley.</p>
+          <p class="credits">**Copyright (c) 2018**</p>
+        </div>
+      </div>
+
+      <button id="logBtn" class="btn btn-danger" type="button" name="Log">LOG</button>
+      <button id="restartBtn" class="btn btn-warning" type="button" name="Log">RESTART</button>
+      <button id="commandsBtn" class="btn btn-danger" type="button" name="Log">COMMANDS</button>
+      <button id="creditsBtn" class="btn btn-danger" type="button" name="Log">CREDITS</button>
+
 
     </div>
   </body>
