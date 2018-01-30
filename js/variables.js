@@ -36,40 +36,42 @@ var stageTwo = {
 // Stage 3 object //
 //
 var stageThree = {
-  wakeUpDescript3: "Wake up, bad things are happening.",
-  bedDescript3: "There are holes in the bed.",
-  closetExteriorDescript3: "Scratch marks on the closet",
-  closetButton3: "the button is now broken",
-  closetInteriorDescript3: "You can not get into the closet",
-  dresserDescript3: "The clothes are torn",
-  windowDescript3: "There are small specks on the glass",
-  doorDescript3: "Still closed",
-  doorButton3: "Does nothing",
-  deskDescript3: "The tablet has been smashed",
-  screenDescript3: "the screen is flickering a warning",
-  syringeDescript3: "The syringe is still under the bed",
-  syringeUseDescript3: "Still kills them",
-  stageThreeSleep3: "worried and sleeping",
+  wakeUpDescript: "You awake rested and refreshed. The burning feeling before bed has passed, and is replaced by a dampness on your neck from your pillow. You reach back and touch your neck, it is lightly crusted with blood. You sit up and find bloodstains right beneath your head. There is a small trail of blood to the vent in the floor.",
+  bedDescript: "The sheets are destroyed from your night time injury.",
+  closetExteriorDescript: "You see the steel is scratched and chipping away on the floor and at the door opening.",
+  closetButton: "You smash the buttons to see what is in the closet, but there is no response.",
+  closetInteriorDescript: "The door won't open",
+  ventDescript: "You get closer to the vent. Whatever slithered down there must have been slimy and flexible.",
+  ventOpenDescript: "You try to open the vent. A nasty slime gets on your hand. Your hands are too slick and the vent won't budge.",
+  dresserDescript: "The clothes are destroyed. There was a nest here.",
+  windowDescript: "The glass has a hairline crack in it. On the other side of it, is gaseous clouds and space shuttle pieces. ",
+  doorDescript: "The door looks untouched but doesn't work.",
+  doorButton: "Unresponsive.",
+  deskDescript: "The desk is untouched, the screen atop it flickers.",
+  screenDescript: "The screen reads: 'SECURITY BREACH!!!' which seems obvious at this point.",
+  syringeDescript: "The syringe sits under the bed untouched by human hands.",
+  syringeUseDescript: "Are you serious? The syringe fills you with goofy juice that makes you incredibly heavy and then you fall through the ship floor and are sucked into unforgiving space.",
+  stageThreeSleep: "You lay back down and try to fall asleep. You fall asleep with literally one eye open.",
 
 }
 //
 // stage 4 object //
 //
 var stageFour = {
-  wakeUpDescript4: "Wake up, bad things are happening.",
-  bedDescript4: "There are holes in the bed.",
-  closetExteriorDescript4: "Scratch marks on the closet",
-  closetButton4: "the button is now broken",
-  closetInteriorDescript4: "You can not get into the closet",
-  dresserDescript4: "The clothes are torn",
-  windowDescript4: "There are small specks on the glass",
-  doorDescript4: "Still closed",
-  doorButton4: "Does nothing",
-  deskDescript4: "The tablet has been smashed",
-  screenDescript4: "the screen is flickering a warning",
-  syringeDescript4: "The syringe is still under the bed",
-  syringeUseDescript4: "Still kills them",
-  stageThreeSleep4: "worried and sleeping",
+  wakeUpDescript: "*Sirens sounding* You awake with a start and look around.",
+  bedDescript: "The old blood is the color of rust. You notice a black goo right around the pillow.",
+  closetExteriorDescript: "The closet has the same goo as was on the bed around the perimeter of the door.",
+  closetButton: "You smash buttons and nothing changes. You begin to push them calmly and methodically. You hear the whoosh sound, and again the door opens.",
+  closetInteriorDescript: "You see a snake-like creature on the ground ready to strike. You smash buttons on the wall again and the door shuts just in time. You hear it hit the door and a small indent forms.",
+  dresserDescript: "You find creature eggs. The closet door bursts open, there is a snake-like alien inside, you are able to reach the button quickly enough to close the door before you are killed. ",
+  windowDescript: "The cracks are growing.",
+  doorDescript: "The door doesn't budge.",
+  doorButton: "You try all the buttons, they don't seem to be doing anything, but you begin to hear an obvious commotion in the hallway.",
+  deskDescript: "The tablet is broken and you hear shrieks from just beyond the walls.",
+  screenDescript: "The screen smashed beyond repair.",
+  syringeDescript: "The syringe sits ready for use.",
+  syringeUseDescript: "In your moment of panic you slide in the goo and stick yourself with the syringe. Sayonara sucker.",
+
 
 }
 //
@@ -95,8 +97,8 @@ var screenCommands1 =  ["LOOK AT SCREEN", "USE SCREEN"];
 //
 var stageTwoWakeUp = ["WAKE UP"]
 var medKitCommands2 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
-var syringeStage2Commands2 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
-var useSyringeCommand2 = ["USE SYRINGE"]
+var syringeStage2 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
+var useSyringeStage2 = ["USE SYRINGE"]
 var stageTwoSleep2 = ["GO TO SLEEP"]
 var bedCommands2 =  ["WALK TO BED", "LOOK AT BED"];
 var closetCommands2 =  ["WALK TO CLOSET", "LOOK AT CLOSET"];
@@ -112,8 +114,8 @@ var screenCommands2 =  ["LOOK AT SCREEN", "USE SCREEN"];
 // //
 var stageThreeWakeUp = ["WAKE UP"]
 var medKitCommands3 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
-var syringeStage2Commands3 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
-var useSyringeCommand3 = ["USE SYRINGE"]
+var syringeStage3 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
+var useSyringeStage3 = ["USE SYRINGE"]
 var stageThreeSleep3 = ["GO TO SLEEP"]
 var bedCommands3 =  ["WALK TO BED", "LOOK AT BED"];
 var closetCommands3 =  ["WALK TO CLOSET", "LOOK AT CLOSET"];
@@ -124,13 +126,15 @@ var windowCommands3 =  ["WALK TO WINDOW", "LOOK AT WINDOW"];
 var doorCommands3 =  ["WALK TO DOOR", "LOOK AT DOOR", "USE DOOR"];
 var deskCommands3 =  ["WALK TO DESK", "LOOK AT DESK"];
 var screenCommands3 =  ["LOOK AT SCREEN", "USE SCREEN"];
+var vent3 = ["WALK TO VENT", "LOOK AT VENT"];
+var openVent3 = ["OPEN VENT"];
 // //
 //Stage 4 commands //
 // //
-var stageFourWakeUp = ["WAKE UP"]
+var stage4WakeUp = ["WAKE UP"]
 var medKitCommands4 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
-var syringeStage2Commands4 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
-var useSyringeCommand4 = ["USE SYRINGE"]
+var syringeStage4 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
+var useSyringeStage4 = ["USE SYRINGE"]
 var stageFourSleep4 = ["GO TO SLEEP"]
 var bedCommands4 =  ["WALK TO BED", "LOOK AT BED"];
 var closetCommands4 =  ["WALK TO CLOSET", "LOOK AT CLOSET"];
@@ -150,6 +154,19 @@ var screenCommands4 =  ["LOOK AT SCREEN", "USE SCREEN"];
 //
 Array.prototype.contains = function(commands) {
   return this.indexOf(commands) > -1;
+}
+
+var reset = function() {
+  $("#gameLog").empty();
+  $("#textBox").empty();
+  $("#gameTextPanel").hide();
+  $("#nameDisplay").empty();
+  $("#titlePanel").show();
+  $("#userInputText").val("");
+  $("#userName").val("");
+}
+var commands = function() {
+  ("#commandsList").slideToggle();
 }
 
 //
@@ -250,7 +267,7 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.medKitDescript);
   $("ul#gameLog").append(stageTwo.medKitDescript);
   $("#userInputText").val("");
-} else if (syringeStage2Commands2.contains(input)) {
+} else if (syringeStage2.contains(input)) {
   $("h5").text(stageTwo.syringeDescript);
   $("ul#gameLog").append(stageTwo.syringeDescript);
   $("#userInputText").val("");
@@ -262,7 +279,7 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.closetInteriorDescript);
   $("ul#gameLog").append(stageTwo.closetInteriorDescript);
   $("#userInputText").val("");
-} else if (useSyringeCommand2.contains(input)) {
+} else if (useSyringeStage2.contains(input)) {
   $("h5").text(stageTwo.syringeUseDescript);
   $("ul#gameLog").append(stageTwo.syringeUseDescript);
   $("#userInputText").val("");
@@ -319,7 +336,7 @@ var stage3 = function(input) {
   $("h5").text(stageThree.medKitDescript);
   $("ul#gameLog").append(stageThree.medKitDescript);
   $("#userInputText").val("");
-} else if (syringeStage3Commands3.contains(input)) {
+} else if (syringeStage3.contains(input)) {
   $("h5").text(stageThree.syringeDescript);
   $("ul#gameLog").append(stageThree.syringeDescript);
   $("#userInputText").val("");
@@ -331,15 +348,24 @@ var stage3 = function(input) {
   $("h5").text(stageThree.closetInteriorDescript);
   $("ul#gameLog").append(stageThree.closetInteriorDescript);
   $("#userInputText").val("");
-} else if (useSyringeCommand3.contains(input)) {
+} else if (useSyringeStage3.contains(input)) {
   $("h5").text(stageThree.syringeUseDescript);
   $("ul#gameLog").append(stageThree.syringeUseDescript);
+  $("#userInputText").val("");
+} else if (vent3.contains(input)) {
+  $("h5").text(stageThree.ventDescript);
+  $("ul#gameLog").append(stageThree.ventDescript);
+  $("#userInputText").val("");
+} else if (openVent3.contains(input)) {
+  $("h5").text(stageThree.ventOpenDescript);
+  $("ul#gameLog").append(stageThree.ventOpenDescript);
   $("#userInputText").val("");
 } else if (stageThreeSleep3.contains(input)) {
   $("h5").text(stageThree.stageThreeSleep);
   $("ul#gameLog").append(stageThree.stageThreeSleep);
   $("#userInputText").val("");
   level++;
+  console.log(level);
 }
 }
 //
@@ -351,7 +377,7 @@ var stage3 = function(input) {
 // Stage 4 if statement //
 //
 var stage4 = function(input) {
-  if (stageFourWakeUp.contains(input)) {
+  if (stage4WakeUp.contains(input)) {
   $("h5").text(stageFour.wakeUpDescript);
   $("#userInputText").val("");
   $("ul#gameLog").append(stageFour.wakeUpDescript);
@@ -368,6 +394,7 @@ var stage4 = function(input) {
   $("h5").text(stageFour.dresserDescript);
   $("ul#gameLog").append(stageFour.dresserDescript);
   $("#userInputText").val("");
+  level++;
 } else if (windowCommands4.contains(input)) {
   $("h5").text(stageFour.windowDescript);
   $("ul#gameLog").append(stageFour.windowDescript);
@@ -388,7 +415,7 @@ var stage4 = function(input) {
   $("h5").text(stageFour.medKitDescript);
   $("ul#gameLog").append(stageFour.medKitDescript);
   $("#userInputText").val("");
-} else if (syringeStage4Commands4.contains(input)) {
+} else if (syringeStage4.contains(input)) {
   $("h5").text(stageFour.syringeDescript);
   $("ul#gameLog").append(stageFour.syringeDescript);
   $("#userInputText").val("");
@@ -400,15 +427,11 @@ var stage4 = function(input) {
   $("h5").text(stageFour.closetInteriorDescript);
   $("ul#gameLog").append(stageFour.closetInteriorDescript);
   $("#userInputText").val("");
-} else if (useSyringeCommand4.contains(input)) {
+  level++;
+} else if (useSyringeStage4.contains(input)) {
   $("h5").text(stageFour.syringeUseDescript);
   $("ul#gameLog").append(stageFour.syringeUseDescript);
   $("#userInputText").val("");
-} else if (stageFourSleep4.contains(input)) {
-  $("h5").text(stageFour.stageFourSleep);
-  $("ul#gameLog").append(stageFour.stageFourSleep);
-  $("#userInputText").val("");
-  level++;
 }
 }
 //

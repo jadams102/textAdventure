@@ -22,6 +22,13 @@ $("#logBtn").click(function() {
   $("#textBox").slideToggle();
 }
 })
+$("#restartBtn").click(function() {
+  reset();
+})
+$("#commandsBtn").click(function() {
+  commands();
+})
+
 $("form#userInput").submit(function(event) {
   event.preventDefault();
   var input = ($("#userInputText").val()).toUpperCase();
@@ -31,10 +38,14 @@ $("form#userInput").submit(function(event) {
       stage1(input);
   } else if (level === 2) {
     stage2(input);
+    $("body").addClass("stage2");
+    console.log(level);
   } else if (level === 3) {
     stage3(input);
+    $("body").addClass("stage3");
   } else if (level === 4) {
-    stage4();
+    stage4(input);
+    $("body").addClass("stage4");
   }
 });
 });
