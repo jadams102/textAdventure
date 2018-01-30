@@ -14,14 +14,21 @@
   <body>
     <div class="container">
       <div id="titlePanel" class="panel panel-info">
-        <h1 id="titleText" class="logo">ALIENOID</h1>
-        <h2 id="titleSubText">PRESS ENTER</h2>
+        <div class="panel-body">
+          <h1 id="titleText" class="logo">ALIENOID</h1>
+          <h2 id="titleSubText">PRESS ENTER</h2>
+          <form id="startGameForm" autocomplete="off">
+            <p class="console">:></p>
+            <input type="text" id="startGame" autofocus="autofocus">
+            <button id="startGameBtn" type="btn" type="submit" name="button"></button>
+          </form>
+        </div>
       </div>
       <div id="userNamePanel" class="panel">
         <div class="panel-body">
           <form id="user" autocomplete="off">
             <p class="console">:></p>
-            <input type="text" id="userName" placeholder="Enter Your Name">
+            <input type="text" id="userName" placeholder="Enter Your Name" autofocus="autofocus">
             <button id="userNameBtn" type="btn btn-info" type="submit" name="button">Submit</button>
           </form>
         </div>
@@ -35,7 +42,7 @@
           </div>
           <form id="userInput" autocomplete="off">
             <p class="console">:></p>
-            <input id="userInputText" type="text" placeholder="ENTER COMMAND">
+            <input id="userInputText" type="text" placeholder="ENTER COMMAND" autofocus="autofocus">
             <button id="userInputSubmit" class="btn btn-info" type="submit" name="button">Submit</button>
           </form>
         </div>

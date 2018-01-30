@@ -66,6 +66,11 @@ Array.prototype.contains = function(commands) {
 
 
 $(document).ready(function() {
+  $("form#startGameForm").submit(function(event) {
+  event.preventDefault();
+    $("#userNamePanel").show();
+    $("#titlePanel").hide();
+    $("h5").text("")
 $("form#user").submit(function(event) {
   event.preventDefault();
     var userName = $("#userName").val();
@@ -174,6 +179,7 @@ $("form#userInput").submit(function(event) {
 
 }
 };
+});
 });
 });
 });
