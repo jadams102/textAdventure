@@ -7,10 +7,12 @@ body {
   padding-top: 100px;
 }
 
-#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn{
+#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn, #gameLog{
   display: none;
 }
-
+#gameLog {
+  color:lightgreen;
+}
 #titlePanel {
   height: 768px;
   width: 1024;

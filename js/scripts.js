@@ -17,7 +17,7 @@ var stageOne = {
 var stageTwo = {
   wakeUpDescript: "You are woken up to a scratching sound. You wonder about mice and sheet metal. The pitter patter of little feet isn't so cute right now.",
   bedDescript: "The bed is messy because you didn't make it when you got up.",
-  closetExteriorDescript: "The closet glints in the light.",
+  closetExteriorDescript: "The closet glints in the light. The button on the left side is also especially shiny today.",
   closetButton: "Your messy bed hair is blown back and your eyes water.",
   closetInteriorDescript: "You decide to dig around. Luckily you did so delicately, as you find a medical kit with an encased syringe in a glowing tube. ",
   dresserDescript: "You consider changing your clothes and then realize you literally don't care.",
@@ -32,6 +32,7 @@ var stageTwo = {
   stageTwoSleep: "You lay your head down, now painfully aware of a light burning feeling on the back of your neck. You reach back to scratch it and feel relief, you can sleep well.",
 
 }
+//Commands//
 var stageOneSleep1 = ["GO TO SLEEP"]
 var bedCommands1 =  ["WALK TO BED", "LOOK AT BED"];
 var closetCommands1 =  ["WALK TO CLOSET", "LOOK AT CLOSET"];
@@ -61,16 +62,190 @@ var screenCommands2 =  ["LOOK AT SCREEN", "USE SCREEN"];
 Array.prototype.contains = function(commands) {
   return this.indexOf(commands) > -1;
 }
+var stage1 = function(input) {
+if (bedCommands1.contains(input)) {
+$("h5").text(stageOne.bedDescript);
+$("ul#gameLog").append(stageOne.bedDescript);
+$("#userInputText").val("");
+} else if (closetCommands1.contains(input)) {
+$("h5").text(stageOne.closetExteriorDescript);
+$("ul#gameLog").append(stageOne.closetExteriorDescript);
+console.log(level);
+$("#userInputText").val("");
+} else if (dresserCommands1.contains(input)) {
+$("h5").text(stageOne.dresserDescript);
+$("ul#gameLog").append(stageOne.dresserDescript);
+$("#userInputText").val("");
+} else if (closetButton1.contains(input)) {
+$("h5").text(stageOne.closetButton);
+$("ul#gameLog").append(stageOne.closetButton);
+$("#userInputText").val("");
+} else if (closetInterior1.contains(input)) {
+$("h5").text(stageOne.closetInteriorDescript);
+$("ul#gameLog").append(stageOne.closetInteriorDescript);
+$("#userInputText").val("");
+} else if (windowCommands1.contains(input)) {
+$("h5").text(stageOne.windowDescript);
+$("ul#gameLog").append(stageOne.windowDescript);
+$("#userInputText").val("");
+} else if (doorCommands1.contains(input)) {
+$("h5").text(stageOne.doorDescript);
+$("ul#gameLog").append(stageOne.doorDescript);
+$("#userInputText").val("");
+} else if (deskCommands1.contains(input)) {
+$("h5").text(stageOne.deskDescript);
+$("ul#gameLog").append(stageOne.deskDescript);
+$("#userInputText").val("");
+} else if (screenCommands1.contains(input)) {
+$("h5").text(stageOne.screenDescript);
+$("ul#gameLog").append(stageOne.screenDescript);
+$("#userInputText").val("");
+} else if (stageOneSleep1.contains(input)) {
+$("h5").text(stageOne.stageOneSleep);
+$("ul#gameLog").append(stageOne.stageOneSleep);
+$("#userInputText").val("");
+level++;
+}
+}
+
+var stage2 = function(input) {
+  if (stageTwoWakeUp.contains(input)) {
+  $("h5").text(stageTwo.wakeUpDescript);
+  $("ul#gameLog").append(stageTwo.wakeUpDescript);
+  $("#userInputText").val("");
+} else if (bedCommands2.contains(input)) {
+  $("h5").text(stageTwo.bedDescript);
+  $("ul#gameLog").append(stageTwo.bedDescript);
+  $("#userInputText").val("");
+} else if (closetCommands2.contains(input)) {
+  $("h5").text(stageTwo.closetExteriorDescript);
+  $("ul#gameLog").append(stageTwo.closetExteriorDescript);
+  console.log(level);
+  $("#userInputText").val("");
+} else if (dresserCommands2.contains(input)) {
+  $("h5").text(stageTwo.dresserDescript);
+  $("ul#gameLog").append(stageTwo.dresserDescript);
+  $("#userInputText").val("");
+} else if (windowCommands2.contains(input)) {
+  $("h5").text(stageTwo.windowDescript);
+  $("ul#gameLog").append(stageTwo.windowDescript);
+  $("#userInputText").val("");
+} else if (doorCommands2.contains(input)) {
+  $("h5").text(stageTwo.doorDescript);
+  $("ul#gameLog").append(stageTwo.doorDescript);
+  $("#userInputText").val("");
+} else if (deskCommands2.contains(input)) {
+  $("h5").text(stageTwo.deskDescript);
+  $("ul#gameLog").append(stageTwo.deskDescript);
+  $("#userInputText").val("");
+} else if (screenCommands2.contains(input)) {
+  $("h5").text(stageTwo.screenDescript);
+  $("ul#gameLog").append(stageTwo.screenDescript);
+  $("#userInputText").val("");
+} else if (medKitCommands2.contains(input)) {
+  $("h5").text(stageTwo.medKitDescript);
+  $("ul#gameLog").append(stageTwo.medKitDescript);
+  $("#userInputText").val("");
+} else if (syringeStage2Commands2.contains(input)) {
+  $("h5").text(stageTwo.syringeDescript);
+  $("ul#gameLog").append(stageTwo.syringeDescript);
+  $("#userInputText").val("");
+} else if (closetButton2.contains(input)) {
+  $("h5").text(stageTwo.closetButton);
+  $("ul#gameLog").append(stageTwo.closetButton);
+  $("#userInputText").val("");
+} else if (closetInterior2.contains(input)) {
+  $("h5").text(stageTwo.closetInteriorDescript);
+  $("ul#gameLog").append(stageTwo.closetInteriorDescript);
+  $("#userInputText").val("");
+} else if (useSyringeCommand2.contains(input)) {
+  $("h5").text(stageTwo.syringeUseDescript);
+  $("ul#gameLog").append(stageTwo.syringeUseDescript);
+  $("#userInputText").val("");
+} else if (stageTwoSleep2.contains(input)) {
+  $("h5").text(stageTwo.stageTwoSleep);
+  $("ul#gameLog").append(stageTwo.stageTwoSleep);
+  $("#userInputText").val("");
+  level++;
+
+  console.log(level);
+}
+}
+
+var stage3 = function(input) {
+  if (stageThreeWakeUp.contains(input)) {
+  $("h5").text(stageThree.wakeUpDescript);
+  $("#userInputText").val("");
+  $("ul#gameLog").append(stageThree.wakeUpDescript);
+} else if (bedCommands3.contains(input)) {
+  $("h5").text(stageThree.bedDescript);
+  $("ul#gameLog").append(stageThree.bedDescript);
+  $("#userInputText").val("");
+} else if (closetCommands3.contains(input)) {
+  $("h5").text(stageThree.closetExteriorDescript);
+  $("ul#gameLog").append(stageThree.bedDescript);
+  console.log(level);
+  $("#userInputText").val("");
+} else if (dresserCommands3.contains(input)) {
+  $("h5").text(stageThree.dresserDescript);
+  $("ul#gameLog").append(stageThree.dresserDescript);
+  $("#userInputText").val("");
+} else if (windowCommands3.contains(input)) {
+  $("h5").text(stageThree.windowDescript);
+  $("ul#gameLog").append(stageThree.windowDescript);
+  $("#userInputText").val("");
+} else if (doorCommands3.contains(input)) {
+  $("h5").text(stageThree.doorDescript);
+  $("ul#gameLog").append(stageThree.doorDescript);
+  $("#userInputText").val("");
+} else if (deskCommands3.contains(input)) {
+  $("h5").text(stageThree.deskDescript);
+  $("ul#gameLog").append(stageThree.deskDescript);
+  $("#userInputText").val("");
+} else if (screenCommands3.contains(input)) {
+  $("h5").text(stageThree.screenDescript);
+  $("ul#gameLog").append(stageThree.screenDescript);
+  $("#userInputText").val("");
+} else if (medKitCommands3.contains(input)) {
+  $("h5").text(stageThree.medKitDescript);
+  $("ul#gameLog").append(stageThree.medKitDescript);
+  $("#userInputText").val("");
+} else if (syringeStage3Commands3.contains(input)) {
+  $("h5").text(stageThree.syringeDescript);
+  $("ul#gameLog").append(stageThree.syringeDescript);
+  $("#userInputText").val("");
+} else if (closetButton3.contains(input)) {
+  $("h5").text(stageThree.closetButton);
+  $("ul#gameLog").append(stageThree.closetButton);
+  $("#userInputText").val("");
+} else if (closetInterior3.contains(input)) {
+  $("h5").text(stageThree.closetInteriorDescript);
+  $("ul#gameLog").append(stageThree.closetInteriorDescript);
+  $("#userInputText").val("");
+} else if (useSyringeCommand3.contains(input)) {
+  $("h5").text(stageThree.syringeUseDescript);
+  $("ul#gameLog").append(stageThree.syringeUseDescript);
+  $("#userInputText").val("");
+} else if (stageTwoSleep3.contains(input)) {
+  $("h5").text(stageThree.stageThreeSleep);
+  $("ul#gameLog").append(stageThree.stageThreeSleep);
+  $("#userInputText").val("");
+  level++;
+
+  console.log(level);
+}
+}
 
 
-
-
+var level = 0;
 $(document).ready(function() {
+  $('form:first *:input[type!=hidden]:first').focus();
   $("form#startGameForm").submit(function(event) {
   event.preventDefault();
     $("#userNamePanel").show();
     $("#titlePanel").hide();
     $("h5").text("")
+});
 $("form#user").submit(function(event) {
   event.preventDefault();
     var userName = $("#userName").val();
@@ -78,108 +253,39 @@ $("form#user").submit(function(event) {
     $("#userNamePanel").hide();
     $("#gameTextPanel").show();
     $("h5").text(stageOne.roomDescript);
+    level++;
+});
+$("#logBtn").click(function() {
+  if (level >= 1) {
+  $("ul#gameLog").slideToggle();
+  $("#textBox").slideToggle();
 
-var level = 1;
+}
+})
+
 $("form#userInput").submit(function(event) {
-
   event.preventDefault();
   var input = ($("#userInputText").val()).toUpperCase();
-
+  $("ul#gameLog").append("<li>" + input + "</li>");
   // stage one //
     if (level === 1) {
-      if (bedCommands1.contains(input)) {
-      $("h5").text(stageOne.bedDescript);
-      console.log(level);
-      $("#userInputText").val("");
-    } else if (closetCommands1.contains(input)) {
-      $("h5").text(stageOne.closetExteriorDescript);
-      console.log(level);
-      $("#userInputText").val("");
-    } else if (dresserCommands1.contains(input)) {
-      $("h5").text(stageOne.dresserDescript);
-      $("#userInputText").val("");
-    } else if (closetButton1.contains(input)) {
-      $("h5").text(stageOne.closetButton);
-      $("#userInputText").val("");
-    } else if (closetInterior1.contains(input)) {
-      $("h5").text(stageOne.closetInteriorDescript);
-      $("#userInputText").val("");
-    } else if (windowCommands1.contains(input)) {
-      $("h5").text(stageOne.windowDescript);
-      $("#userInputText").val("");
-    } else if (doorCommands1.contains(input)) {
-      $("h5").text(stageOne.doorDescript);
-      $("#userInputText").val("");
-    } else if (deskCommands1.contains(input)) {
-      $("h5").text(stageOne.deskDescript);
-      $("#userInputText").val("");
-    } else if (screenCommands1.contains(input)) {
-      $("h5").text(stageOne.screenDescript);
-      $("#userInputText").val("");
-    } else if (stageOneSleep1.contains(input)) {
-      $("h5").text(stageOne.stageOneSleep);
-      $("#userInputText").val("");
-      level++;
-      console.log(level);
-    }
+      stage1(input);
+
+
     // end stage one //
 
     //start stage 2//
   } else if (level === 2) {
-      if (stageTwoWakeUp.contains(input)) {
-      $("h5").text(stageTwo.wakeUpDescript);
-      $("#userInputText").val("");
-    } else if (bedCommands2.contains(input)) {
-      $("h5").text(stageTwo.bedDescript);
-      $("#userInputText").val("");
-    } else if (closetCommands2.contains(input)) {
-      $("h5").text(stageTwo.closetExteriorDescript);
-      console.log(level);
-      $("#userInputText").val("");
-    } else if (dresserCommands2.contains(input)) {
-      $("h5").text(stageTwo.dresserDescript);
-      $("#userInputText").val("");
-    } else if (windowCommands2.contains(input)) {
-      $("h5").text(stageTwo.windowDescript);
-      $("#userInputText").val("");
-    } else if (doorCommands2.contains(input)) {
-      $("h5").text(stageTwo.doorDescript);
-      $("#userInputText").val("");
-    } else if (deskCommands2.contains(input)) {
-      $("h5").text(stageTwo.deskDescript);
-      $("#userInputText").val("");
-    } else if (screenCommands2.contains(input)) {
-      $("h5").text(stageTwo.screenDescript);
-      $("#userInputText").val("");
-    } else if (medKitCommands2.contains(input)) {
-      $("h5").text(stageTwo.medKitDescript);
-      $("#userInputText").val("");
-    } else if (syringeStage2Commands2.contains(input)) {
-      $("h5").text(stageTwo.syringeDescript);
-      $("#userInputText").val("");
-    } else if (closetButton2.contains(input)) {
-      $("h5").text(stageTwo.closetButton);
-      $("#userInputText").val("");
-    } else if (closetInterior2.contains(input)) {
-      $("h5").text(stageTwo.closetInteriorDescript);
-      $("#userInputText").val("");
-    } else if (useSyringeCommand2.contains(input)) {
-      $("h5").text(stageTwo.syringeUseDescript);
-      $("#userInputText").val("");
-    } else if (stageTwoSleep2.contains(input)) {
-      $("h5").text(stageTwo.stageTwoSleep);
-      $("#userInputText").val("");
-      level++;
+    stage2(input);
 
-      console.log(level);
+
+  } else if (level === 3) {
+    stage3(input);
 
 
 
 
 
 }
-};
-});
-});
 });
 });
