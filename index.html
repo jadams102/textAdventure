@@ -26,17 +26,27 @@
       </div>
       <div id="userNamePanel" class="panel">
         <div class="panel-body">
+          <h1 class="systemText">SSE WOODPECKER://SYSTEM ACTIVE//</h2>
+            <ul class="systemText">
+              <li>Days Since Departure: 39612399</li>
+              <li>Fuel Reserves: Sub-Optimial</li>
+              <li>Days Since Last Accident: 3.5</li>
+              <li>Tralfamadorian Life Signs: Negative</li>
+            </ul>
+
+            <p class="systemText">PLEASE ENTER USER INFORMATION</p>
           <form id="user" autocomplete="off">
             <p class="console">:></p>
-            <input type="text" id="userName" placeholder="Enter Your Name" autofocus="autofocus">
+            <input type="text" id="userName" placeholder="ENTER USERNAME" autofocus="autofocus">
             <button id="userNameBtn" type="btn btn-info" type="submit" name="button">Submit</button>
           </form>
         </div>
       </div>
       <div id="gameTextPanel" class="panel panel-info">
         <div class="panel-body">
-          <h5 id="textBox"><span id="gameText"></span></h5>
-          <div class="logBox">
+          <h3 id="nameDisplay"></h3>
+          <h5 id="textBox" class="systemText"><span id="gameText"></span></h5>
+          <div class="logBox systemText">
             <ul id="gameLog">
             </ul>
           </div>
@@ -48,6 +58,9 @@
         </div>
       </div>
         <button id="logBtn" class="btn btn-danger" type="button" name="Log">LOG</button>
+        <button id="restartBtn" class="btn btn-warning" type="button" name="Log">RESTART</button>
+        <button id="commandsBtn" class="btn btn-danger" type="button" name="Log">COMMANDS</button>
+
     </div>
   </body>
 </html>
