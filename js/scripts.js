@@ -27,7 +27,12 @@ var stageTwo = {
   screenDescript: "You scroll and find some memos from the Captain's log, 'all is well.'",
 
 }
-
+var commands = {
+  walkToBed: "Walk to bed",
+  lookAtBed: "Look at bed",
+  walkToCloset: "Walk to closet",
+}
+var input = $("#userInputText").val();
 
 $(document).ready(function() {
 $("#gameText").hide();
@@ -36,17 +41,28 @@ $("#userNamePanel").show();
 $("form#user").submit(function(event) {
   event.preventDefault();
     var userName = $("#userName").val();
+    console.log(userName);
     $("#userNamePanel").hide();
     $("#gameTextPanel").show();
-    $("p").text(stageOne.roomDescript);
+    $("h5").text(stageOne.roomDescript);
 
-});
 
 $("form#userInput").submit(function(event) {
-    var input = $("#userInput").val();
+  event.preventDefault();
+  var input = $("#userInputText").val();
+    console.log(input);
+    if (input.includes(commands.walkToBed)) {
+      $("h5").text(stageOne.bedDescript);
+    } else if (input.includes(commands.walkToCloset)) {
+      $("h5").text(stageOne.closetExteriorDescript);
+    } else {
+      alert("Can't do that!");
+    }
 
 
 
 
+
+});
 });
 });
