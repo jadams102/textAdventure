@@ -66,9 +66,6 @@ Array.prototype.contains = function(commands) {
 
 
 $(document).ready(function() {
-$("#gameText").hide();
-$("#gameTextPanel").hide();
-$("#userNamePanel").show();
 $("form#user").submit(function(event) {
   event.preventDefault();
     var userName = $("#userName").val();
