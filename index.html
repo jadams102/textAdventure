@@ -13,18 +13,16 @@
   </head>
   <body>
     <div class="container">
-      <div id="title" class="jumbotron">
-        <h1>Text Adventure</h1>
+      <div id="titlePanel" class="panel panel-info">
+        <h1 id="titleText" class="logo">ALIENOID</h1>
+        <h2 id="titleSubText">PRESS ENTER</h2>
       </div>
-      <div id="userNamePanel" class="panel panel-success">
-        <div class="panel-heading">
-          <h2>Enter Your Name</h2>
-        </div>
+      <div id="userNamePanel" class="panel">
         <div class="panel-body">
-          <form id="user">
-            <input type="text" id="userName"><br>
-
-            <button type="submit" name="button">Submit</button>
+          <form id="user" autocomplete="off">
+            <p class="console">:></p>
+            <input type="text" id="userName" placeholder="Enter Your Name">
+            <button id="userNameBtn" type="btn btn-info" type="submit" name="button">Submit</button>
           </form>
         </div>
       </div>
@@ -35,13 +33,14 @@
             <ul id="gameLog">
             </ul>
           </div>
-          <form id="userInput">
-            <p id="console">:></p>
+          <form id="userInput" autocomplete="off">
+            <p class="console">:></p>
             <input id="userInputText" type="text" placeholder="ENTER COMMAND">
             <button id="userInputSubmit" class="btn btn-info" type="submit" name="button">Submit</button>
           </form>
         </div>
       </div>
+      <button id="logBtn" class="btn btn-danger" type="button" name="Log">LOG</button>
     </div>
   </body>
 </html>

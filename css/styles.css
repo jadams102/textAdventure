@@ -3,17 +3,60 @@ body {
   background-image: url(../img/steel.jpg);
 }
 
-.jumbotron {
-  background-color: inherit;
-  color: white;
+.container {
+  padding-top: 100px;
 }
 
-#title {
-  text-align: center;
-}
-
-#userNamePanel, #userInputSubmit {
+#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel{
   display: none;
+}
+
+#titlePanel {
+  height: 768px;
+  width: 1024;
+  border-radius: 30px;
+  background-image: url(../img/giphy.gif);
+  background-size: cover;
+  box-shadow: 0px 0px 60px #1de054;
+  border: lightgreen;
+}
+
+#titleText {
+  -webkit-animation: flicker1 5s infinite;
+  display: block;
+  position: relative;
+  top: 300px;
+  font-family: 'Press Start 2P';
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgreen;
+  text-shadow: 0px 0px 60px black;
+}
+
+#titleSubText {
+  -webkit-animation: flicker2 5s infinite;
+  display: block;
+  position: relative;
+  top: 300px;
+  font-family: 'Press Start 2P';
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgreen;
+  text-shadow: 0px 0px 60px black;
+}
+
+
+#userNamePanel {
+  height: 768px;
+  width: 1024;
+  border-radius: 30px;
+  background-image: url(../img/computerScreen.jpg);
+  background-size: cover;
+  box-shadow: 0px 0px 60px #1de054;
+  position: relative;
+  border: lightgreen;
 }
 
 #gameTextPanel {
@@ -26,6 +69,27 @@ body {
   position: relative;
   border: lightgreen;
 }
+
+#logBtn {
+  font-family: 'VT323', monospace;
+  font-size: 40px;
+  background-image: url(../img/logButtonRedOff.jpg);
+  width: 198px;
+  height: 77px;
+  border: none;
+}
+
+#logBtn:focus {
+  outline: none;
+}
+
+#logBtn:active {
+  outline: none;
+  background-image: url(../img/logButtonRed.jpg);
+  box-shadow: 0px 0px 40px red;
+}
+
+
 
 .logBox {
   height: 668px;
@@ -53,7 +117,7 @@ body {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
 }
 
-#userInput, #userInputText {
+#user, #userInput, #userInputText, #userName {
   position: absolute;
   bottom: 0;
   margin-bottom: 8px;
@@ -66,7 +130,7 @@ body {
   border: none;
 }
 
-#console {
+.console {
   position: absolute;
   bottom: 0;
   font-family: 'VT323', monospace;
@@ -80,6 +144,31 @@ p, li, h5 {
   font-size: 30px;
 }
 
-#userInput:focus {
+#userInputText:focus, #userName:focus {
   outline: none;
+}
+
+@-webkit-keyframes flicker1
+{
+0% {opacity:1;}
+9% {opacity:0;}
+10% {opacity:1;}
+13% {opacity:0;}
+20% {opacity:1;}
+25% {opacity:0;}
+50% {opacity:1;}
+75% {opacity:1;}
+}
+
+@-webkit-keyframes flicker2
+{
+0% {opacity:0;}
+9% {opacity:0;}
+10% {opacity:1;}
+13% {opacity:0;}
+20% {opacity:1;}
+25% {opacity:0;}
+50% {opacity:1;}
+75% {opacity:0;}
+100% {opacity:1;}
 }
