@@ -18,7 +18,7 @@ var stageOne = {
 
 };
 var stageTwo = {
-  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars."
+  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript: "The bed is messy because you didn't make it when you got up.",
   closetExteriorDescript: "The closet glints in the light. The button on the left side is also especially shiny today.",
   closetButton: "Your messy bed hair is blown back and your eyes water.",
@@ -39,7 +39,7 @@ var stageTwo = {
 // Stage 3 object //
 //
 var stageThree = {
-  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars."
+  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript: "The sheets are destroyed from your night time injury.",
   closetExteriorDescript: "You see the steel is scratched and chipping away on the floor and at the door opening.",
   closetButton: "You reach for the button, but hear a rustling in the closet. Probably best to keep it closed for now.",
@@ -61,7 +61,7 @@ var stageThree = {
 // stage 4 object //
 //
 var stageFour = {
-  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars."
+  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript: "The old blood is the color of rust. You notice a black goo right around the pillow.",
   closetExteriorDescript: "The closet has the same goo as was on the bed around the perimeter of the door.",
   closetButton: "You smash buttons and nothing changes. You begin to push them calmly and methodically. You hear the whoosh sound, and again the door opens.",
@@ -77,7 +77,7 @@ var stageFour = {
 }
 
 var stageFive = {
-  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars."
+  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript5: "You move toward the bloody bed and remember the syringe stashed underneath.",
   bedDescript5Turn2: "You step over to take a look under the bed, but before you can look down your legs are bound tightly by the creatures massive tail.",
   syringeGrab5: "You pick up the syringe and turn back towards the room.",

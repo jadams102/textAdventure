@@ -20,56 +20,56 @@ var commands = function() {
 // Stage one if statement //
 //
 var stage1 = function(input) {
-if (bedCommands1.contains(input)) {
-$("h5").text(stageOne.bedDescript);
-$("ul#gameLog").append(stageOne.bedDescript);
-$("#userInputText").val("");
-} else if (help1.contains(input)) {
-$("h5").text(stageOne.roomDescript);
-$("#userInputText").val("");
-} else if (closetCommands1.contains(input)) {
-$("h5").text(stageOne.closetExteriorDescript);
-$("ul#gameLog").append(stageOne.closetExteriorDescript);
-$("#userInputText").val("");
-} else if (dresserCommands1.contains(input)) {
-$("h5").text(stageOne.dresserDescript);
-$("ul#gameLog").append(stageOne.dresserDescript);
-$("#userInputText").val("");
-} else if (closetButton1.contains(input)) {
-$("h5").text(stageOne.closetButton);
-$("ul#gameLog").append(stageOne.closetButton);
-$("#userInputText").val("");
-} else if (closetInterior1.contains(input)) {
-$("h5").text(stageOne.closetInteriorDescript);
-$("ul#gameLog").append(stageOne.closetInteriorDescript);
-$("#userInputText").val("");
-} else if (windowCommands1.contains(input)) {
-$("h5").text(stageOne.windowDescript);
-$("ul#gameLog").append(stageOne.windowDescript);
-$("#userInputText").val("");
-} else if (doorCommands1.contains(input)) {
-$("h5").text(stageOne.doorDescript);
-$("ul#gameLog").append(stageOne.doorDescript);
-$("#userInputText").val("");
-} else if (deskCommands1.contains(input)) {
-$("h5").text(stageOne.deskDescript);
-$("ul#gameLog").append(stageOne.deskDescript);
-$("#userInputText").val("");
-} else if (screenCommands1.contains(input)) {
-$("h5").text(stageOne.screenDescript);
-$("ul#gameLog").append(stageOne.screenDescript);
-$("#userInputText").val("");
-} else if (back1.contains(input)) {
-$("h5").text(backObject.backDescript);
-$("#userInputText").val("");
-} else if (stageOneSleep1.contains(input)) {
-$("h5").text(stageOne.stageOneSleep);
-$("ul#gameLog").append(stageOne.stageOneSleep);
-$("#userInputText").val("");
-level++;
-} else {
-  $("h5").text("COMMAND NOT RECOGNIZED");
-}
+  if (bedCommands1.contains(input)) {
+  $("h5").text(stageOne.bedDescript);
+  $("ul#gameLog").append(stageOne.bedDescript);
+  $("#userInputText").val("");
+  } else if (help1.contains(input)) {
+  $("h5").text(stageOne.roomDescript);
+  $("#userInputText").val("");
+  } else if (closetCommands1.contains(input)) {
+  $("h5").text(stageOne.closetExteriorDescript);
+  $("ul#gameLog").append(stageOne.closetExteriorDescript);
+  $("#userInputText").val("");
+  } else if (dresserCommands1.contains(input)) {
+  $("h5").text(stageOne.dresserDescript);
+  $("ul#gameLog").append(stageOne.dresserDescript);
+  $("#userInputText").val("");
+  } else if (closetButton1.contains(input)) {
+  $("h5").text(stageOne.closetButton);
+  $("ul#gameLog").append(stageOne.closetButton);
+  $("#userInputText").val("");
+  } else if (closetInterior1.contains(input)) {
+  $("h5").text(stageOne.closetInteriorDescript);
+  $("ul#gameLog").append(stageOne.closetInteriorDescript);
+  $("#userInputText").val("");
+  } else if (windowCommands1.contains(input)) {
+  $("h5").text(stageOne.windowDescript);
+  $("ul#gameLog").append(stageOne.windowDescript);
+  $("#userInputText").val("");
+  } else if (doorCommands1.contains(input)) {
+  $("h5").text(stageOne.doorDescript);
+  $("ul#gameLog").append(stageOne.doorDescript);
+  $("#userInputText").val("");
+  } else if (deskCommands1.contains(input)) {
+  $("h5").text(stageOne.deskDescript);
+  $("ul#gameLog").append(stageOne.deskDescript);
+  $("#userInputText").val("");
+  } else if (screenCommands1.contains(input)) {
+  $("h5").text(stageOne.screenDescript);
+  $("ul#gameLog").append(stageOne.screenDescript);
+  $("#userInputText").val("");
+  } else if (back1.contains(input)) {
+  $("h5").text(backObject.backDescript);
+  $("#userInputText").val("");
+  } else if (stageOneSleep1.contains(input)) {
+  $("h5").text(stageOne.stageOneSleep);
+  $("ul#gameLog").append(stageOne.stageOneSleep);
+  $("#userInputText").val("");
+  level++;
+  } else {
+    $("h5").text("COMMAND NOT RECOGNIZED");
+  }
 }
 //
 // End of stage 1 statement //
@@ -343,11 +343,7 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.closetTurnOne5);
     $("#userInputText").val("");
     moveCounter++;
-  } else {
-      $("h5").text("COMMAND NOT RECOGNIZED");
-  }
-}
-  if (moveCounter === 2) {
+  } else if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
     $("h5").text(stageFive.bedDescript5Turn2);
     $("ul#gameLog").append(stageFive.bedDescript5Turn2);
@@ -391,3 +387,4 @@ var stage5 = function(input) {
     moveCounter++;
 
     }
+  }
