@@ -26,16 +26,12 @@ $("#restartBtn").click(function() {
   reset();
 })
 $("#commandsBtn").click(function() {
-  if (level >= 1) {
   $("ul#commandsList").slideToggle();
   $("#textBox").slideToggle();
-}
 })
 $("#creditsBtn").click(function() {
-  if (level >= 1) {
-  $("#creditsPanel").slideToggle();
-  $("#gameTextPanel").slideToggle();
-}
+  $("ul#credits").slideToggle();
+  $("#textBox").slideToggle();
 })
 
 $("form#userInput").submit(function(event) {

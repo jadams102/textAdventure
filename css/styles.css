@@ -18,7 +18,7 @@ body {
 
 }
 
-#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn, #gameLog, #winPanel, #gameOverPanel, #creditsPanel, #commandsList {
+#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn, #gameLog, #winPanel, #gameOverPanel, #credits, #commandsList {
   display: none;
 }
 

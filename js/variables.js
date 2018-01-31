@@ -1,11 +1,11 @@
 // Expected inputs - Walk to [bed,window,desk,closet] look at [], use [button], room description []
 var stageOne = {
-  roomDescript: "You are in a bed with white sheets that have a slight smell of moth balls and lysol. You are in a room made entirely of stainless steel. The surfaces shimmer from the flourescent lights overhead. Your eyes adjust to the light after your long rest. On the west wall is a closet with a door resembling an elevator door. There is no apparent door. You gaze wide eyed and find a small button and a slit in the wall. It is several feet beyond the foot of the bed. Tucked away in the southwest corner is a small desk. There is something atop it. You remember canned sardines.",
+  roomDescript: "You are in a small room aboard the SSE Woodpecker. The walls and floor shimmer from the flourescent lights overhead. Your eyes adjust to the light after your long rest. On the west wall is a closet. Your gaze turns to the south end of the room and you find a small button and a slit in the wall. It is several feet beyond the foot of the bed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it.",
   bedDescript: "A small solitary bed, with a thin mattress.",
   closetExteriorDescript: "As you approach the closet, you notice that there is no obvious handle. There is an array of buttons on the wall next to the closet.",
   closetButton: "You click the button and with a blast of air, the doors slide up into the ceiling revealing the space behind.",
-  closetInteriorDescript: "The closet contains many things, none of them are recognizable to you, Earthling.",
-  dresserDescript: "You approach the dresser, it is large and glinting in the light. It reminds you of a freezer, from Earth, where you are from.",
+  closetInteriorDescript: "The closet contains many things, none of them seem like they would be much use to you at this point.",
+  dresserDescript: "You approach the dresser, it is large and glinting in the light.",
   windowDescript: "The only window is a port hole. For a moment you are wooed by the vastness of space.",
   doorDescript: "A loud alert beep sounds off. You quickly survey the room again. You hear mechanical grinding, but the door doesn't move an inch.",
   doorButton: "Upon closer inspection you find, again, there are several buttons. These buttons are much smaller. A few of them having a blinking light in the center.",
@@ -82,6 +82,7 @@ var stageFour = {
 //
 //Commands//
 //
+var back = ["BACK"]
 var stageOneSleep1 = ["GO TO SLEEP", "SLEEP", "USE BED"]
 var bedCommands1 =  ["WALK TO BED", "GO BED", "BED", "LOOK AT BED"];
 var closetCommands1 =  ["WALK TO CLOSET", "CLOSET", "GO CLOSET", "LOOK AT CLOSET"];
@@ -95,6 +96,7 @@ var screenCommands1 =  ["LOOK AT TABLET", "TAKE TABLET", "USE TABLET"];
 //
 //stage 2 commands //
 //
+var back = ["BACK"]
 var stageTwoWakeUp = ["WAKE UP"]
 var medKitCommands2 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
 var syringeStage2 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
@@ -112,6 +114,7 @@ var screenCommands2 =  ["LOOK AT SCREEN", "USE SCREEN"];
 // //
 //stage 3 commands //
 // //
+var back = ["BACK"]
 var stageThreeWakeUp = ["WAKE UP"]
 var medKitCommands3 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
 var syringeStage3 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
@@ -131,6 +134,7 @@ var openVent3 = ["OPEN VENT"];
 // //
 //Stage 4 commands //
 // //
+var back = ["BACK"]
 var stage4WakeUp = ["WAKE UP"]
 var medKitCommands4 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
 var syringeStage4 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
@@ -148,6 +152,7 @@ var screenCommands4 =  ["LOOK AT SCREEN", "USE SCREEN"];
 // //
 // Stage 5 commands //
 // //
+var back = ["BACK"]
 var medKitCommands5 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
 var syringeStage5 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
 var useSyringeStage5 = ["USE SYRINGE"]
