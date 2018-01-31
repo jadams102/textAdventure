@@ -27,7 +27,6 @@ $("#userInputText").val("");
 } else if (closetCommands1.contains(input)) {
 $("h5").text(stageOne.closetExteriorDescript);
 $("ul#gameLog").append(stageOne.closetExteriorDescript);
-console.log(level);
 $("#userInputText").val("");
 } else if (dresserCommands1.contains(input)) {
 $("h5").text(stageOne.dresserDescript);
@@ -90,7 +89,6 @@ var stage2 = function(input) {
 } else if (closetCommands2.contains(input)) {
   $("h5").text(stageTwo.closetExteriorDescript);
   $("ul#gameLog").append(stageTwo.closetExteriorDescript);
-  console.log(level);
   $("#userInputText").val("");
 } else if (dresserCommands2.contains(input)) {
   $("h5").text(stageTwo.dresserDescript);
@@ -162,7 +160,6 @@ var stage3 = function(input) {
 } else if (closetCommands3.contains(input)) {
   $("h5").text(stageThree.closetExteriorDescript);
   $("ul#gameLog").append(stageThree.bedDescript);
-  console.log(level);
   $("#userInputText").val("");
 } else if (dresserCommands3.contains(input)) {
   $("h5").text(stageThree.dresserDescript);
@@ -217,14 +214,13 @@ var stage3 = function(input) {
   $("ul#gameLog").append(stageThree.stageThreeSleep);
   $("#userInputText").val("");
   level++;
-  console.log(level);
 }
 }
 //
 // End of stage 3 statement //
 //
 
-var moveCounter = 1;
+
 //
 // Stage 4 if statement //
 //
@@ -243,14 +239,12 @@ var stage4 = function(input) {
 } else if (closetCommands4.contains(input)) {
   $("h5").text(stageFour.closetExteriorDescript);
   $("ul#gameLog").append(stageFour.bedDescript);
-  console.log(level);
   $("#userInputText").val("");
 } else if (dresserCommands4.contains(input)) {
   $("h5").text(stageFour.dresserDescript);
   $("ul#gameLog").append(stageFour.dresserDescript);
   $("#userInputText").val("");
   level++;
-  console.log(moveCounter);
 } else if (windowCommands4.contains(input)) {
   $("h5").text(stageFour.windowDescript);
   $("ul#gameLog").append(stageFour.windowDescript);
@@ -296,12 +290,14 @@ var stage4 = function(input) {
 //
 var stage5 = function(input) {
   if (moveCounter === 1) {
+    console.log(moveCounter);
     if (bedCommands5Turn1.contains(input)) {
       console.log(moveCounter);
     $("h5").text(stageFive.bedDescript5);
     $("ul#gameLog").append(stageFive.bedDescript5);
     $("#userInputText").val("");
     moveCounter++;
+    console.log(moveCounter);
   } else if(deskCommands5.contains(input)) {
     $("h5").text(stageFive.deskDescript5Turn1);
     $("ul#gameLog").append(stageFive.deskDescript5Turn1);
@@ -322,6 +318,7 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.closetTurnOne5);
     $("#userInputText").val("");
     moveCounter++;
+  }
   } else if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
     $("h5").text(stageFive.bedDescript5Turn2);
@@ -332,25 +329,30 @@ var stage5 = function(input) {
     $("h5").text(stageFive.windowTurn2Descript);
     $("ul#gameLog").append(stageFive.windowTurn2Descript);
     $("#userInputText").val("");
-  } else if (syringeStage5.contains(input)) {
+    } else if (kill.contains(input)) {
+    $("h5").text(stageFive.kill5);
+    $("ul#gameLog").append(stageFive.kill5);
+    $("#userInputText").val("");
+    moveCounter++;
+    } else if (syringeStage5.contains(input)) {
     $("h5").text(stageFive.syringeGrab5);
     $("ul#gameLog").append(stageFive.syringeGrab5);
     $("#userInputText").val("");
     moveCounter++;
+  } else if (closetCommands5.contains(input)) {
+    $("h5").text(stageFive.closetTurnTwo5);
+    $("ul#gameLog").append(stageFive.closetTurnTwo5);
+    $("#userInputText").val("");
+  } else if (moveCounter === 3) {
+    if (bedCommands5Turn2.contains(input)) {
+    $("h5").text(stageFive.bedDescript5Turn2);
+    $("ul#gameLog").append(stageFive.bedDescript5Turn2);
+    $("#userInputText").val("");
+    moveCounter++;
+  }
+}
+  if (moveCounter === 3) {
+
+  }
 }
 }
-};
-
-
-
-
-
-//
-// global variables //
-//
-var level = 0;
-
-var inventory = [];
-//
-// end of global variables //
-//

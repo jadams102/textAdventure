@@ -83,7 +83,7 @@ var stageFive = {
   kill5: "You heroically jump onto the snake, but are quickly bested by the snakes strength. It wraps its tail around your body and squeezes till your lights go out.",
   killWith5Turn2: "You heroically jump onto the snake, and plunge the syringe into the snakes thick skin. The snake recoils and slithers away. It starts to violently pulse, it makes an awful screeching noise and begins to spew a thick black ooze. The more ooze that comes out of the snake the thinner the snake becomes until the snake is paper thin on the ground. The room, and yourself are coated with the warm, rancid smelling sludge. After regaining your composure, you step out of the now open door ready to assist the other passengers of the SSE Woodpecker against this alien menace.",
   deskDescript5Turn1: "You move towards the desk to investigate the creature. You stick your head down to take a look and are greeted with thousands of needle like teeth.",
-  deskDescript5Turn2: "The snake struck at you, but missed you by an inch. It slithers under the bed.",
+  deskDescript5Turn3: "The snake struck at you, but missed you by an inch. It slithers under the bed.",
   windowTurn1Descript: "You gaze out at the beauty of space, and for a moment forget about your current situation, and the looming threat of the horrible monster.",
   windowTurn2Descript: "You take a moment to appreciate the majesty of space, but quickly feel the pain of a thousand tiny teeth sinking into your back. As the snake slowly devours you, you are comforted by the fact that the last thing you saw before your death was beautiful.",
   closetTurnOne5: "You head to the closet, and reach out for buttons. The snake lunges out from under the desk and consumes you, starting with your outstretched hand. ",
