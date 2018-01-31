@@ -6,19 +6,14 @@ body {
 .container {
   padding-top: 100px;
 }
-#nameDisplay {
+
+.systemText, #nameDisplay  {
   color:lightgreen;
   font-family: 'VT323', monospace;
   -webkit-animation: flicker3 3.5s infinite;
 }
-.systemText {
-  color:lightgreen;
-  font-family: 'VT323', monospace;
-  -webkit-animation: flicker3 3.5s infinite;
 
-}
-
-#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn, #gameLog, #winPanel, #gameOverPanel, #credits, #commandsList {
+#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn, #gameLog, #gameOverPanel, #credits, #commandsList, #winPanel {
   display: none;
 }
 
@@ -28,18 +23,22 @@ body {
   font-size: 25px;
 }
 
-#titlePanel {
+.gamePanel {
   height: 768px;
   width: 1024;
   border-radius: 30px;
-  background-image: url(../img/giphy.gif);
   background-size: cover;
+  background-image: url(../img/computerScreen.jpg);
   box-shadow: 0px 0px 60px #1de054;
   border: lightgreen;
   position: relative;
 }
 
-#titleText {
+#titlePanel {
+  background-image: url(../img/giphy.gif);
+}
+
+#titleText, #titleSubText {
   -webkit-animation: flicker1 5s infinite;
   display: block;
   position: relative;
@@ -52,104 +51,85 @@ body {
   text-shadow: 0px 0px 60px black;
 }
 
-#titleSubText, #win, #gameOver, .credits {
+#titleSubText {
   -webkit-animation: flicker2 5s infinite;
-  display: block;
-  position: relative;
-  top: 300px;
-  font-family: 'Press Start 2P';
   font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  color: lightgreen;
-  text-shadow: 0px 0px 60px black;
 }
 
+ #win, #gameOver, .credits{
+   -webkit-animation: flicker2 5s infinite;
+   display: block;
+   position: relative;
+   top: 300px;
+   font-family: 'Press Start 2P';
+   font-size: 60px;
+   font-weight: bold;
+   text-align: center;
+   color: lightgreen;
+   text-shadow: 0px 0px 60px black;
+ }
 
-#userNamePanel, #winPanel, #gameOverPanel, #creditsPanel {
-  height: 768px;
-  width: 1024;
-  border-radius: 30px;
-  background-image: url(../img/computerScreen.jpg);
-  background-size: cover;
-  box-shadow: 0px 0px 60px #1de054;
-  position: relative;
-  border: lightgreen;
+#winPanel {
+  background-image: url(../img/win1.jpg);
+  box-shadow: 0px 0px 60px #597aff;
 }
 
-#gameTextPanel {
-  height: 768px;
-  width: 1024;
-  border-radius: 30px;
-  background-image: url(../img/computerScreen.jpg);
-  background-size: cover;
-  box-shadow: 0px 0px 60px #1de054;
-  position: relative;
-  border: lightgreen;
+#gameOverPanel {
+  background-image: url(../img/computerScreenRed.jpg);
+  box-shadow: 0px 0px 60px red;
+}
+
+.btn {
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 40px;
+  width: 198px;
+  height: 77px;
+  border: none;
+}
+
+.btn:active, .btn:hover, .btn:focus  {
+  color: white;
+  outline: none;
 }
 
 #logBtn {
-  font-family: 'VT323', monospace;
-  font-size: 40px;
   background-image: url(../img/LogButtonRedOff.jpg);
-  width: 198px;
-  height: 77px;
-  border: none;
 }
 
-
 #logBtn:active {
-  outline: none;
   background-image: url(../img/LogButtonRed.jpg);
   box-shadow: 0px 0px 40px red;
+  outline: none;
 }
 
 #commandsBtn {
-  font-family: 'VT323', monospace;
-  font-size: 40px;
   background-image: url(../img/ButtonGreenOff.jpg);
-  width: 198px;
-  height: 77px;
-  border: none;
 }
 
 #commandsBtn:active {
-  outline: none;
   background-image: url(../img/ButtonGreen.jpg);
   box-shadow: 0px 0px 40px green;
+  outline: none;
 }
 
 #restartBtn {
-  font-family: 'VT323', monospace;
-  font-size: 40px;
   background-image: url(../img/ButtonYellowOff.jpg);
-  width: 198px;
-  height: 77px;
-  border: none;
 }
 
 #restartBtn:active {
-  outline: none;
   background-image: url(../img/ButtonYellow.jpg);
   box-shadow: 0px 0px 40px yellow;
+  outline: none;
 }
 
 #creditsBtn {
-  font-family: 'VT323', monospace;
-  font-size: 40px;
   background-image: url(../img/ButtonBlueOff.jpg);
-  width: 198px;
-  height: 77px;
-  border: none;
 }
 
 #creditsBtn:active {
-  outline: none;
   background-image: url(../img/ButtonBlue.jpg);
   box-shadow: 0px 0px 40px blue;
-}
-
-#logBtn:focus, #restartBtn:focus, #commandsBtn:focus, #creditsBtn:focus {
   outline: none;
 }
 
