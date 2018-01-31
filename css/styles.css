@@ -6,7 +6,11 @@ body {
 .container {
   padding-top: 100px;
 }
-
+#nameDisplay {
+  color:lightgreen;
+  font-family: 'VT323', monospace;
+  -webkit-animation: flicker3 3.5s infinite;
+}
 .systemText {
   color:lightgreen;
   font-family: 'VT323', monospace;

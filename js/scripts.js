@@ -4,7 +4,7 @@ $(document).ready(function() {
   event.preventDefault();
     $("#userNamePanel").show();
     $("#titlePanel").hide();
-    $("h5").text("")
+    $("#textBox").text("")
 });
 $("form#user").submit(function(event) {
   event.preventDefault();
@@ -13,7 +13,7 @@ $("form#user").submit(function(event) {
     $("#userNamePanel").hide();
     $("#gameTextPanel").show();
     $("#nameDisplay").text("Hello " + userName + ", Welcome to Alienoid!");
-    $("h5").text(stageOne.roomDescript);
+    $("#textBox").text(stageOne.roomDescript);
     level++;
 });
 $("#logBtn").click(function() {
