@@ -13,7 +13,7 @@ body {
   -webkit-animation: flicker3 3.5s infinite;
 }
 
-#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn, #gameLog, #gameOverPanel, #credits, #commandsList, #winPanel {
+#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn, #gameLog, #credits, #commandsList, #gameOverPanel, #winPanel  {
   display: none;
 }
 
@@ -56,17 +56,27 @@ body {
   font-size: 30px;
 }
 
- #win, #gameOver, .credits{
-   -webkit-animation: flicker2 5s infinite;
+ #winText, #gameOverText, #win, #gameOver, .credits{
+   -webkit-animation: flicker3 5s infinite;
    display: block;
    position: relative;
-   top: 300px;
+   top: 150px;
    font-family: 'Press Start 2P';
    font-size: 60px;
    font-weight: bold;
    text-align: center;
    color: lightgreen;
    text-shadow: 0px 0px 60px black;
+ }
+
+  #gameOver {
+    -webkit-animation: flicker2 5s infinite;
+    font-size: 90px;
+  }
+
+ #winText, #gameOverText {
+   -webkit-animation: flicker3 5s infinite;
+   font-size: 15px;
  }
 
 #winPanel {
@@ -86,6 +96,7 @@ body {
   width: 198px;
   height: 77px;
   border: none;
+  margin-right: 26px;
 }
 
 .btn:active, .btn:hover, .btn:focus  {
@@ -94,6 +105,7 @@ body {
 }
 
 #logBtn {
+  float: left;
   background-image: url(../img/LogButtonRedOff.jpg);
 }
 
@@ -123,11 +135,11 @@ body {
   outline: none;
 }
 
-#creditsBtn {
+#mapBtn {
   background-image: url(../img/ButtonBlueOff.jpg);
 }
 
-#creditsBtn:active {
+#mapBtn:active {
   background-image: url(../img/ButtonBlue.jpg);
   box-shadow: 0px 0px 40px blue;
   outline: none;
