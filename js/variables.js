@@ -1,4 +1,7 @@
 // Expected inputs - Walk to [bed,window,desk,closet] look at [], use [button], room description []
+var backObject = {
+  backDescript: "You are aboard the SSE Woodpecker. Your room comes fully equipped with all the luxury that one could expect from New Stellar Incorporations. Make sure to read your tablet everyday for updates from our captain. If you have any questions just type help. Enjoy your stay and thank you for booking with New Stellar Inc. 'Preparing for a better you.'",
+}
 var stageOne = {
   roomDescript: "You are in a small room aboard the SSE Woodpecker. The walls and floor shimmer from the flourescent lights overhead. Your eyes adjust to the light after your long rest. On the west wall is a closet. Your gaze turns to the south end of the room and you find a small button and a slit in the wall. It is several feet beyond the foot of the bed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it.",
   bedDescript: "A small solitary bed, with a thin mattress.",
@@ -82,7 +85,7 @@ var stageFour = {
 //
 //Commands//
 //
-var back = ["BACK"]
+var back1 = ["BACK"]
 var stageOneSleep1 = ["GO TO SLEEP", "SLEEP", "USE BED"]
 var bedCommands1 =  ["WALK TO BED", "GO BED", "BED", "LOOK AT BED"];
 var closetCommands1 =  ["WALK TO CLOSET", "CLOSET", "GO CLOSET", "LOOK AT CLOSET"];
@@ -96,7 +99,7 @@ var screenCommands1 =  ["LOOK AT TABLET", "TAKE TABLET", "USE TABLET"];
 //
 //stage 2 commands //
 //
-var back = ["BACK"]
+var back2 = ["BACK"]
 var stageTwoWakeUp = ["WAKE UP"]
 var medKitCommands2 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
 var syringeStage2 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
@@ -114,7 +117,7 @@ var screenCommands2 =  ["LOOK AT SCREEN", "USE SCREEN"];
 // //
 //stage 3 commands //
 // //
-var back = ["BACK"]
+var back3 = ["BACK"]
 var stageThreeWakeUp = ["WAKE UP"]
 var medKitCommands3 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
 var syringeStage3 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
@@ -134,7 +137,7 @@ var openVent3 = ["OPEN VENT"];
 // //
 //Stage 4 commands //
 // //
-var back = ["BACK"]
+var back4 = ["BACK"]
 var stage4WakeUp = ["WAKE UP"]
 var medKitCommands4 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
 var syringeStage4 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
@@ -152,7 +155,7 @@ var screenCommands4 =  ["LOOK AT SCREEN", "USE SCREEN"];
 // //
 // Stage 5 commands //
 // //
-var back = ["BACK"]
+var back5 = ["BACK"]
 var medKitCommands5 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT"];
 var syringeStage5 =  ["TAKE SYRINGE", "LOOK AT SYRINGE"];
 var useSyringeStage5 = ["USE SYRINGE"]
@@ -228,6 +231,10 @@ $("#userInputText").val("");
 $("h5").text(stageOne.screenDescript);
 $("ul#gameLog").append(stageOne.screenDescript);
 $("#userInputText").val("");
+} else if (back1.contains(input)) {
+$("h5").text(backObject.backDescript);
+$("#userInputText").val("");
+}
 } else if (stageOneSleep1.contains(input)) {
 $("h5").text(stageOne.stageOneSleep);
 $("ul#gameLog").append(stageOne.stageOneSleep);
@@ -252,6 +259,10 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.bedDescript);
   $("ul#gameLog").append(stageTwo.bedDescript);
   $("#userInputText").val("");
+} else if (back1.contains(input)) {
+  $("h5").text(backObject.backDescript);
+  $("#userInputText").val("");
+}
 } else if (closetCommands2.contains(input)) {
   $("h5").text(stageTwo.closetExteriorDescript);
   $("ul#gameLog").append(stageTwo.closetExteriorDescript);
@@ -321,6 +332,10 @@ var stage3 = function(input) {
   $("h5").text(stageThree.bedDescript);
   $("ul#gameLog").append(stageThree.bedDescript);
   $("#userInputText").val("");
+} else if (back1.contains(input)) {
+  $("h5").text(backObject.backDescript);
+  $("#userInputText").val("");
+}
 } else if (closetCommands3.contains(input)) {
   $("h5").text(stageThree.closetExteriorDescript);
   $("ul#gameLog").append(stageThree.bedDescript);
@@ -399,6 +414,10 @@ var stage4 = function(input) {
   $("h5").text(stageFour.bedDescript);
   $("ul#gameLog").append(stageFour.bedDescript);
   $("#userInputText").val("");
+} else if (back1.contains(input)) {
+  $("h5").text(backObject.backDescript);
+  $("#userInputText").val("");
+}
 } else if (closetCommands4.contains(input)) {
   $("h5").text(stageFour.closetExteriorDescript);
   $("ul#gameLog").append(stageFour.bedDescript);
