@@ -308,6 +308,10 @@ var stage4 = function(input) {
 //
 // End of stage 4 statement //
 //
+
+////////////
+// Turn 1 //
+///////////
 var stage5 = function(input) {
   if (moveCounter === 1) {
     console.log(moveCounter);
@@ -341,7 +345,13 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.closetTurnOne5);
     $("#userInputText").val("");
     moveCounter++;
+  } else if (run.contains(input)) {
+    $("h5").text(stageFive.run);
   }
+
+  ////////////
+  // Turn 2 //
+  ///////////
   } else if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
     $("h5").text(stageFive.bedDescript5Turn2);
@@ -369,7 +379,12 @@ var stage5 = function(input) {
     $("h5").text(stageFive.closetTurnTwo5);
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
     $("#userInputText").val("");
+  } else if (run.contains(input)) {
+    $("h5").text(stageFive.run);
   }
+  /////////////
+  // turn 3 //
+  ////////////
   } else if (moveCounter === 3) {
     if (killWith.contains(input)) {
     $("h5").text(stageFive.killWith5Turn2);
@@ -386,6 +401,8 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.bedDescript5Turn2);
     $("#userInputText").val("");
     moveCounter++;
-  }
+  } else if (run.contains(input)) {
+    $("h5").text(stageFive.run);
+}
 }
 }
