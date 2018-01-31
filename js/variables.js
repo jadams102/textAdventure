@@ -74,22 +74,21 @@ var stageFour = {
   screenDescript: "The screen is beyond repair, but you can make out a few words: 'Alien' and 'Evacuation' are among the more worrisome.",
   syringeDescript: "The syringe sits ready for use.",
   syringeUseDescript: "In your moment of panic you slide in the goo and stick yourself with the syringe. Sayonara sucker.",
+}
 
 var stageFive = {
   bedDescript5: "You move toward the bloody bed and remember the syringe stashed underneath.",
-  bedDescript5Turn2: "You step over to take a look under the bed, but before you can look down your legs are bound tightly by the creatures massive tail. "
+  bedDescript5Turn2: "You step over to take a look under the bed, but before you can look down your legs are bound tightly by the creatures massive tail.",
   syringeGrab5: "You pick up the syringe and turn back towards the room.",
   kill5: "You heroically jump onto the snake, but are quickly bested by the snakes strength. It wraps its tail around your body and squeezes till your lights go out.",
-  killWith5Turn2: "You heroically jump onto the snake, and plunge the syringe into the snakes thick skin. The snake recoils and slithers away. It starts to violently pulse, it makes an awful screeching noise and begins to spew a thick black ooze. The more ooze that comes out of the snake the thinner the snake becomes until the snake is paper thin on the ground. The room, and yourself are coated with the warm, rancid smelling sludge. After regaining your composure, you step out of the now open door ready to assist the other passengers of the SSE Woodpecker against this alien menace."
+  killWith5Turn2: "You heroically jump onto the snake, and plunge the syringe into the snakes thick skin. The snake recoils and slithers away. It starts to violently pulse, it makes an awful screeching noise and begins to spew a thick black ooze. The more ooze that comes out of the snake the thinner the snake becomes until the snake is paper thin on the ground. The room, and yourself are coated with the warm, rancid smelling sludge. After regaining your composure, you step out of the now open door ready to assist the other passengers of the SSE Woodpecker against this alien menace.",
   deskDescript5Turn1: "You move towards the desk to investigate the creature. You stick your head down to take a look and are greeted with thousands of needle like teeth.",
   deskDescript5Turn2: "The snake struck at you, but missed you by an inch. It slithers under the bed.",
   windowTurn1Descript: "You gaze out at the beauty of space, and for a moment forget about your current situation, and the looming threat of the horrible monster.",
-  windowTurn2Descript: "You take a moment to appreciate the majesty of space, but quickly feel the pain of a thousand tiny teeth sinking into your back. As your screams fade away, your last "
-
-
-
+  windowTurn2Descript: "You take a moment to appreciate the majesty of space, but quickly feel the pain of a thousand tiny teeth sinking into your back. As the snake slowly devours you, you are comforted by the fact that the last thing you saw before your death was beautiful.",
+  closetTurnOne5: "You head to the closet, and reach out for buttons. The snake lunges out from under the desk and consumes you, starting with your outstretched hand. ",
+  closetTurnTwo5: "You go to the closet seeking solace. As you press the buttons the snake lunges out at you from under the desk. You duck and it narrowly misses you. You hit the right combination of buttons and the door opens. You climb in and the door shuts behind you. You hear the snake outside the door smashing around the room in its anger. You sit down in the fetal position, and in your panic you forgot about the snake residing in the closet. It promptly reminds you."
 }
-
 //
 // End of stages //
 //
@@ -169,13 +168,14 @@ var screenCommands4 =  ["LOOK AT TABLET", "USE TABLET", "TAKE TABLET"];
 // Stage 5 commands //
 // //
 var back5 = ["BACK"]
-var medKitCommands5 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT", "MEDKIT", "USE MEDICAL KIT", "MEDICAL KIT", "LOOK AT MEDICAL KIT"];
+var medKitCommands5 = ["OPEN KIT", "LOOK AT KIT", "USE KIT", "MEDKIT", "USE MEDICAL KIT", "MEDICAL KIT", "LOOK AT MEDICAL KIT"];
 var syringeStage5 =  ["TAKE SYRINGE", "LOOK AT SYRINGE", "SYRINGE", "GRAB SYRINGE"];
 var useSyringeStage5 = ["USE SYRINGE"];
-var kill: ["KILL ALIEN", "KILL", "FIGHT", "FIGHT ALIEN", "ATTACK", "ATTACK ALIEN", "KICK", "KICK ALIEN"];
-var killWith: ["KILL WITH SYRINGE", "USE SYRINGE ON ALIEN", "USE SYRINGE ALIEN", "KILL ALIEN", "KILL"];
-var run: ["RUN", "RUN AWAY", "HIDE"];
-var bedCommands5 =  ["WALK TO BED", "LOOK AT BED", "BED", "GO TO BED"];
+var kill = ["KILL ALIEN", "KILL", "FIGHT", "FIGHT ALIEN", "ATTACK", "ATTACK ALIEN", "KICK", "KICK ALIEN"];
+var killWith = ["KILL WITH SYRINGE", "USE SYRINGE ON ALIEN", "USE SYRINGE ALIEN", "KILL ALIEN", "KILL"];
+var run = ["RUN", "RUN AWAY", "HIDE"];
+var bedCommands5Turn1 =  ["WALK TO BED", "LOOK AT BED", "BED", "GO TO BED"];
+var bedCommands5Turn2 =  ["WALK TO BED", "LOOK AT BED", "BED", "GO TO BED"];
 var closetCommands5 =  ["WALK TO CLOSET", "LOOK AT CLOSET", "CLOSET", "GO TO BED"];
 var closetInterior5 = ["LOOK IN CLOSET", "GO IN CLOSET"];
 var closetButton5 = ["USE CLOSET BUTTON"];
@@ -414,7 +414,7 @@ var stage3 = function(input) {
 // End of stage 3 statement //
 //
 
-
+var moveCounter = 1;
 //
 // Stage 4 if statement //
 //
@@ -440,6 +440,7 @@ var stage4 = function(input) {
   $("ul#gameLog").append(stageFour.dresserDescript);
   $("#userInputText").val("");
   level++;
+  console.log(moveCounter);
 } else if (windowCommands4.contains(input)) {
   $("h5").text(stageFour.windowDescript);
   $("ul#gameLog").append(stageFour.windowDescript);
@@ -485,26 +486,62 @@ var stage4 = function(input) {
 //
 var stage5 = function(input) {
   if (moveCounter === 1) {
-    if (bedCommands5.contains(input)) {
+    if (bedCommands5Turn1.contains(input)) {
+      console.log(moveCounter);
     $("h5").text(stageFive.bedDescript5);
     $("ul#gameLog").append(stageFive.bedDescript5);
     $("#userInputText").val("");
+    moveCounter++;
   } else if(deskCommands5.contains(input)) {
     $("h5").text(stageFive.deskDescript5Turn1);
     $("ul#gameLog").append(stageFive.deskDescript5Turn1);
     $("#userInputText").val("");
+    moveCounter++;
   } else if (kill.contains(input)) {
     $("h5").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
     $("#userInputText").val("");
-  } else if ()
+    moveCounter++;
+  } else if (windowCommands5.contains(input)) {
+    $("h5").text(stageFive.windowTurn1Descript);
+    $("ul#gameLog").append(stageFive.windowTurn1Descript);
+    $("#userInputText").val("");
+    moveCounter++;
+  } else if (syringeStage5.contains(input)) {
+    $("h5").text(stageFive.syringeGrab5);
+    $("ul#gameLog").append(stageFive.syringeGrab5);
+    $("#userInputText").val("");
+    moveCounter++;
+  } else if (closetCommands5.contains(input)) {
+    $("h5").text(stageFive.closetTurnOne5);
+    $("ul#gameLog").append(stageFive.closetTurnOne5);
+    $("#userInputText").val("");
+    moveCounter++;
+  } else if (moveCounter === 2) {
+    if (bedCommands5Turn2.contains(input)) {
+    $("h5").text(stageFive.bedDescript5Turn2);
+    $("ul#gameLog").append(stageFive.bedDescript5Turn2);
+    $("#userInputText").val("");
+    moveCounter++;
+    } else if (windowCommands5.contains(input)) {
+    $("h5").text(stageFive.windowTurn2Descript);
+    $("ul#gameLog").append(stageFive.windowTurn2Descript);
+    $("#userInputText").val("");
+  }
+}
+}
+};
+
+
+
+
 
 //
 // global variables //
 //
 var level = 0;
-var moveCounter = 0;
-var inventory = []
+
+var inventory = [];
 //
 // end of global variables //
 //

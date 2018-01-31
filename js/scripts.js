@@ -51,6 +51,9 @@ $("form#userInput").submit(function(event) {
   } else if (level === 4) {
     stage4(input);
     $("body").addClass("stage4");
+  } else if (level === 5) {
+    stage5(input);
+    $("body").addClass("stage5");
   }
 });
 });
