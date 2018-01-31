@@ -91,7 +91,7 @@ body {
 #logBtn {
   font-family: 'VT323', monospace;
   font-size: 40px;
-  background-image: url(../img/logButtonRedOff.jpg);
+  background-image: url(../img/LogButtonRedOff.jpg);
   width: 198px;
   height: 77px;
   border: none;
@@ -100,7 +100,7 @@ body {
 
 #logBtn:active {
   outline: none;
-  background-image: url(../img/logButtonRed.jpg);
+  background-image: url(../img/LogButtonRed.jpg);
   box-shadow: 0px 0px 40px red;
 }
 
