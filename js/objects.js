@@ -3,7 +3,7 @@ var backObject = {
   backDescript: "You are aboard the SSE Woodpecker on your way back to earth with your dream vacation in the rear view mirror. You'll always remember the lagoon swims, the volcano hikes and of course the quirky local food. Fortunately, your room for the journey home comes fully equipped with all the luxury that one could expect from New Stellar Incorporations. Make sure to read your tablet everyday for updates from our captain. If you have any questions just type help. Enjoy your stay and thank you for booking with New Stellar Inc. 'Preparing for a better you.'",
 }
 var stageOne = {
-  roomDescript: "You are in a small room aboard the SSE Woodpecker. The walls and floor shimmer from the flourescent lights overhead. Your eyes adjust to the light after your long rest. On the west wall is a closet. Your gaze turns to the south end of the room and you find a small button and a slit in the wall. It is several feet beyond the foot of the bed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it.",
+  roomDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript: "A small solitary bed, with a thin mattress.",
   closetExteriorDescript: "As you approach the closet, you notice that there is no obvious handle. There is an array of buttons on the wall next to the closet.",
   closetButton: "You click the button and with a blast of air, the doors slide up into the ceiling revealing the space behind.",
@@ -14,17 +14,17 @@ var stageOne = {
   doorButton: "Upon closer inspection you find, again, there are several buttons. These buttons are much smaller. A few of them having a blinking light in the center.",
   deskDescript: "A plain surface. The edges look sharp. There is a very smooth looking transparent tablet sitting on top of it.",
   screenDescript: "Though this tablet seems very advanced, it feels familiar to you. The screen displays a message from the captain: 'Hello Passengers! Hope you are enjoying your stay. Just wanted to let you know that the ship has experienced a small breach of a foreign microbial infection. No cause for alarm, just remember to wash your hands before having a great time on the SSE Woodpecker!'",
-  stageOneSleep: "After your first day on the ship, you are excited to get some well deserved rest."
+  stageOneSleep: "You are woken up to a scratching sound coming from the walls. It is probably just the rats that the crew warned the passengers about."
 
 };
 var stageTwo = {
-  wakeUpDescript: "You are woken up to a scratching sound coming from the walls. It is probably just the rats that the crew warned the passengers about.",
+  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars."
   bedDescript: "The bed is messy because you didn't make it when you got up.",
   closetExteriorDescript: "The closet glints in the light. The button on the left side is also especially shiny today.",
   closetButton: "Your messy bed hair is blown back and your eyes water.",
   closetInteriorDescript: "You decide to dig around. Luckily you did so delicately, as you find a medical kit with an encased syringe in a glowing tube.",
   dresserDescript: "You consider changing your clothes and then realize that the assigned active wear the crew passed out when you arrived all looks the same",
-  windowDescript: "You gaze out and see a few star clusters. Were those the same ones from yesterday?",
+  windowDescript: "You gaze out and see a few star clusters. You wonder if those were the same ones from yesterday?",
   doorDescript: "The door seems as tight and sealed as ever.",
   doorButton: "You fumble around with the buttons. They seem to all only control equally terrible sounds.",
   deskDescript: "You stare at the desk waiting for some computer games and mountain dew to appear, but alas...",
@@ -32,14 +32,14 @@ var stageTwo = {
   medKitDescript: "You get closer to the small steel case. The syringe inside seems to being slowly dripping an orange liquid.",
   syringeDescript: "The syringe looks so large in your hand. You're careful to not touch any of the orange liquid. You store it under your bed for safe keeping.",
   syringeUseDescript: "You jam the syringe in your jugular. You suddenly became painfully aware of an organism that had been living on the back of your neck. It detaches itself and watches as the syringe's contents slowly drain into your blood stream. As you feel the last drops fill your veins, the creature starts moving towards you. 'Could this really be how it ends' you think, as your vision goes dark.",
-  stageTwoSleep: "You lay your head down, trying to adjust your pillow for the now horrible burning sensation on the back of your neck. After hours of struggling you finally succumb to your to exhaustion and rest.",
+  stageTwoSleep: "You lay your head down, trying to adjust your pillow for the now horrible burning sensation on the back of your neck. After hours of struggling you finally succumb to your to exhaustion and rest. You wake up in the morning well rested and surprisingly the burning sensation has left you. In its place you now find a small pool of blood on your pillow and dried blood on your neck.",
 
 }
 //
 // Stage 3 object //
 //
 var stageThree = {
-  wakeUpDescript: "You awake rested and refreshed. The burning feeling before bed has passed, and is replaced by a dampness on your neck from your pillow. You reach back and touch your neck, it is lightly crusted with blood. You sit up and find bloodstains right beneath your head. There is a small trail of blood to the vent in the floor.",
+  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars."
   bedDescript: "The sheets are destroyed from your night time injury.",
   closetExteriorDescript: "You see the steel is scratched and chipping away on the floor and at the door opening.",
   closetButton: "You reach for the button, but hear a rustling in the closet. Probably best to keep it closed for now.",
@@ -54,14 +54,14 @@ var stageThree = {
   screenDescript: "The tablet is blank, the lack of a message from the ships captain is less than comforting",
   syringeDescript: "The syringe remains under the bed where you stored it. The glowing orange liquid's purpose still escapes you.",
   syringeUseDescript: "Are you serious? The syringe fills you with goofy juice that makes you incredibly heavy and then you fall through the ship floor and are sucked into unforgiving space.",
-  stageThreeSleep: "As you lay your head down and begin to drift off, rustling from the closet jolts you awake. This continues for some time, but eventually you convince yourself it is just a large rodent and fall asleep.",
+  stageThreeSleep: "As you lay your head down and begin to drift off, rustling from the closet jolts you awake. This continues for some time, but eventually you convince yourself it is just a large rodent and fall asleep. Your peaceful sleep is abruptly interrupted by a blaring siren. The tablet on the table is vibrating with notifications from the crew.",
 
 }
 //
 // stage 4 object //
 //
 var stageFour = {
-  wakeUpDescript: "Your peaceful sleep is abruptly interrupted by a blaring siren. The tablet on the table is vibrating with notifications from the crew.",
+  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars."
   bedDescript: "The old blood is the color of rust. You notice a black goo right around the pillow.",
   closetExteriorDescript: "The closet has the same goo as was on the bed around the perimeter of the door.",
   closetButton: "You smash buttons and nothing changes. You begin to push them calmly and methodically. You hear the whoosh sound, and again the door opens.",
@@ -77,6 +77,7 @@ var stageFour = {
 }
 
 var stageFive = {
+  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars."
   bedDescript5: "You move toward the bloody bed and remember the syringe stashed underneath.",
   bedDescript5Turn2: "You step over to take a look under the bed, but before you can look down your legs are bound tightly by the creatures massive tail.",
   syringeGrab5: "You pick up the syringe and turn back towards the room.",

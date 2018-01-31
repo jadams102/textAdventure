@@ -24,6 +24,9 @@ if (bedCommands1.contains(input)) {
 $("h5").text(stageOne.bedDescript);
 $("ul#gameLog").append(stageOne.bedDescript);
 $("#userInputText").val("");
+} else if (help1.contains(input)) {
+$("h5").text(stageOne.roomDescript);
+$("#userInputText").val("");
 } else if (closetCommands1.contains(input)) {
 $("h5").text(stageOne.closetExteriorDescript);
 $("ul#gameLog").append(stageOne.closetExteriorDescript);
@@ -64,6 +67,8 @@ $("h5").text(stageOne.stageOneSleep);
 $("ul#gameLog").append(stageOne.stageOneSleep);
 $("#userInputText").val("");
 level++;
+} else {
+  $("h5").text("COMMAND NOT RECOGNIZED");
 }
 }
 //
@@ -82,6 +87,9 @@ var stage2 = function(input) {
 } else if (bedCommands2.contains(input)) {
   $("h5").text(stageTwo.bedDescript);
   $("ul#gameLog").append(stageTwo.bedDescript);
+  $("#userInputText").val("");
+} else if (help2.contains(input)) {
+  $("h5").text(stageTwo.helpDescript);
   $("#userInputText").val("");
 } else if (back2.contains(input)) {
   $("h5").text(backObject.backDescript);
@@ -135,8 +143,11 @@ var stage2 = function(input) {
   $("ul#gameLog").append(stageTwo.stageTwoSleep);
   $("#userInputText").val("");
   level++;
+} else {
+    $("h5").text("COMMAND NOT RECOGNIZED");
+  }
 }
-}
+
 //
 // End of stage 2 statement //
 //
@@ -153,6 +164,9 @@ var stage3 = function(input) {
 } else if (bedCommands3.contains(input)) {
   $("h5").text(stageThree.bedDescript);
   $("ul#gameLog").append(stageThree.bedDescript);
+  $("#userInputText").val("");
+} else if (help3.contains(input)) {
+  $("h5").text(stageThree.helpDescript);
   $("#userInputText").val("");
 } else if (back3.contains(input)) {
   $("h5").text(backObject.backDescript);
@@ -214,7 +228,9 @@ var stage3 = function(input) {
   $("ul#gameLog").append(stageThree.stageThreeSleep);
   $("#userInputText").val("");
   level++;
-}
+  } else {
+    $("h5").text("COMMAND NOT RECOGNIZED");
+  }
 }
 //
 // End of stage 3 statement //
@@ -232,6 +248,9 @@ var stage4 = function(input) {
 } else if (bedCommands4.contains(input)) {
   $("h5").text(stageFour.bedDescript);
   $("ul#gameLog").append(stageFour.bedDescript);
+  $("#userInputText").val("");
+} else if (help4.contains(input)) {
+  $("h5").text(stageFour.helpDescript);
   $("#userInputText").val("");
 } else if (back4.contains(input)) {
   $("h5").text(backObject.backDescript);
@@ -283,7 +302,9 @@ var stage4 = function(input) {
   $("h5").text(stageFour.syringeUseDescript);
   $("ul#gameLog").append(stageFour.syringeUseDescript);
   $("#userInputText").val("");
-}
+} else {
+    $("h5").text("COMMAND NOT RECOGNIZED");
+  }
 }
 //
 // End of stage 4 statement //
@@ -303,6 +324,10 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.deskDescript5Turn1);
     $("#userInputText").val("");
     moveCounter++;
+  } else if (help5.contains(input)) {
+    $("h5").text(stageFive.helpDescript);
+    $("#userInputText").val("");
+  }
   } else if (kill.contains(input)) {
     $("h5").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
@@ -318,13 +343,20 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.closetTurnOne5);
     $("#userInputText").val("");
     moveCounter++;
+  } else {
+      $("h5").text("COMMAND NOT RECOGNIZED");
   }
-  } else if (moveCounter === 2) {
+}
+  if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
     $("h5").text(stageFive.bedDescript5Turn2);
     $("ul#gameLog").append(stageFive.bedDescript5Turn2);
     $("#userInputText").val("");
     moveCounter++;
+  } else if (help5.contains(input)) {
+    $("h5").text(stageFive.helpDescript);
+    $("#userInputText").val("");
+  }
     } else if (windowCommands5.contains(input)) {
     $("h5").text(stageFive.windowTurn2Descript);
     $("ul#gameLog").append(stageFive.windowTurn2Descript);
@@ -351,8 +383,11 @@ var stage5 = function(input) {
     moveCounter++;
   }
 }
-  if (moveCounter === 3) {
+    if (moveCounter === 3) {
+    } else if (killWith.contains(input)) {
+    $("h5").text(stageFive.killWith5Turn2);
+    $("ul#gameLog").append(stageFive.killWith5Turn2);
+    $("#userInputText").val("");
+    moveCounter++;
 
-  }
-}
-}
+    }
