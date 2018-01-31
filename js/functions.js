@@ -59,7 +59,7 @@ var stage1 = function(input) {
   $("h5").text(stageOne.screenDescript);
   $("ul#gameLog").append(stageOne.screenDescript);
   $("#userInputText").val("");
-  } else if (back1.contains(input)) {
+  } else if (help1.contains(input)) {
   $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
   } else if (stageOneSleep1.contains(input)) {
@@ -91,7 +91,7 @@ var stage2 = function(input) {
 } else if (help2.contains(input)) {
   $("h5").text(stageTwo.helpDescript);
   $("#userInputText").val("");
-} else if (back2.contains(input)) {
+} else if (help2.contains(input)) {
   $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
 } else if (closetCommands2.contains(input)) {
@@ -168,7 +168,7 @@ var stage3 = function(input) {
 } else if (help3.contains(input)) {
   $("h5").text(stageThree.helpDescript);
   $("#userInputText").val("");
-} else if (back3.contains(input)) {
+} else if (help3.contains(input)) {
   $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
 } else if (closetCommands3.contains(input)) {
@@ -252,7 +252,7 @@ var stage4 = function(input) {
 } else if (help4.contains(input)) {
   $("h5").text(stageFour.helpDescript);
   $("#userInputText").val("");
-} else if (back4.contains(input)) {
+} else if (help4.contains(input)) {
   $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
 } else if (closetCommands4.contains(input)) {
