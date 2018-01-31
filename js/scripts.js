@@ -19,7 +19,12 @@ $("form#user").submit(function(event) {
 $("#logBtn").click(function() {
   if (level >= 1) {
   $("ul#gameLog").slideToggle();
-  $("#textBox").slideToggle();
+  $("#restartBtn").toggle();
+  $("#commandsBtn").toggle();
+  $("#creditsBtn").toggle();
+  $("#textBox").toggle();
+  $("ul#commandsList").hide();
+  $("ul#credits").hide();
 }
 })
 $("#restartBtn").click(function() {
@@ -27,11 +32,21 @@ $("#restartBtn").click(function() {
 })
 $("#commandsBtn").click(function() {
   $("ul#commandsList").slideToggle();
-  $("#textBox").slideToggle();
+  $("#restartBtn").toggle();
+  $("#creditsBtn").toggle();
+  $("#logBtn").toggle();
+  $("#textBox").toggle();
+  $("ul#credits").hide();
 })
 $("#creditsBtn").click(function() {
   $("ul#credits").slideToggle();
-  $("#textBox").slideToggle();
+  $("#restartBtn").toggle();
+  $("#comandsBtn").toggle();
+  $("#commandsBtn").toggle();
+  $("#logBtn").toggle();
+  $("#textBox").toggle();
+  $("ul#commandsList").hide();
+  $("ul#gameLog").hide();
 })
 
 $("form#userInput").submit(function(event) {
@@ -42,18 +57,18 @@ $("form#userInput").submit(function(event) {
       $("#nameDisplay").hide();
       stage1(input);
   } else if (level === 2) {
-    stage2(input);
     $("body").addClass("stage2");
+    stage2(input);
     console.log(level);
   } else if (level === 3) {
-    stage3(input);
     $("body").addClass("stage3");
+    stage3(input);
   } else if (level === 4) {
-    stage4(input);
     $("body").addClass("stage4");
+    stage4(input);
   } else if (level === 5) {
-    stage5(input);
     $("body").addClass("stage5");
+    stage5(input);
   }
 });
 });

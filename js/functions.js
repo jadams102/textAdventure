@@ -122,10 +122,6 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.medKitDescript);
   $("ul#gameLog").append(stageTwo.medKitDescript);
   $("#userInputText").val("");
-} else if (syringeStage2.contains(input)) {
-  $("h5").text(stageTwo.syringeDescript);
-  $("ul#gameLog").append(stageTwo.syringeDescript);
-  $("#userInputText").val("");
 } else if (closetButton2.contains(input)) {
   $("h5").text(stageTwo.closetButton);
   $("ul#gameLog").append(stageTwo.closetButton);
@@ -134,10 +130,11 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.closetInteriorDescript);
   $("ul#gameLog").append(stageTwo.closetInteriorDescript);
   $("#userInputText").val("");
-} else if (useSyringeStage2.contains(input)) {
-  $("h5").text(stageTwo.syringeUseDescript);
-  $("ul#gameLog").append(stageTwo.syringeUseDescript);
+} else if (pickUpSyringe.contains(input)) {
+  $("h5").text(stageTwo.syringeDescript);
+  $("ul#gameLog").append(stageTwo.syringeDescript);
   $("#userInputText").val("");
+  inventory.push("syringe");
 } else if (stageTwoSleep2.contains(input)) {
   $("h5").text(stageTwo.stageTwoSleep);
   $("ul#gameLog").append(stageTwo.stageTwoSleep);
@@ -230,6 +227,7 @@ var stage3 = function(input) {
   level++;
   } else {
     $("h5").text("COMMAND NOT RECOGNIZED");
+    $("#userInputText").val("");
   }
 }
 //
@@ -304,6 +302,7 @@ var stage4 = function(input) {
   $("#userInputText").val("");
 } else {
     $("h5").text("COMMAND NOT RECOGNIZED");
+    $("#userInputText").val("");
   }
 }
 //
@@ -327,7 +326,6 @@ var stage5 = function(input) {
   } else if (help5.contains(input)) {
     $("h5").text(stageFive.helpDescript);
     $("#userInputText").val("");
-  }
   } else if (kill.contains(input)) {
     $("h5").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
@@ -343,6 +341,7 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.closetTurnOne5);
     $("#userInputText").val("");
     moveCounter++;
+  }
   } else if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
     $("h5").text(stageFive.bedDescript5Turn2);
@@ -352,7 +351,6 @@ var stage5 = function(input) {
   } else if (help5.contains(input)) {
     $("h5").text(stageFive.helpDescript);
     $("#userInputText").val("");
-  }
     } else if (windowCommands5.contains(input)) {
     $("h5").text(stageFive.windowTurn2Descript);
     $("ul#gameLog").append(stageFive.windowTurn2Descript);
@@ -371,20 +369,23 @@ var stage5 = function(input) {
     $("h5").text(stageFive.closetTurnTwo5);
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
     $("#userInputText").val("");
+  }
   } else if (moveCounter === 3) {
-    if (bedCommands5Turn2.contains(input)) {
+    if (killWith.contains(input)) {
+    $("h5").text(stageFive.killWith5Turn2);
+    $("ul#gameLog").append(stageFive.killWith5Turn2);
+    $("#userInputText").val("");
+    moveCounter++;
+  } else if (kill.contains(input)) {
+    $("h5").text(stageFive.kill5);
+    $("ul#gameLog").append(stageFive.kill5);
+    $("#userInputText").val("");
+    moveCounter++;
+  } else if (bedCommands5Turn2.contains(input)) {
     $("h5").text(stageFive.bedDescript5Turn2);
     $("ul#gameLog").append(stageFive.bedDescript5Turn2);
     $("#userInputText").val("");
     moveCounter++;
   }
 }
-    if (moveCounter === 3) {
-    } else if (killWith.contains(input)) {
-    $("h5").text(stageFive.killWith5Turn2);
-    $("ul#gameLog").append(stageFive.killWith5Turn2);
-    $("#userInputText").val("");
-    moveCounter++;
-
-    }
-  }
+}

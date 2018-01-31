@@ -13,7 +13,7 @@ var stageOne = {
   doorDescript: "A loud alert beep sounds off. You quickly survey the room again. You hear mechanical grinding, but the door doesn't move an inch.",
   doorButton: "Upon closer inspection you find, again, there are several buttons. These buttons are much smaller. A few of them having a blinking light in the center.",
   deskDescript: "A plain surface. The edges look sharp. There is a very smooth looking transparent tablet sitting on top of it.",
-  screenDescript: "Though this tablet seems very advanced, it feels familiar to you. The screen displays a message from the captain: 'Hello Passengers! Hope you are enjoying your stay. Just wanted to let you know that the ship has experienced a small breach of a foreign microbial infection. No cause for alarm, just remember to wash your hands before having a great time on the SSE Woodpecker!'",
+  screenDescript: "Though this tablet seems very advanced, it feels familiar to you. The screen displays a message from the captain: 'Hello Passengers! Hope you are enjoying your stay. Just wanted to let you know that the ship has experienced a small security breach in the form of a foreign microbial infection. No cause for alarm, just remember to wash your hands before having a great time on the SSE Woodpecker!'",
   stageOneSleep: "You are woken up to a scratching sound coming from the walls. It is probably just the rats that the crew warned the passengers about."
 
 };
@@ -21,7 +21,7 @@ var stageTwo = {
   helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript: "The bed is messy because you didn't make it when you got up.",
   closetExteriorDescript: "The closet glints in the light. The button on the left side is also especially shiny today.",
-  closetButton: "Your messy bed hair is blown back and your eyes water.",
+  closetButton: "You press the button and the closet door slides open.",
   closetInteriorDescript: "You decide to dig around. Luckily you did so delicately, as you find a medical kit with an encased syringe in a glowing tube.",
   dresserDescript: "You consider changing your clothes and then realize that the assigned active wear the crew passed out when you arrived all looks the same",
   windowDescript: "You gaze out and see a few star clusters. You wonder if those were the same ones from yesterday?",
@@ -65,7 +65,7 @@ var stageFour = {
   bedDescript: "The old blood is the color of rust. You notice a black goo right around the pillow.",
   closetExteriorDescript: "The closet has the same goo as was on the bed around the perimeter of the door.",
   closetButton: "You smash buttons and nothing changes. You begin to push them calmly and methodically. You hear the whoosh sound, and again the door opens.",
-  closetInteriorDescript: "You see a snake-like creature on the ground ready to strike. You smash buttons on the wall again and the door shuts just in time. You hear it hit the door and a small indent forms. As you back away the door to your room is blown off its hinges and a larger snake-like alien slithers under the desk.",
+  closetInteriorDescript: "The door slides open and you see a snake-like creature on the ground ready to strike. You smash buttons on the wall again and the door shuts just in time. You hear it hit the door and a small indent forms. As you back away the door to your room is blown off its hinges and a larger snake-like alien slithers under the desk.",
   dresserDescript: "You find creature eggs. The closet door bursts open, there is a snake-like alien inside, you are able to reach the button quickly enough to close the door before you are killed. As you back away the door to your room is blown off its hinges and a larger snake-like alien slithers under the desk.",
   windowDescript: "The cracks are growing.",
   doorDescript: "The door doesn't budge.",
