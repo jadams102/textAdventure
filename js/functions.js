@@ -27,6 +27,13 @@ var stage1 = function(input) {
   } else if (help1.contains(input)) {
   $("h5").text(stageOne.roomDescript);
   $("#userInputText").val("");
+} else if (hitWindow.contains(input)) {
+  $("body").removeClass();
+  $("#gameTextPanel").hide();
+  $("#gameOverPanel").show();
+  $("#gameOverText").text(stageOne.windowHit);
+  $("ul#gameLog").append(stageOne.windowHit);
+  $("#userInputText").hide();
   } else if (closetCommands1.contains(input)) {
   $("h5").text(stageOne.closetExteriorDescript);
   $("ul#gameLog").append(stageOne.closetExteriorDescript);
@@ -88,6 +95,13 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.bedDescript);
   $("ul#gameLog").append(stageTwo.bedDescript);
   $("#userInputText").val("");
+} else if (hitWindow.contains(input)) {
+  $("body").removeClass();
+  $("#gameTextPanel").hide();
+  $("#gameOverPanel").show();
+  $("#gameOverText").text(stageOne.windowHit);
+  $("ul#gameLog").append(stageOne.windowHit);
+  $("#userInputText").hide();
 } else if (help2.contains(input)) {
   $("h5").text(stageTwo.helpDescript);
   $("#userInputText").val("");
@@ -135,6 +149,13 @@ var stage2 = function(input) {
   $("ul#gameLog").append(stageTwo.syringeDescript);
   $("#userInputText").val("");
   inventory.push("syringe");
+} else if (useSyringeStage2.contains(input)) {
+  $("body").removeClass();
+  $("#gameTextPanel").hide();
+  $("#gameOverPanel").show();
+  $("#gameOverText").text(stageTwo.syringeUseDescript);
+  $("ul#gameLog").append(stageTwo.syringeUseDescript);
+  $("#userInputText").hide();
 } else if (stageTwoSleep2.contains(input)) {
   $("h5").text(stageTwo.stageTwoSleep);
   $("ul#gameLog").append(stageTwo.stageTwoSleep);
@@ -165,6 +186,13 @@ var stage3 = function(input) {
 } else if (help3.contains(input)) {
   $("h5").text(stageThree.helpDescript);
   $("#userInputText").val("");
+} else if (hitWindow.contains(input)) {
+  $("body").removeClass();
+  $("#gameTextPanel").hide();
+  $("#gameOverPanel").show();
+  $("#gameOverText").text(stageOne.windowHit);
+  $("ul#gameLog").append(stageOne.windowHit);
+  $("#userInputText").hide();
 } else if (help3.contains(input)) {
   $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
@@ -250,6 +278,13 @@ var stage4 = function(input) {
 } else if (help4.contains(input)) {
   $("h5").text(stageFour.helpDescript);
   $("#userInputText").val("");
+} else if (hitWindow.contains(input)) {
+  $("body").removeClass();
+  $("#gameTextPanel").hide();
+  $("#gameOverPanel").show();
+  $("#gameOverText").text(stageOne.windowHit);
+  $("ul#gameLog").append(stageOne.windowHit);
+  $("#userInputText").hide();
 } else if (help4.contains(input)) {
   $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
@@ -330,6 +365,13 @@ var stage5 = function(input) {
   } else if (help5.contains(input)) {
     $("h5").text(stageFive.helpDescript);
     $("#userInputText").val("");
+  } else if (hitWindow.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageOne.windowHit);
+    $("ul#gameLog").append(stageOne.windowHit);
+    $("#userInputText").hide();
   } else if (kill.contains(input)) {
     $("h5").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
@@ -370,6 +412,13 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.kill5);
     $("#userInputText").val("");
     moveCounter++;
+  } else if (hitWindow.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageOne.windowHit);
+    $("ul#gameLog").append(stageOne.windowHit);
+    $("#userInputText").hide();
     } else if (syringeStage5.contains(input)) {
     $("h5").text(stageFive.syringeGrab5);
     $("ul#gameLog").append(stageFive.syringeGrab5);
@@ -387,15 +436,25 @@ var stage5 = function(input) {
   ////////////
   } else if (moveCounter === 3) {
     if (killWith.contains(input)) {
-    $("h5").text(stageFive.killWith5Turn2);
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#winPanel").show();
+    $("#winText").text(stageFive.killWith5Turn2);
     $("ul#gameLog").append(stageFive.killWith5Turn2);
-    $("#userInputText").val("");
+    $("#userInputText").hide();
     moveCounter++;
   } else if (kill.contains(input)) {
     $("h5").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
     $("#userInputText").val("");
     moveCounter++;
+  } else if (hitWindow.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageOne.windowHit);
+    $("ul#gameLog").append(stageOne.windowHit);
+    $("#userInputText").hide();
   } else if (bedCommands5Turn2.contains(input)) {
     $("h5").text(stageFive.bedDescript5Turn2);
     $("ul#gameLog").append(stageFive.bedDescript5Turn2);
