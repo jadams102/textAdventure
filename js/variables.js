@@ -84,7 +84,7 @@ var stageFive = {
   deskDescript5Turn1: "You move towards the desk to investigate the creature. You stick your head down to take a look and are greeted with thousands of needle like teeth.",
   deskDescript5Turn2: "The snake struck at you, but missed you by an inch. It slithers under the bed.",
   windowTurn1Descript: "You gaze out at the beauty of space, and for a moment forget about your current situation, and the looming threat of the horrible monster.",
-  windowTurn2Descript: "You take a moment to appreciate the majesty of space, but quickly feel the pain of a thousand tiny teeth sinking into your back."
+  windowTurn2Descript: "You take a moment to appreciate the majesty of space, but quickly feel the pain of a thousand tiny teeth sinking into your back. As your screams fade away, your last "
 
 
 
