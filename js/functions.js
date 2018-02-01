@@ -396,9 +396,12 @@ var stage5 = function(input) {
     $("#userInputText").val("");
     moveCounter++;
   } else if (closetCommands.contains(input)) {
-    $("h5").text(stageFive.closetTurnOne5 + "// FOUR MORE MOVES UNTIL DEATH //");
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.closetTurnOne5);
     $("ul#gameLog").append(stageFive.closetTurnOne5);
-    $("#userInputText").val("");
+    $("#userInputText").hide();
     moveCounter++;
   } else if (run.contains(input)) {
     $("body").removeClass();
