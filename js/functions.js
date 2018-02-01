@@ -76,6 +76,7 @@ var stage1 = function(input) {
   level++;
   } else {
     $("h5").text("COMMAND NOT RECOGNIZED");
+    $("#userInputText").val("");
   }
 }
 //
@@ -163,6 +164,7 @@ var stage2 = function(input) {
   level++;
 } else {
     $("h5").text("COMMAND NOT RECOGNIZED");
+    $("#userInputText").val("");
   }
 }
 
@@ -389,12 +391,16 @@ var stage5 = function(input) {
     moveCounter++;
   } else if (run.contains(input)) {
     $("h5").text(stageFive.run);
+  } else {
+    $("h5").text("COMMAND NOT RECOGNIZED");
+    $("#userInputText").val("");
   }
+
 
   ////////////
   // Turn 2 //
   ///////////
-  } else if (moveCounter === 2) {
+} else if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
     $("h5").text(stageFive.bedDescript5Turn2);
     $("ul#gameLog").append(stageFive.bedDescript5Turn2);
@@ -430,7 +436,11 @@ var stage5 = function(input) {
     $("#userInputText").val("");
   } else if (run.contains(input)) {
     $("h5").text(stageFive.run);
+  } else {
+    $("h5").text("COMMAND NOT RECOGNIZED");
+    $("#userInputText").val("");
   }
+
   /////////////
   // turn 3 //
   ////////////
@@ -462,6 +472,9 @@ var stage5 = function(input) {
     moveCounter++;
   } else if (run.contains(input)) {
     $("h5").text(stageFive.run);
-}
-}
+  } else {
+      $("h5").text("COMMAND NOT RECOGNIZED");
+      $("#userInputText").val("");
+    }
+  }
 }

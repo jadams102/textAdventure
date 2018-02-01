@@ -23,20 +23,18 @@ $("#logBtn").click(function() {
   $("#commandsBtn").toggle();
   $("#creditsBtn").toggle();
   $("#textBox").toggle();
-  $("ul#commandsList").hide();
   $("ul#credits").hide();
 }
 })
 $("#restartBtn").click(function() {
   reset();
 })
-$("#commandsBtn").click(function() {
-  $("ul#commandsList").slideToggle();
+$("#creditsBtn").click(function() {
+  $("ul#credits").slideToggle();
   $("#restartBtn").toggle();
   $("#creditsBtn").toggle();
   $("#logBtn").toggle();
   $("#textBox").toggle();
-  $("ul#credits").hide();
 })
 $("#mapBtn").click(function() {
   $("ul#credits").slideToggle();
@@ -45,7 +43,6 @@ $("#mapBtn").click(function() {
   $("#commandsBtn").toggle();
   $("#logBtn").toggle();
   $("#textBox").toggle();
-  $("ul#commandsList").hide();
   $("ul#gameLog").hide();
 })
 
