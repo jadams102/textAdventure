@@ -19,7 +19,7 @@ A website created with JavaScript, jQuery, Boostrap, CSS, and HTML, where a user
 | **User Clicks on "Restart" Button to Start the Game Over**| Input: User clicks "Restart" Button | Output: Program Returns to the Main Page. |
 | **User Clicks on "Credits" Button to View Game Credits**| Input: User clicks "Credits" Button | Output: Program Returns the Names of Individuals Who Created the Game. |
 | **User Clicks on "Map" Button to View Map of the Game** | Input: User clicks "Map" Button | Output: Program Displays Map of the Room the Game Takes Place In. |
-| **User Enters the Command, "Go To Sleep", This Will Increment the Level Variable and Change the Background According to Level **| Input: User Enters "Go To Sleep" | Output: Level Variable Increments by One and the Background Changes. |
+| **User Enters the Command, "Go To Sleep", This Will Increment the Level Variable and Change the Background According to Level**| Input: User Enters "Go To Sleep" | Output: Level Variable Increments by One and the Background Changes. |
 | **Program Displays "Win" State**| Input: User Kills Alien on Level 5. | Output: Program Displays "Congratulations" Screen. |
 | **Program Displays "Lose" State**| Input: User Enters an Input that Triggers the Lose State. | Output: Program Displays "Game Over" Screen. |
 
