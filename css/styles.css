@@ -193,12 +193,9 @@ body {
 }
 
 #commands {
-  position: relative;
-  bottom: 275px;
-  left: 29px;
   font-family: 'VT323', monospace;
   color: lightgreen;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 p, li, h5 {
