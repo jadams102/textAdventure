@@ -28,6 +28,8 @@ var stage1 = function(input) {
   $("h5").text(stageOne.roomDescript);
   $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
+  wilhelmSound.play();
+  ambientSound.pause();
   $("body").removeClass();
   $("#gameTextPanel").hide();
   $("#gameOverPanel").show();

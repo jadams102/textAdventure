@@ -58,6 +58,7 @@ $("form#userInput").submit(function(event) {
   var input = ($("#userInputText").val()).toUpperCase();
   $("ul#gameLog").append("<li>" + input + "</li>");
     if (level === 1) {
+
       $("#nameDisplay").hide();
       stage1(input);
   } else if (level === 2) {
