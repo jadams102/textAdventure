@@ -14,12 +14,13 @@ var stageOne = {
   doorButton: "Upon closer inspection you find, again, there are several buttons. These buttons are much smaller. A few of them having a blinking light in the center.",
   deskDescript: "A plain surface. The edges look sharp. There is a very smooth looking transparent tablet sitting on top of it.",
   screenDescript: "Though this tablet seems very advanced, it feels familiar to you. The screen displays a message from the captain: 'Hello Passengers! Hope you are enjoying your stay. Just wanted to let you know that the ship has experienced a small security breach in the form of a foreign microbial infection. No cause for alarm, just remember to wash your hands before having a great time on the SSE Woodpecker!'",
-  stageOneSleep: "You are woken up to a scratching sound coming from the walls. It is probably just the rats that the crew warned the passengers about."
+  stageOneSleep: "You fall asleep very quickly after your long day of space adventures. You are woken up to a scratching sound coming from the walls. It is probably just the space rats that the crew warned the passengers about.",
+  windowHit: "You smash your head into the window out of boredom. When the window doesn't immediately break you decide to do it again, this time you aren't so lucky. Your body is sucked into the vacuum of space and you are crushed into a small wallet sized human meat pouch."
 
 };
 var stageTwo = {
   helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
-  bedDescript: "The bed is messy because you didn't make it when you got up.",
+  bedDescript: "The bed is messy because you didn't make it when you got up. ",
   closetExteriorDescript: "The closet glints in the light. The button on the left side is also especially shiny today.",
   closetButton: "You press the button and the closet door slides open.",
   closetInteriorDescript: "You decide to dig around. Luckily you did so delicately, as you find a medical kit with an encased syringe in a glowing tube.",
@@ -33,6 +34,7 @@ var stageTwo = {
   syringeDescript: "The syringe looks so large in your hand. You're careful to not touch any of the orange liquid. You store it under your bed for safe keeping.",
   syringeUseDescript: "You jam the syringe in your jugular. You suddenly became painfully aware of an organism that had been living on the back of your neck. It detaches itself and watches as the syringe's contents slowly drain into your blood stream. As you feel the last drops fill your veins, the creature starts moving towards you. 'Could this really be how it ends' you think, as your vision goes dark.",
   stageTwoSleep: "You lay your head down, trying to adjust your pillow for the now horrible burning sensation on the back of your neck. After hours of struggling you finally succumb to your to exhaustion and rest. You wake up in the morning well rested and surprisingly the burning sensation has left you. In its place you now find a small pool of blood on your pillow and dried blood on your neck.",
+  windowHit: "You smash your head into the window out of boredom. When the window doesn't immediately break you decide to do it again, this time you aren't so lucky. Your body is sucked into the vacuum of space and you are crushed into a small wallet sized human meat pouch."
 
 }
 //
@@ -40,7 +42,7 @@ var stageTwo = {
 //
 var stageThree = {
   helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
-  bedDescript: "The sheets are destroyed from your night time injury.",
+  bedDescript: "The sheets are destroyed from your night time injury. You notice a slime trail leading off the bed onto the floor.",
   closetExteriorDescript: "You see the steel is scratched and chipping away on the floor and at the door opening.",
   closetButton: "You reach for the button, but hear a rustling in the closet. Probably best to keep it closed for now.",
   closetInteriorDescript: "The rustling from inside the closet is enough motivation for you to stay away from the door.",
@@ -55,6 +57,7 @@ var stageThree = {
   syringeDescript: "The syringe remains under the bed where you stored it. The glowing orange liquid's purpose still escapes you.",
   syringeUseDescript: "Are you serious? The syringe fills you with goofy juice that makes you incredibly heavy and then you fall through the ship floor and are sucked into unforgiving space.",
   stageThreeSleep: "As you lay your head down and begin to drift off, rustling from the closet jolts you awake. This continues for some time, but eventually you convince yourself it is just a large rodent and fall asleep. Your peaceful sleep is abruptly interrupted by a blaring siren. The tablet on the table is vibrating with notifications from the crew.",
+  windowHit: "You smash your head into the window out of boredom. When the window doesn't immediately break you decide to do it again, this time you aren't so lucky. Your body is sucked into the vacuum of space and you are crushed into a small wallet sized human meat pouch."
 
 }
 //
@@ -74,6 +77,7 @@ var stageFour = {
   screenDescript: "The screen is beyond repair, but you can make out a few words: 'Alien' and 'Evacuation' are among the more worrisome.",
   syringeDescript: "The syringe sits ready for use.",
   syringeUseDescript: "In your moment of panic you slide in the goo and stick yourself with the syringe. Sayonara sucker.",
+  windowHit: "You smash your head into the window out of boredom. When the window doesn't immediately break you decide to do it again, this time you aren't so lucky. Your body is sucked into the vacuum of space and you are crushed into a small wallet sized human meat pouch."
 }
 
 var stageFive = {
@@ -90,6 +94,7 @@ var stageFive = {
   closetTurnOne5: "You head to the closet, and reach out for buttons. The snake lunges out from under the desk and consumes you, starting with your outstretched hand. ",
   closetTurnTwo5: "You go to the closet seeking solace. As you press the buttons the snake lunges out at you from under the desk. You duck and it narrowly misses you. You hit the right combination of buttons and the door opens. You climb in and the door shuts behind you. You hear the snake outside the door smashing around the room in its anger. You sit down in the fetal position, and in your panic you forgot about the snake residing in the closet. It promptly reminds you.",
   run: "You slip through the now open door of your room and sprint down the hallway. You can hear frantic slithering coming from behind you but just focus on your breathing. Suddenly you feel a warmth on your leg. When you look down you have the horrific realization that your leg is no longer attached to you, it is now in the snakes mouth. As you are falling to the ground the last thing you see is the wide open mouth of an alien snake slowly moving towards its crippled prey.",
+  windowHit: "You smash your head into the window out of boredom. When the window doesn't immediately break you decide to do it again, this time you aren't so lucky. Your body is sucked into the vacuum of space and you are crushed into a small wallet sized human meat pouch."
 }
 //
 // End of stages //

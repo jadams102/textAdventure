@@ -21,10 +21,10 @@ $("#logBtn").click(function() {
   $("ul#gameLog").slideToggle();
   $("#restartBtn").toggle();
   $("#commandsBtn").toggle();
-  $("#mapBtn").toggle();
+  $("#creditsBtn").toggle();
   $("#textBox").toggle();
   $("ul#commandsList").hide();
-  $("ul#map").hide();
+  $("ul#credits").hide();
 }
 })
 $("#restartBtn").click(function() {
@@ -33,13 +33,13 @@ $("#restartBtn").click(function() {
 $("#commandsBtn").click(function() {
   $("ul#commandsList").slideToggle();
   $("#restartBtn").toggle();
-  $("#mapBtn").toggle();
+  $("#creditsBtn").toggle();
   $("#logBtn").toggle();
   $("#textBox").toggle();
-  $("ul#map").hide();
+  $("ul#credits").hide();
 })
 $("#mapBtn").click(function() {
-  $("ul#map").slideToggle();
+  $("ul#credits").slideToggle();
   $("#restartBtn").toggle();
   $("#comandsBtn").toggle();
   $("#commandsBtn").toggle();
