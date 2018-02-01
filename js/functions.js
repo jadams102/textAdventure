@@ -363,10 +363,12 @@ var stage5 = function(input) {
     moveCounter++;
     console.log(moveCounter);
   } else if(deskCommands.contains(input)) {
-    $("h5").text(stageFive.deskDescript5Turn1 + "// FOUR MORE MOVES UNTIL DEATH //");
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.deskDescript5Turn1);
     $("ul#gameLog").append(stageFive.deskDescript5Turn1);
-    $("#userInputText").val("");
-    moveCounter++;
+    $("#userInputText").hide();
   } else if (help.contains(input)) {
     $("h5").text(stageFive.helpDescript + "// FOUR MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
