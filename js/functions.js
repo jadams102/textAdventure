@@ -401,7 +401,12 @@ var stage5 = function(input) {
     $("#userInputText").val("");
     moveCounter++;
   } else if (run.contains(input)) {
-    $("h5").text(stageFive.run);
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.run);
+    $("ul#gameLog").append(stageFive.run);
+    $("#userInputText").hide();
   } else {
     $("h5").text("COMMAND NOT RECOGNIZED // FOUR MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
@@ -440,11 +445,25 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageOne.windowHit);
     $("ul#gameLog").append(stageOne.windowHit);
     $("#userInputText").hide();
+  } else if (dresserCommands5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.dresserDescript);
+    $("ul#gameLog").append(stageOne.dresserDescript);
+    $("#userInputText").hide();
     } else if (syringeStage5.contains(input)) {
     $("h5").text(stageFive.syringeGrab5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.syringeGrab5);
     $("#userInputText").val("");
     moveCounter++;
+  } else if (closetCommands5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.closetTurnTwo5);
+    $("ul#gameLog").append(stageOne.closetTurnTwo5);
+    $("#userInputText").hide();
   } else if (closetCommands5.contains(input)) {
     $("h5").text(stageFive.closetTurnTwo5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
@@ -454,7 +473,12 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
     $("#userInputText").val("");
   } else if (run.contains(input)) {
-    $("h5").text(stageFive.run);
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.run);
+    $("ul#gameLog").append(stageFive.run);
+    $("#userInputText").hide();
   } else {
     $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
@@ -472,6 +496,22 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.killWith5Turn2);
     $("#userInputText").hide();
     moveCounter++;
+  } else if (help5.contains(intput)) {
+    $("h5").text(stageFive.helpDescript);
+    $("ul#gameLog").append(stageFive.helpDescript);
+    $("#userInputText").val("");
+  } else if (syringeStage5.contains(input)) {
+    $("h5").text(stageFive.syringeGrab5 + "// TWO MORE MOVES UNTIL DEATH //");
+    $("ul#gameLog").append(stageFive.syringeGrab5);
+    $("#userInputText").val("");
+    moveCounter++;
+  } else if (useSyringeStage5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.syringeUse);
+    $("ul#gameLog").append(stageOne.syringeUse);
+    $("#userInputText").hide();
   } else if (kill.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
@@ -479,7 +519,27 @@ var stage5 = function(input) {
     $("#winText").text(stageFive.killWith5Turn2);
     $("ul#gameLog").append(stageFive.killWith5Turn2);
     $("#userInputText").hide();
-    moveCounter++;
+  } else if (closetCommands5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.closetTurnTwo5);
+    $("ul#gameLog").append(stageOne.closetTurnTwo5);
+    $("#userInputText").hide();
+  } else if (closetInterior5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.closetTurnTwo5);
+    $("ul#gameLog").append(stageOne.closetTurnTwo5);
+    $("#userInputText").hide();
+  } else if (dresserCommands5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.dresserDescript);
+    $("ul#gameLog").append(stageOne.dresserDescript);
+    $("#userInputText").hide();
   } else if (hitWindow.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
@@ -493,17 +553,100 @@ var stage5 = function(input) {
     $("#userInputText").val("");
     moveCounter++;
   } else if (run.contains(input)) {
-    $("h5").text(stageFive.run);
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.run);
+    $("ul#gameLog").append(stageFive.run);
+    $("#userInputText").hide();
   } else {
       $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
       $("#userInputText").val("");
     }
-  } else if (moveCounter > 4) {
-    $("body").removeClass();
-    $("#gameTextPanel").hide();
-    $("#gameOverPanel").show();
-    $("#gameOverText").text("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
-    $("ul#gameLog").append("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
-    $("#userInputText").hide();
+  } else if (moveCounter = 4) {
+      if (killWith.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#winPanel").show();
+      $("#winText").text(stageFive.killWith5Turn2);
+      $("ul#gameLog").append(stageFive.killWith5Turn2);
+      $("#userInputText").hide();
+      moveCounter++;
+    } else if (help5.contains(intput)) {
+      $("h5").text(stageFive.helpDescript);
+      $("ul#gameLog").append(stageFive.helpDescript);
+      $("#userInputText").val("");
+      moveCounter++;
+    } else if (syringeStage5.contains(input)) {
+      $("h5").text(stageFive.syringeGrab5 + "// TWO MORE MOVES UNTIL DEATH //");
+      $("ul#gameLog").append(stageFive.syringeGrab5);
+      $("#userInputText").val("");
+      moveCounter++;
+    } else if (useSyringeStage5.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.syringeUse);
+      $("ul#gameLog").append(stageOne.syringeUse);
+      $("#userInputText").hide();
+      moveCounter++;
+    } else if (kill.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#winPanel").show();
+      $("#winText").text(stageFive.killWith5Turn2);
+      $("ul#gameLog").append(stageFive.killWith5Turn2);
+      $("#userInputText").hide();
+    } else if (closetCommands5.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.closetTurnTwo5);
+      $("ul#gameLog").append(stageOne.closetTurnTwo5);
+      $("#userInputText").hide();
+    } else if (closetInterior5.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.closetTurnTwo5);
+      $("ul#gameLog").append(stageOne.closetTurnTwo5);
+      $("#userInputText").hide();
+    } else if (dresserCommands5.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.dresserDescript);
+      $("ul#gameLog").append(stageOne.dresserDescript);
+      $("#userInputText").hide();
+    } else if (hitWindow.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageOne.windowHit);
+      $("ul#gameLog").append(stageOne.windowHit);
+      $("#userInputText").hide();
+    } else if (bedCommands5Turn2.contains(input)) {
+      $("h5").text(stageFive.bedDescript5Turn2 + "// THREE MORE MOVES UNTIL DEATH //");
+      $("ul#gameLog").append(stageFive.bedDescript5Turn2);
+      $("#userInputText").val("");
+      moveCounter++;
+    } else if (run.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.run);
+      $("ul#gameLog").append(stageFive.run);
+      $("#userInputText").hide();
+    } else {
+        $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
+        $("#userInputText").val("");
+      }
+    } else if (moveCounter > 4) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
+      $("ul#gameLog").append("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
+      $("#userInputText").hide();
 }
 }
