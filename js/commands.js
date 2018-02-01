@@ -3,11 +3,12 @@
 //
 var help1 = ["HELP", "BACK", "SEARCH", "HINT"]
 var stageOneSleep1 = ["GO TO SLEEP", "SLEEP", "USE BED"]
+var dresserInt = ["LOOK IN DRESSER", "LOOK AT DRESSER", "IN DRESSER", "GO IN DRESSER", "OPEN DRESSER"]
 var bedCommands1 =  ["WALK TO BED", "GO BED", "BED", "LOOK AT BED", "LOOK BED", "GO TO BED"];
 var closetCommands1 =  ["WALK TO CLOSET", "CLOSET", "GO CLOSET", "LOOK AT CLOSET", "LOOK CLOSET"];
 var closetInterior1 = ["LOOK IN CLOSET", "OPEN CLOSET", "GO IN CLOSET"];
 var closetButton1 = ["USE CLOSET BUTTON", "TOUCH BUTTON", "PUSH BUTTON", "LICK BUTTON", "SMASH BUTTON", "PRESS BUTTON", "PRESS"];
-var dresserCommands1 =  ["WALK TO DRESSER", "LOOK AT DRESSER", "DRESSER", "GO TO DRESSER", "LOOK DRESSER", "LOOK IN DRESSER", "OPEN DRESSER", "OPEN"];
+var dresserCommands1 =  ["WALK TO DRESSER", "LOOK AT DRESSER", "DRESSER", "GO TO DRESSER", "LOOK DRESSER"];
 var windowCommands1 =  ["WALK TO WINDOW", "WINDOW", "GO WINDOW", "LOOK AT WINDOW","WALK TO PORTHOLE", "PORTHOLE", "GO PORTHOLE", "LOOK AT PORT HOLE", "PORT HOLE", "GO PORT HOLE", "LOOK AT PORT HOLE"];
 var hitWindow = ["HIT WINDOW", "SMASH WINDOW"]
 var doorCommands1 =  ["WALK TO DOOR", "GO DOOR", "DOOR", "LOOK AT DOOR", "USE DOOR", "GO TO DOOR"];
@@ -26,7 +27,7 @@ var bedCommands2 =  ["WALK TO BED", "GO BED", "BED", "LOOK AT BED", "LOOK BED", 
 var closetCommands2 =  ["WALK TO CLOSET", "CLOSET", "GO CLOSET", "LOOK AT CLOSET", "GO TO CLOSET", "LOOK CLOSET"];
 var closetInterior2 = ["LOOK IN CLOSET", "GO IN CLOSET", "OPEN CLOSET"];
 var closetButton2 = ["USE CLOSET BUTTON", "TOUCH BUTTON", "PUSH BUTTON", "LICK BUTTON", "SMASH BUTTON", "PRESS BUTTON", "PRESS"];
-var doorButton2 = ["USE CLOSET BUTTON", "TOUCH BUTTON", "PUSH BUTTON", "LICK BUTTON", "SMASH BUTTON"];
+var doorCommands2 = ["USE DOOR BUTTON", "OPEN DOOR BUTTON", "OPEN DOOR", "GO TO DOOR", "DOOR", "WALK TO DOOR", "GO TO DOOR"];
 var dresserCommands2 =  ["WALK TO DRESSER", "LOOK AT DRESSER", "DRESSER", "GO TO DRESSER", "LOOK DRESSER", "LOOK IN DRESSER", "OPEN DRESSER", "OPEN"];
 var windowCommands2 =  ["WALK TO WINDOW", "WINDOW", "GO WINDOW", "LOOK AT WINDOW","WALK TO PORTHOLE", "PORTHOLE", "GO PORTHOLE", "LOOK AT PORT HOLE", "PORT HOLE", "GO PORT HOLE", "LOOK AT PORT HOLE"];
 var hitWindow = ["HIT WINDOW", "SMASH WINDOW"]
@@ -57,8 +58,9 @@ var openVent3 = ["OPEN VENT"];
 // //
 //Stage 4 commands //
 // //
+var sleep = ["SLEEP", "GO TO SLEEP"]
 var help4 = ["HELP"]
-var stage4WakeUp = ["WAKE UP"]
+var stage4WakeUp = ["WAKE UP", "GET UP"]
 var medKitCommands4 =  ["OPEN KIT", "LOOK AT KIT", "USE KIT", "MEDKIT", "USE MEDICAL KIT", "MEDICAL KIT", "LOOK AT MEDICAL KIT"];
 var syringeStage4 =  ["TAKE SYRINGE", "LOOK AT SYRINGE", "SYRINGE", "GRAB SYRINGE"];
 var useSyringeStage4 = ["USE SYRINGE"]

@@ -3,6 +3,7 @@ var backObject = {
   backDescript: "You are aboard the SSE Woodpecker on your way back to earth with your dream vacation in the rear view mirror. You'll always remember the lagoon swims, the volcano hikes and of course the quirky local food. Fortunately, your room for the journey home comes fully equipped with all the luxury that one could expect from New Stellar Incorporations. Make sure to read your tablet everyday for updates from our captain. If you have any questions just type help. Enjoy your stay and thank you for booking with New Stellar Inc. 'Preparing for a better you.'",
 }
 var stageOne = {
+  dresserInt: "The dresser is filled with the same three active wear outfits you were supplied when you boarded the ship.",
   roomDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript: "A small solitary bed, with a thin mattress.",
   closetExteriorDescript: "As you approach the closet, you notice that there is no obvious handle. There is an array of buttons on the wall next to the closet.",
@@ -64,6 +65,7 @@ var stageThree = {
 // stage 4 object //
 //
 var stageFour = {
+  wakeUpDescript: "You wake up to the screeching of an alarm. You notice that your tablet is vibrating with notifications.",
   helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript: "The old blood is the color of rust. You notice a black goo right around the pillow.",
   closetExteriorDescript: "The closet has the same goo as was on the bed around the perimeter of the door.",

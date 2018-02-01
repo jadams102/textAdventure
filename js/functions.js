@@ -62,6 +62,9 @@ var stage1 = function(input) {
   $("h5").text(stageOne.deskDescript);
   $("ul#gameLog").append(stageOne.deskDescript);
   $("#userInputText").val("");
+  } else if (dresserInt.contains(input)) {
+  $("h5").text(stageOne.dresserInt);
+  $("ul#gameLog").append(stageOne.dresserInt);    $("#userInputText").val("");
   } else if (screenCommands1.contains(input)) {
   $("h5").text(stageOne.screenDescript);
   $("ul#gameLog").append(stageOne.screenDescript);
@@ -105,9 +108,6 @@ var stage2 = function(input) {
   $("#userInputText").hide();
 } else if (help2.contains(input)) {
   $("h5").text(stageTwo.helpDescript);
-  $("#userInputText").val("");
-} else if (help2.contains(input)) {
-  $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
 } else if (closetCommands2.contains(input)) {
   $("h5").text(stageTwo.closetExteriorDescript);
@@ -162,6 +162,10 @@ var stage2 = function(input) {
   $("ul#gameLog").append(stageTwo.stageTwoSleep);
   $("#userInputText").val("");
   level++;
+} else if (doorCommands2.contains(input)) {
+  $("h5").text(stageTwo.doorDescript);
+  $("ul#gameLog").append(stageTwo.doorDescript);
+  $("#userInputText").val("");
 } else {
     $("h5").text("COMMAND NOT RECOGNIZED");
     $("#userInputText").val("");
@@ -200,7 +204,7 @@ var stage3 = function(input) {
   $("#userInputText").val("");
 } else if (closetCommands3.contains(input)) {
   $("h5").text(stageThree.closetExteriorDescript);
-  $("ul#gameLog").append(stageThree.bedDescript);
+  $("ul#gameLog").append(stageThree.closetExteriorDescript);
   $("#userInputText").val("");
 } else if (dresserCommands3.contains(input)) {
   $("h5").text(stageThree.dresserDescript);
@@ -239,8 +243,12 @@ var stage3 = function(input) {
   $("ul#gameLog").append(stageThree.closetInteriorDescript);
   $("#userInputText").val("");
 } else if (useSyringeStage3.contains(input)) {
-  $("h5").text(stageThree.syringeUseDescript);
-  $("ul#gameLog").append(stageThree.syringeUseDescript);
+  $("body").removeClass();
+  $("#gameTextPanel").hide();
+  $("#gameOverPanel").show();
+  $("#gameOverText").text(stageThree.useSyringeStage3);
+  $("ul#gameLog").append(stageOne.useSyringeStage3);
+  $("#userInputText").hide();
   $("#userInputText").val("");
 } else if (vent3.contains(input)) {
   $("h5").text(stageThree.ventDescript);
@@ -287,9 +295,6 @@ var stage4 = function(input) {
   $("#gameOverText").text(stageOne.windowHit);
   $("ul#gameLog").append(stageOne.windowHit);
   $("#userInputText").hide();
-} else if (help4.contains(input)) {
-  $("h5").text(backObject.backDescript);
-  $("#userInputText").val("");
 } else if (closetCommands4.contains(input)) {
   $("h5").text(stageFour.closetExteriorDescript);
   $("ul#gameLog").append(stageFour.bedDescript);
@@ -337,8 +342,8 @@ var stage4 = function(input) {
   $("h5").text(stageFour.syringeUseDescript);
   $("ul#gameLog").append(stageFour.syringeUseDescript);
   $("#userInputText").val("");
-} else {
-    $("h5").text("COMMAND NOT RECOGNIZED");
+} else if (sleep.contains(input)){
+    $("h5").text("YOU CAN'T SLEEP NOW!");
     $("#userInputText").val("");
   }
 }
@@ -354,18 +359,22 @@ var stage5 = function(input) {
     console.log(moveCounter);
     if (bedCommands5Turn1.contains(input)) {
       console.log(moveCounter);
-    $("h5").text(stageFive.bedDescript5);
+    $("h5").text(stageFive.bedDescript5 + "// FOUR MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.bedDescript5);
     $("#userInputText").val("");
     moveCounter++;
     console.log(moveCounter);
   } else if(deskCommands5.contains(input)) {
-    $("h5").text(stageFive.deskDescript5Turn1);
+    $("h5").text(stageFive.deskDescript5Turn1 + "// FOUR MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.deskDescript5Turn1);
     $("#userInputText").val("");
     moveCounter++;
   } else if (help5.contains(input)) {
-    $("h5").text(stageFive.helpDescript);
+    $("h5").text(stageFive.helpDescript + "// FOUR MORE MOVES UNTIL DEATH //");
+    $("#userInputText").val("");
+  } else if (dresserInt.contains(input)) {
+    $("h5").text(stageOne.dresserInt);
+    $("ul#gameLog").append(stageOne.dresserInt);
     $("#userInputText").val("");
   } else if (hitWindow.contains(input)) {
     $("body").removeClass();
@@ -375,24 +384,26 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageOne.windowHit);
     $("#userInputText").hide();
   } else if (kill.contains(input)) {
-    $("h5").text(stageFive.kill5);
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
-    $("#userInputText").val("");
-    moveCounter++;
+    $("#userInputText").hide();
   } else if (windowCommands5.contains(input)) {
-    $("h5").text(stageFive.windowTurn1Descript);
+    $("h5").text(stageFive.windowTurn1Descript + "// FOUR MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.windowTurn1Descript);
     $("#userInputText").val("");
     moveCounter++;
   } else if (closetCommands5.contains(input)) {
-    $("h5").text(stageFive.closetTurnOne5);
+    $("h5").text(stageFive.closetTurnOne5 + "// FOUR MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.closetTurnOne5);
     $("#userInputText").val("");
     moveCounter++;
   } else if (run.contains(input)) {
     $("h5").text(stageFive.run);
   } else {
-    $("h5").text("COMMAND NOT RECOGNIZED");
+    $("h5").text("COMMAND NOT RECOGNIZED // FOUR MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
   }
 
@@ -402,7 +413,7 @@ var stage5 = function(input) {
   ///////////
 } else if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
-    $("h5").text(stageFive.bedDescript5Turn2);
+    $("h5").text(stageFive.bedDescript5Turn2 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.bedDescript5Turn2);
     $("#userInputText").val("");
     moveCounter++;
@@ -410,8 +421,12 @@ var stage5 = function(input) {
     $("h5").text(stageFive.helpDescript);
     $("#userInputText").val("");
     } else if (windowCommands5.contains(input)) {
-    $("h5").text(stageFive.windowTurn2Descript);
-    $("ul#gameLog").append(stageFive.windowTurn2Descript);
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.windowTurn2Descript);
+      $("ul#gameLog").append(stageFive.windowTurn2Descript);
+      $("#userInputText").hide();
     $("#userInputText").val("");
     } else if (kill.contains(input)) {
     $("h5").text(stageFive.kill5);
@@ -426,18 +441,22 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageOne.windowHit);
     $("#userInputText").hide();
     } else if (syringeStage5.contains(input)) {
-    $("h5").text(stageFive.syringeGrab5);
+    $("h5").text(stageFive.syringeGrab5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.syringeGrab5);
     $("#userInputText").val("");
     moveCounter++;
   } else if (closetCommands5.contains(input)) {
-    $("h5").text(stageFive.closetTurnTwo5);
+    $("h5").text(stageFive.closetTurnTwo5 + "// THREE MORE MOVES UNTIL DEATH //");
+    $("ul#gameLog").append(stageFive.closetTurnTwo5);
+    $("#userInputText").val("");
+  } else if (closetInterior5.contains(input)) {
+    $("h5").text(stageFive.closetTurnTwo5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
     $("#userInputText").val("");
   } else if (run.contains(input)) {
     $("h5").text(stageFive.run);
   } else {
-    $("h5").text("COMMAND NOT RECOGNIZED");
+    $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
   }
 
@@ -454,9 +473,12 @@ var stage5 = function(input) {
     $("#userInputText").hide();
     moveCounter++;
   } else if (kill.contains(input)) {
-    $("h5").text(stageFive.kill5);
-    $("ul#gameLog").append(stageFive.kill5);
-    $("#userInputText").val("");
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#winPanel").show();
+    $("#winText").text(stageFive.killWith5Turn2);
+    $("ul#gameLog").append(stageFive.killWith5Turn2);
+    $("#userInputText").hide();
     moveCounter++;
   } else if (hitWindow.contains(input)) {
     $("body").removeClass();
@@ -466,15 +488,22 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageOne.windowHit);
     $("#userInputText").hide();
   } else if (bedCommands5Turn2.contains(input)) {
-    $("h5").text(stageFive.bedDescript5Turn2);
+    $("h5").text(stageFive.bedDescript5Turn2 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.bedDescript5Turn2);
     $("#userInputText").val("");
     moveCounter++;
   } else if (run.contains(input)) {
     $("h5").text(stageFive.run);
   } else {
-      $("h5").text("COMMAND NOT RECOGNIZED");
+      $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
       $("#userInputText").val("");
     }
-  }
+  } else if (moveCounter > 4) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
+    $("ul#gameLog").append("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
+    $("#userInputText").hide();
+}
 }
