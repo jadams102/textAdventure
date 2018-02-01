@@ -4,7 +4,7 @@ var backObject = {
 }
 var stageOne = {
   dresserInt: "The dresser is filled with the same three active wear outfits you were supplied when you boarded the ship.",
-  roomDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
+  roomDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall where the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
   bedDescript: "A small solitary bed, with a thin mattress.",
   closetExteriorDescript: "As you approach the closet, you notice that there is no obvious handle. There is an array of buttons on the wall next to the closet.",
   closetButton: "You click the button and with a blast of air, the doors slide up into the ceiling revealing the space behind.",
@@ -21,6 +21,7 @@ var stageOne = {
 };
 var stageTwo = {
   helpDescript: "Congratulations! You finished your first day aboard the SSE Woodpecker. We hope you enjoyed exploring your room, and had time to check out your personal window, closet, dresser and bed. As the ship is still traveling at lightspeed, stay in your room for today and explore more to see if anything has changed.",
+  bedDescript: "The sheets are strewn about from your restful sleep.",
   closetExteriorDescript: "The closet glints in the light. The button on the left side is especially shiny today.",
   closetButton: "You press the button and the closet door slides open.",
   closetInteriorDescript: "You decide to dig around. Luckily you did so delicately, as you find a medical kit with an encased syringe in a glowing tube.",
@@ -85,14 +86,14 @@ var stageFive = {
   bedDescript5: "You move toward the bloody bed and remember the syringe stashed underneath.",
   bedDescript5Turn2: "You step over to take a look under the bed, but before you can look down your legs are bound tightly by the creature's massive tail.",
   syringeGrab5: "You pick up the syringe and turn back towards the room.",
-  syringeUse: "You run towards the monster but slip on the trail of sludge and in your flailing inject yourself with the orange liquid. Luckily it paralyzes you so you won't feel what the alien is about to do to you."
+  syringeUse: "You run towards the monster but slip on the trail of sludge and in your flailing inject yourself with the orange liquid. Luckily it paralyzes you so you won't feel what the alien is about to do to you.",
   kill5: "You heroically jump onto the snake, but are quickly bested by the snake's strength. It wraps its tail around your body and squeezes till your lights go out.",
   killWith5Turn2: "You heroically jump onto the snake, and plunge the syringe into the snake's thick skin. The snake recoils and slithers away. It starts to violently pulse, it makes an awful screeching noise and begins to spew a thick black ooze. The more ooze that comes out of the snake the thinner the snake becomes until the snake is paper thin on the ground. The room, and yourself are coated with the warm, rancid smelling sludge. After regaining your composure, you step out of the now open door ready to assist the other passengers of the SSE Woodpecker against this alien menace.",
   deskDescript5Turn1: "You move towards the desk to investigate the creature. You stick your head down to take a look and are greeted with thousands of needle like teeth.",
   deskDescript5Turn3: "The snake strikes, missing you by an inch. It slithers under the bed.",
   windowTurn1Descript: "You gaze out at the beauty of space, and for a moment forget about your current situation, and the looming threat of the horrible monster.",
   windowTurn2Descript: "You take a moment to appreciate the majesty of space, but quickly feel the pain of a thousand tiny teeth sinking into your back. As the snake slowly devours you, you are comforted by the fact that the last thing you saw before your death was beautiful.",
-  closetTurnOne5: "You head to the closet, and reach out for buttons. The snake lunges out from under the desk and consumes you, starting with your outstretched hand. ",
+  closetTurnOne5: "You head to the closet, but before you can reach the buttons to open the door the snake lunges out from under the desk and consumes you, starting with your outstretched hand. ",
   closetTurnTwo5: "You go to the closet seeking solace. As you press the buttons the snake lunges out at you from under the desk. You duck and it narrowly misses you. You hit the right combination of buttons and the door opens. You climb in and the door shuts behind you. You hear the snake outside the door smashing around the room in its anger. You sit down in the fetal position, and in your panic you forgot about the snake residing in the closet. It promptly reminds you.",
   run: "You slip through the now open door of your room and sprint down the hallway. You can hear frantic slithering coming from behind you but just focus on your breathing. Suddenly you feel a warmth on your leg. When you look down you have the horrific realization that your leg is no longer attached to you, it is now in the snakes mouth. As you are falling to the ground the last thing you see is the wide open mouth of an alien snake slowly consuming you, its crippled prey.",
   windowHit: "You smash your head into the window out of boredom. When the window doesn't immediately break you decide to do it again, this time you aren't so lucky. Your body is sucked into the vacuum of space and you are crushed into a small wallet sized human meat pouch."

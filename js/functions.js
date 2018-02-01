@@ -28,6 +28,8 @@ var stage1 = function(input) {
   $("h5").text(stageOne.roomDescript);
   $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
+  wilhelmSound.play();
+  ambientSound.pause();
   $("body").removeClass();
   $("#gameTextPanel").hide();
   $("#gameOverPanel").show();
@@ -64,7 +66,8 @@ var stage1 = function(input) {
   $("#userInputText").val("");
   } else if (dresserInt.contains(input)) {
   $("h5").text(stageOne.dresserInt);
-  $("ul#gameLog").append(stageOne.dresserInt);    $("#userInputText").val("");
+  $("ul#gameLog").append(stageOne.dresserInt);
+  $("#userInputText").val("");
   } else if (screenCommands.contains(input)) {
   $("h5").text(stageOne.screenDescript);
   $("ul#gameLog").append(stageOne.screenDescript);
@@ -72,7 +75,7 @@ var stage1 = function(input) {
   } else if (help.contains(input)) {
   $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
-  } else if (stageOneSleep.contains(input)) {
+} else if (sleep.contains(input)) {
   $("h5").text(stageOne.stageOneSleep);
   $("ul#gameLog").append(stageOne.stageOneSleep);
   $("#userInputText").val("");
@@ -95,7 +98,7 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.wakeUpDescript);
   $("ul#gameLog").append(stageTwo.wakeUpDescript);
   $("#userInputText").val("");
-} else if (bedCommands2.contains(input)) {
+} else if (bedCommands.contains(input)) {
   $("h5").text(stageTwo.bedDescript);
   $("ul#gameLog").append(stageTwo.bedDescript);
   $("#userInputText").val("");
@@ -106,42 +109,42 @@ var stage2 = function(input) {
   $("#gameOverText").text(stageOne.windowHit);
   $("ul#gameLog").append(stageOne.windowHit);
   $("#userInputText").hide();
-} else if (help2.contains(input)) {
+} else if (help.contains(input)) {
   $("h5").text(stageTwo.helpDescript);
   $("#userInputText").val("");
-} else if (closetCommands2.contains(input)) {
+} else if (closetCommands.contains(input)) {
   $("h5").text(stageTwo.closetExteriorDescript);
   $("ul#gameLog").append(stageTwo.closetExteriorDescript);
   $("#userInputText").val("");
-} else if (dresserCommands2.contains(input)) {
+} else if (dresserCommands.contains(input)) {
   $("h5").text(stageTwo.dresserDescript);
   $("ul#gameLog").append(stageTwo.dresserDescript);
   $("#userInputText").val("");
-} else if (windowCommands2.contains(input)) {
+} else if (windowCommands.contains(input)) {
   $("h5").text(stageTwo.windowDescript);
   $("ul#gameLog").append(stageTwo.windowDescript);
   $("#userInputText").val("");
-} else if (doorCommands2.contains(input)) {
+} else if (doorCommands.contains(input)) {
   $("h5").text(stageTwo.doorDescript);
   $("ul#gameLog").append(stageTwo.doorDescript);
   $("#userInputText").val("");
-} else if (deskCommands2.contains(input)) {
+} else if (deskCommands.contains(input)) {
   $("h5").text(stageTwo.deskDescript);
   $("ul#gameLog").append(stageTwo.deskDescript);
   $("#userInputText").val("");
-} else if (screenCommands2.contains(input)) {
+} else if (screenCommands.contains(input)) {
   $("h5").text(stageTwo.screenDescript);
   $("ul#gameLog").append(stageTwo.screenDescript);
   $("#userInputText").val("");
-} else if (medKitCommands2.contains(input)) {
+} else if (medKitCommands.contains(input)) {
   $("h5").text(stageTwo.medKitDescript);
   $("ul#gameLog").append(stageTwo.medKitDescript);
   $("#userInputText").val("");
-} else if (closetButton2.contains(input)) {
+} else if (closetButton.contains(input)) {
   $("h5").text(stageTwo.closetButton);
   $("ul#gameLog").append(stageTwo.closetButton);
   $("#userInputText").val("");
-} else if (closetInterior2.contains(input)) {
+} else if (closetInterior.contains(input)) {
   $("h5").text(stageTwo.closetInteriorDescript);
   $("ul#gameLog").append(stageTwo.closetInteriorDescript);
   $("#userInputText").val("");
@@ -150,19 +153,19 @@ var stage2 = function(input) {
   $("ul#gameLog").append(stageTwo.syringeDescript);
   $("#userInputText").val("");
   inventory.push("syringe");
-} else if (useSyringeStage2.contains(input)) {
+} else if (useSyringeStage.contains(input)) {
   $("body").removeClass();
   $("#gameTextPanel").hide();
   $("#gameOverPanel").show();
   $("#gameOverText").text(stageTwo.syringeUseDescript);
   $("ul#gameLog").append(stageTwo.syringeUseDescript);
   $("#userInputText").hide();
-} else if (stageTwoSleep2.contains(input)) {
+} else if (sleep.contains(input)) {
   $("h5").text(stageTwo.stageTwoSleep);
   $("ul#gameLog").append(stageTwo.stageTwoSleep);
   $("#userInputText").val("");
   level++;
-} else if (doorCommands2.contains(input)) {
+} else if (doorCommands.contains(input)) {
   $("h5").text(stageTwo.doorDescript);
   $("ul#gameLog").append(stageTwo.doorDescript);
   $("#userInputText").val("");
@@ -181,15 +184,15 @@ var stage2 = function(input) {
 // Stage 3 if statement //
 //
 var stage3 = function(input) {
-  if (stageThreeWakeUp.contains(input)) {
+  if (wakeUp.contains(input)) {
   $("h5").text(stageThree.wakeUpDescript);
   $("#userInputText").val("");
   $("ul#gameLog").append(stageThree.wakeUpDescript);
-} else if (bedCommands3.contains(input)) {
+} else if (bedCommands.contains(input)) {
   $("h5").text(stageThree.bedDescript);
   $("ul#gameLog").append(stageThree.bedDescript);
   $("#userInputText").val("");
-} else if (help3.contains(input)) {
+} else if (help.contains(input)) {
   $("h5").text(stageThree.helpDescript);
   $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
@@ -199,50 +202,47 @@ var stage3 = function(input) {
   $("#gameOverText").text(stageOne.windowHit);
   $("ul#gameLog").append(stageOne.windowHit);
   $("#userInputText").hide();
-} else if (help3.contains(input)) {
-  $("h5").text(backObject.backDescript);
-  $("#userInputText").val("");
-} else if (closetCommands3.contains(input)) {
+} else if (closetCommands.contains(input)) {
   $("h5").text(stageThree.closetExteriorDescript);
   $("ul#gameLog").append(stageThree.closetExteriorDescript);
   $("#userInputText").val("");
-} else if (dresserCommands3.contains(input)) {
+} else if (dresserCommands.contains(input)) {
   $("h5").text(stageThree.dresserDescript);
   $("ul#gameLog").append(stageThree.dresserDescript);
   $("#userInputText").val("");
-} else if (windowCommands3.contains(input)) {
+} else if (windowCommands.contains(input)) {
   $("h5").text(stageThree.windowDescript);
   $("ul#gameLog").append(stageThree.windowDescript);
   $("#userInputText").val("");
-} else if (doorCommands3.contains(input)) {
+} else if (doorCommands.contains(input)) {
   $("h5").text(stageThree.doorDescript);
   $("ul#gameLog").append(stageThree.doorDescript);
   $("#userInputText").val("");
-} else if (deskCommands3.contains(input)) {
+} else if (deskCommands.contains(input)) {
   $("h5").text(stageThree.deskDescript);
   $("ul#gameLog").append(stageThree.deskDescript);
   $("#userInputText").val("");
-} else if (screenCommands3.contains(input)) {
+} else if (screenCommands.contains(input)) {
   $("h5").text(stageThree.screenDescript);
   $("ul#gameLog").append(stageThree.screenDescript);
   $("#userInputText").val("");
-} else if (medKitCommands3.contains(input)) {
+} else if (medKitCommands.contains(input)) {
   $("h5").text(stageThree.medKitDescript);
   $("ul#gameLog").append(stageThree.medKitDescript);
   $("#userInputText").val("");
-} else if (syringeStage3.contains(input)) {
+} else if (useSyringeStage.contains(input)) {
   $("h5").text(stageThree.syringeDescript);
   $("ul#gameLog").append(stageThree.syringeDescript);
   $("#userInputText").val("");
-} else if (closetButton3.contains(input)) {
+} else if (closetButton.contains(input)) {
   $("h5").text(stageThree.closetButton);
   $("ul#gameLog").append(stageThree.closetButton);
   $("#userInputText").val("");
-} else if (closetInterior3.contains(input)) {
+} else if (closetInterior.contains(input)) {
   $("h5").text(stageThree.closetInteriorDescript);
   $("ul#gameLog").append(stageThree.closetInteriorDescript);
   $("#userInputText").val("");
-} else if (useSyringeStage3.contains(input)) {
+} else if (useSyringeStage.contains(input)) {
   $("body").removeClass();
   $("#gameTextPanel").hide();
   $("#gameOverPanel").show();
@@ -250,15 +250,15 @@ var stage3 = function(input) {
   $("ul#gameLog").append(stageOne.useSyringeStage3);
   $("#userInputText").hide();
   $("#userInputText").val("");
-} else if (vent3.contains(input)) {
+} else if (vent.contains(input)) {
   $("h5").text(stageThree.ventDescript);
   $("ul#gameLog").append(stageThree.ventDescript);
   $("#userInputText").val("");
-} else if (openVent3.contains(input)) {
+} else if (openVent.contains(input)) {
   $("h5").text(stageThree.ventOpenDescript);
   $("ul#gameLog").append(stageThree.ventOpenDescript);
   $("#userInputText").val("");
-} else if (stageThreeSleep3.contains(input)) {
+} else if (sleep.contains(input)) {
   $("h5").text(stageThree.stageThreeSleep);
   $("ul#gameLog").append(stageThree.stageThreeSleep);
   $("#userInputText").val("");
@@ -277,15 +277,15 @@ var stage3 = function(input) {
 // Stage 4 if statement //
 //
 var stage4 = function(input) {
-  if (stage4WakeUp.contains(input)) {
+  if (wakeUp.contains(input)) {
   $("h5").text(stageFour.wakeUpDescript);
   $("#userInputText").val("");
   $("ul#gameLog").append(stageFour.wakeUpDescript);
-} else if (bedCommands4.contains(input)) {
+} else if (bedCommands.contains(input)) {
   $("h5").text(stageFour.bedDescript);
   $("ul#gameLog").append(stageFour.bedDescript);
   $("#userInputText").val("");
-} else if (help4.contains(input)) {
+} else if (help.contains(input)) {
   $("h5").text(stageFour.helpDescript);
   $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
@@ -295,50 +295,50 @@ var stage4 = function(input) {
   $("#gameOverText").text(stageOne.windowHit);
   $("ul#gameLog").append(stageOne.windowHit);
   $("#userInputText").hide();
-} else if (closetCommands4.contains(input)) {
+} else if (closetCommands.contains(input)) {
   $("h5").text(stageFour.closetExteriorDescript);
   $("ul#gameLog").append(stageFour.bedDescript);
   $("#userInputText").val("");
-} else if (dresserCommands4.contains(input)) {
+} else if (dresserCommands.contains(input)) {
   $("h5").text(stageFour.dresserDescript);
   $("ul#gameLog").append(stageFour.dresserDescript);
   $("#userInputText").val("");
   level++;
-} else if (windowCommands4.contains(input)) {
+} else if (windowCommands.contains(input)) {
   $("h5").text(stageFour.windowDescript);
   $("ul#gameLog").append(stageFour.windowDescript);
   $("#userInputText").val("");
-} else if (doorCommands4.contains(input)) {
+} else if (doorCommands.contains(input)) {
   $("h5").text(stageFour.doorDescript);
   $("ul#gameLog").append(stageFour.doorDescript);
   $("#userInputText").val("");
   level++;
-} else if (deskCommands4.contains(input)) {
+} else if (deskCommands.contains(input)) {
   $("h5").text(stageFour.deskDescript);
   $("ul#gameLog").append(stageFour.deskDescript);
   $("#userInputText").val("");
-} else if (screenCommands4.contains(input)) {
+} else if (screenCommands.contains(input)) {
   $("h5").text(stageFour.screenDescript);
   $("ul#gameLog").append(stageFour.screenDescript);
   $("#userInputText").val("");
-} else if (medKitCommands4.contains(input)) {
+} else if (medKitCommands.contains(input)) {
   $("h5").text(stageFour.medKitDescript);
   $("ul#gameLog").append(stageFour.medKitDescript);
   $("#userInputText").val("");
-} else if (syringeStage4.contains(input)) {
+} else if (useSyringeStage.contains(input)) {
   $("h5").text(stageFour.syringeDescript);
   $("ul#gameLog").append(stageFour.syringeDescript);
   $("#userInputText").val("");
-} else if (closetButton4.contains(input)) {
+} else if (closetButton.contains(input)) {
   $("h5").text(stageFour.closetButton);
   $("ul#gameLog").append(stageFour.closetButton);
   $("#userInputText").val("");
-} else if (closetInterior4.contains(input)) {
+} else if (closetInterior.contains(input)) {
   $("h5").text(stageFour.closetInteriorDescript);
   $("ul#gameLog").append(stageFour.closetInteriorDescript);
   $("#userInputText").val("");
   level++;
-} else if (useSyringeStage4.contains(input)) {
+} else if (useSyringeStage.contains(input)) {
   $("h5").text(stageFour.syringeUseDescript);
   $("ul#gameLog").append(stageFour.syringeUseDescript);
   $("#userInputText").val("");
@@ -364,12 +364,14 @@ var stage5 = function(input) {
     $("#userInputText").val("");
     moveCounter++;
     console.log(moveCounter);
-  } else if(deskCommands5.contains(input)) {
-    $("h5").text(stageFive.deskDescript5Turn1 + "// FOUR MORE MOVES UNTIL DEATH //");
+  } else if(deskCommands.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.deskDescript5Turn1);
     $("ul#gameLog").append(stageFive.deskDescript5Turn1);
-    $("#userInputText").val("");
-    moveCounter++;
-  } else if (help5.contains(input)) {
+    $("#userInputText").hide();
+  } else if (help.contains(input)) {
     $("h5").text(stageFive.helpDescript + "// FOUR MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
   } else if (dresserInt.contains(input)) {
@@ -390,15 +392,18 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
     $("#userInputText").hide();
-  } else if (windowCommands5.contains(input)) {
+  } else if (windowCommands.contains(input)) {
     $("h5").text(stageFive.windowTurn1Descript + "// FOUR MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.windowTurn1Descript);
     $("#userInputText").val("");
     moveCounter++;
-  } else if (closetCommands5.contains(input)) {
-    $("h5").text(stageFive.closetTurnOne5 + "// FOUR MORE MOVES UNTIL DEATH //");
+  } else if (closetCommands.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.closetTurnOne5);
     $("ul#gameLog").append(stageFive.closetTurnOne5);
-    $("#userInputText").val("");
+    $("#userInputText").hide();
     moveCounter++;
   } else if (run.contains(input)) {
     $("body").removeClass();
@@ -418,14 +423,18 @@ var stage5 = function(input) {
   ///////////
 } else if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
-    $("h5").text(stageFive.bedDescript5Turn2 + "// THREE MORE MOVES UNTIL DEATH //");
-    $("ul#gameLog").append(stageFive.bedDescript5Turn2);
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.bedDescript5Turn2);
+      $("ul#gameLog").append(stageFive.bedDescript5Turn2);
+      $("#userInputText").hide();
     $("#userInputText").val("");
     moveCounter++;
-  } else if (help5.contains(input)) {
+  } else if (help.contains(input)) {
     $("h5").text(stageFive.helpDescript);
     $("#userInputText").val("");
-    } else if (windowCommands5.contains(input)) {
+    } else if (windowCommands.contains(input)) {
       $("body").removeClass();
       $("#gameTextPanel").hide();
       $("#gameOverPanel").show();
@@ -445,30 +454,26 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageOne.windowHit);
     $("ul#gameLog").append(stageOne.windowHit);
     $("#userInputText").hide();
-  } else if (dresserCommands5.contains(input)) {
+  } else if (dresserCommands.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
     $("#gameOverText").text(stageFive.dresserDescript);
     $("ul#gameLog").append(stageOne.dresserDescript);
     $("#userInputText").hide();
-    } else if (syringeStage5.contains(input)) {
+  } else if (pickUpSyringe.contains(input)) {
     $("h5").text(stageFive.syringeGrab5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.syringeGrab5);
     $("#userInputText").val("");
     moveCounter++;
-  } else if (closetCommands5.contains(input)) {
+  } else if (closetCommands.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
     $("#gameOverText").text(stageFive.closetTurnTwo5);
     $("ul#gameLog").append(stageOne.closetTurnTwo5);
     $("#userInputText").hide();
-  } else if (closetCommands5.contains(input)) {
-    $("h5").text(stageFive.closetTurnTwo5 + "// THREE MORE MOVES UNTIL DEATH //");
-    $("ul#gameLog").append(stageFive.closetTurnTwo5);
-    $("#userInputText").val("");
-  } else if (closetInterior5.contains(input)) {
+  } else if (closetInterior.contains(input)) {
     $("h5").text(stageFive.closetTurnTwo5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
     $("#userInputText").val("");
@@ -496,21 +501,21 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.killWith5Turn2);
     $("#userInputText").hide();
     moveCounter++;
-  } else if (help5.contains(intput)) {
+  } else if (help.contains(input)) {
     $("h5").text(stageFive.helpDescript);
     $("ul#gameLog").append(stageFive.helpDescript);
     $("#userInputText").val("");
-  } else if (syringeStage5.contains(input)) {
+  } else if (pickUpSyringe.contains(input)) {
     $("h5").text(stageFive.syringeGrab5 + "// TWO MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.syringeGrab5);
     $("#userInputText").val("");
     moveCounter++;
-  } else if (useSyringeStage5.contains(input)) {
+  } else if (useSyringeStage.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
     $("#gameOverText").text(stageFive.syringeUse);
-    $("ul#gameLog").append(stageOne.syringeUse);
+    $("ul#gameLog").append(stageFive.syringeUse);
     $("#userInputText").hide();
   } else if (kill.contains(input)) {
     $("body").removeClass();
@@ -519,21 +524,21 @@ var stage5 = function(input) {
     $("#winText").text(stageFive.killWith5Turn2);
     $("ul#gameLog").append(stageFive.killWith5Turn2);
     $("#userInputText").hide();
-  } else if (closetCommands5.contains(input)) {
+  } else if (closetCommands.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
     $("#gameOverText").text(stageFive.closetTurnTwo5);
     $("ul#gameLog").append(stageOne.closetTurnTwo5);
     $("#userInputText").hide();
-  } else if (closetInterior5.contains(input)) {
+  } else if (closetInterior.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
     $("#gameOverText").text(stageFive.closetTurnTwo5);
     $("ul#gameLog").append(stageOne.closetTurnTwo5);
     $("#userInputText").hide();
-  } else if (dresserCommands5.contains(input)) {
+  } else if (dresserCommands.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
@@ -572,22 +577,17 @@ var stage5 = function(input) {
       $("ul#gameLog").append(stageFive.killWith5Turn2);
       $("#userInputText").hide();
       moveCounter++;
-    } else if (help5.contains(intput)) {
+    } else if (help.contains(intput)) {
       $("h5").text(stageFive.helpDescript);
       $("ul#gameLog").append(stageFive.helpDescript);
       $("#userInputText").val("");
       moveCounter++;
-    } else if (syringeStage5.contains(input)) {
-      $("h5").text(stageFive.syringeGrab5 + "// TWO MORE MOVES UNTIL DEATH //");
-      $("ul#gameLog").append(stageFive.syringeGrab5);
-      $("#userInputText").val("");
-      moveCounter++;
-    } else if (useSyringeStage5.contains(input)) {
+    } else if (useSyringeStage.contains(input)) {
       $("body").removeClass();
       $("#gameTextPanel").hide();
       $("#gameOverPanel").show();
       $("#gameOverText").text(stageFive.syringeUse);
-      $("ul#gameLog").append(stageOne.syringeUse);
+      $("ul#gameLog").append(stageFive.syringeUse);
       $("#userInputText").hide();
       moveCounter++;
     } else if (kill.contains(input)) {
@@ -597,21 +597,21 @@ var stage5 = function(input) {
       $("#winText").text(stageFive.killWith5Turn2);
       $("ul#gameLog").append(stageFive.killWith5Turn2);
       $("#userInputText").hide();
-    } else if (closetCommands5.contains(input)) {
+    } else if (closetCommands.contains(input)) {
       $("body").removeClass();
       $("#gameTextPanel").hide();
       $("#gameOverPanel").show();
       $("#gameOverText").text(stageFive.closetTurnTwo5);
       $("ul#gameLog").append(stageOne.closetTurnTwo5);
       $("#userInputText").hide();
-    } else if (closetInterior5.contains(input)) {
+    } else if (closetInterior.contains(input)) {
       $("body").removeClass();
       $("#gameTextPanel").hide();
       $("#gameOverPanel").show();
       $("#gameOverText").text(stageFive.closetTurnTwo5);
       $("ul#gameLog").append(stageOne.closetTurnTwo5);
       $("#userInputText").hide();
-    } else if (dresserCommands5.contains(input)) {
+    } else if (dresserCommands.contains(input)) {
       $("body").removeClass();
       $("#gameTextPanel").hide();
       $("#gameOverPanel").show();
