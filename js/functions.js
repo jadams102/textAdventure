@@ -103,6 +103,14 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.bedDescript);
   $("ul#gameLog").append(stageTwo.bedDescript);
   $("#userInputText").val("");
+} else if (rats.contains(input)) {
+  $("h5").text(stageTwo.rats);
+  $("ul#gameLog").append(stageTwo.rats);
+  $("#userInputText").val("");
+} else if (neck.contains(input)) {
+  $("h5").text(stageTwo.neck);
+  $("ul#gameLog").append(stageTwo.neck);
+  $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
   wilhelmSound.play();
   ambientSound.pause();

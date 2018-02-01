@@ -20,6 +20,8 @@ var stageOne = {
 
 };
 var stageTwo = {
+  neck: "You put your hand on the backside of your neck, you feel a small hole, almost big enough for you to fit your finger into. It hurts... obviously.",
+  rats: "You press your ear against the wall to listen for the space rats, but everything goes silent.",
   helpDescript: "Congratulations! You finished your first day aboard the SSE Woodpecker. We hope you enjoyed exploring your room, and had time to check out your personal window, closet, dresser and bed. As the ship is still traveling at lightspeed, stay in your room for today and explore more to see if anything has changed.",
   bedDescript: "The sheets are strewn about from your restful sleep.",
   closetExteriorDescript: "The closet glints in the light. The button on the left side is especially shiny today.",
