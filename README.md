@@ -12,15 +12,15 @@ A website created with JavaScript, jQuery, Boostrap, CSS, and HTML, where a user
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **User Presses Enter to Start Game** | User input: [Hits Enter Key] | Output: Program Displays Story Prologue |
-| **User Enters Their Name to Begin Game** | Input: "User Name" | Output: Program Displays User Name and Begins at Scene 1 of Stage 1 |
-| **User Enters a Command: "Walk to Desk"**| Input: "walk to desk" | Output: Program Displays "Desk Description" command. |
-| **User Clicks on "Log" Button for Additional Information on the Game**| Input: User clicks "Log" Button | Output: Program Displays User Command History Entered in the Input Field. |
+| **User Presses Enter to Start Game** | Input: User presses "Enter" key | Output: Program Displays Story Prologue |
+| **User Enters Their Name to Begin Game** | Input: "User Name" | Output: Program Displays User Name and Begins at Level One. |
+| **User Enters a Command: "Walk to Desk"**| Input: "walk to desk" | Output: Program Displays "Desk Description" command describing the desk in the story. |
+| **User Clicks on "Log" Button for Additional Information on the Game**| Input: User clicks "Log" Button | Output: Program Displays User's Command History Entered Through the Input Field. |
+| **User Enters the Command, "Go To Sleep" to Progress to the Next Level**| Input: User Enters "Go To Sleep" | Output: The Background of the Game Changes to Indicate the Next Level and Displays Narrative for that Level. |
 | **User Clicks on "Restart" Button to Start the Game Over**| Input: User clicks "Restart" Button | Output: Program Returns to the Main Page. |
 | **User Clicks on "Credits" Button to View Game Credits**| Input: User clicks "Credits" Button | Output: Program Returns the Names of Individuals Who Created the Game. |
 | **User Clicks on "Map" Button to View Map of the Game** | Input: User clicks "Map" Button | Output: Program Displays Map of the Room the Game Takes Place In. |
-| **User Enters the Command, "Go To Sleep", This Will Increment the Level Variable and Change the Background According to Level**| Input: User Enters "Go To Sleep" | Output: Level Variable Increments by One and the Background Changes. |
-| **Program Displays "Win" State**| Input: User Kills Alien on Level 5. | Output: Program Displays "Congratulations" Screen. |
+| **Program Displays "Win" State**| Input: User Kills Alien on Level Five. | Output: Program Displays "Congratulations" Screen. |
 | **Program Displays "Lose" State**| Input: User Enters an Input that Triggers the Lose State. | Output: Program Displays "Game Over" Screen. |
 
 ## Setup/Installation Requirements
