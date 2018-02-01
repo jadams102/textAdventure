@@ -20,11 +20,11 @@ var commands = function() {
 // Stage one if statement //
 //
 var stage1 = function(input) {
-  if (bedCommands1.contains(input)) {
+  if (bedCommands.contains(input)) {
   $("h5").text(stageOne.bedDescript);
   $("ul#gameLog").append(stageOne.bedDescript);
   $("#userInputText").val("");
-  } else if (help1.contains(input)) {
+  } else if (help.contains(input)) {
   $("h5").text(stageOne.roomDescript);
   $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
@@ -34,45 +34,45 @@ var stage1 = function(input) {
   $("#gameOverText").text(stageOne.windowHit);
   $("ul#gameLog").append(stageOne.windowHit);
   $("#userInputText").hide();
-  } else if (closetCommands1.contains(input)) {
+  } else if (closetCommands.contains(input)) {
   $("h5").text(stageOne.closetExteriorDescript);
   $("ul#gameLog").append(stageOne.closetExteriorDescript);
   $("#userInputText").val("");
-  } else if (dresserCommands1.contains(input)) {
+  } else if (dresserCommands.contains(input)) {
   $("h5").text(stageOne.dresserDescript);
   $("ul#gameLog").append(stageOne.dresserDescript);
   $("#userInputText").val("");
-  } else if (closetButton1.contains(input)) {
+  } else if (closetButton.contains(input)) {
   $("h5").text(stageOne.closetButton);
   $("ul#gameLog").append(stageOne.closetButton);
   $("#userInputText").val("");
-  } else if (closetInterior1.contains(input)) {
+  } else if (closetInterior.contains(input)) {
   $("h5").text(stageOne.closetInteriorDescript);
   $("ul#gameLog").append(stageOne.closetInteriorDescript);
   $("#userInputText").val("");
-  } else if (windowCommands1.contains(input)) {
+  } else if (windowCommands.contains(input)) {
   $("h5").text(stageOne.windowDescript);
   $("ul#gameLog").append(stageOne.windowDescript);
   $("#userInputText").val("");
-  } else if (doorCommands1.contains(input)) {
+  } else if (doorCommands.contains(input)) {
   $("h5").text(stageOne.doorDescript);
   $("ul#gameLog").append(stageOne.doorDescript);
   $("#userInputText").val("");
-  } else if (deskCommands1.contains(input)) {
+  } else if (deskCommands.contains(input)) {
   $("h5").text(stageOne.deskDescript);
   $("ul#gameLog").append(stageOne.deskDescript);
   $("#userInputText").val("");
   } else if (dresserInt.contains(input)) {
   $("h5").text(stageOne.dresserInt);
   $("ul#gameLog").append(stageOne.dresserInt);    $("#userInputText").val("");
-  } else if (screenCommands1.contains(input)) {
+  } else if (screenCommands.contains(input)) {
   $("h5").text(stageOne.screenDescript);
   $("ul#gameLog").append(stageOne.screenDescript);
   $("#userInputText").val("");
-  } else if (help1.contains(input)) {
+  } else if (help.contains(input)) {
   $("h5").text(backObject.backDescript);
   $("#userInputText").val("");
-  } else if (stageOneSleep1.contains(input)) {
+  } else if (stageOneSleep.contains(input)) {
   $("h5").text(stageOne.stageOneSleep);
   $("ul#gameLog").append(stageOne.stageOneSleep);
   $("#userInputText").val("");
@@ -91,7 +91,7 @@ var stage1 = function(input) {
 // Stage 2 if statement //
 //
 var stage2 = function(input) {
-  if (stageTwoWakeUp.contains(input)) {
+  if (wakeUp.contains(input)) {
   $("h5").text(stageTwo.wakeUpDescript);
   $("ul#gameLog").append(stageTwo.wakeUpDescript);
   $("#userInputText").val("");
@@ -401,7 +401,12 @@ var stage5 = function(input) {
     $("#userInputText").val("");
     moveCounter++;
   } else if (run.contains(input)) {
-    $("h5").text(stageFive.run);
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.run);
+    $("ul#gameLog").append(stageFive.run);
+    $("#userInputText").hide();
   } else {
     $("h5").text("COMMAND NOT RECOGNIZED // FOUR MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
@@ -440,11 +445,25 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageOne.windowHit);
     $("ul#gameLog").append(stageOne.windowHit);
     $("#userInputText").hide();
+  } else if (dresserCommands5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.dresserDescript);
+    $("ul#gameLog").append(stageOne.dresserDescript);
+    $("#userInputText").hide();
     } else if (syringeStage5.contains(input)) {
     $("h5").text(stageFive.syringeGrab5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.syringeGrab5);
     $("#userInputText").val("");
     moveCounter++;
+  } else if (closetCommands5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.closetTurnTwo5);
+    $("ul#gameLog").append(stageOne.closetTurnTwo5);
+    $("#userInputText").hide();
   } else if (closetCommands5.contains(input)) {
     $("h5").text(stageFive.closetTurnTwo5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
@@ -454,7 +473,12 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
     $("#userInputText").val("");
   } else if (run.contains(input)) {
-    $("h5").text(stageFive.run);
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.run);
+    $("ul#gameLog").append(stageFive.run);
+    $("#userInputText").hide();
   } else {
     $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
@@ -472,6 +496,22 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.killWith5Turn2);
     $("#userInputText").hide();
     moveCounter++;
+  } else if (help5.contains(intput)) {
+    $("h5").text(stageFive.helpDescript);
+    $("ul#gameLog").append(stageFive.helpDescript);
+    $("#userInputText").val("");
+  } else if (syringeStage5.contains(input)) {
+    $("h5").text(stageFive.syringeGrab5 + "// TWO MORE MOVES UNTIL DEATH //");
+    $("ul#gameLog").append(stageFive.syringeGrab5);
+    $("#userInputText").val("");
+    moveCounter++;
+  } else if (useSyringeStage5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.syringeUse);
+    $("ul#gameLog").append(stageOne.syringeUse);
+    $("#userInputText").hide();
   } else if (kill.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
@@ -479,7 +519,27 @@ var stage5 = function(input) {
     $("#winText").text(stageFive.killWith5Turn2);
     $("ul#gameLog").append(stageFive.killWith5Turn2);
     $("#userInputText").hide();
-    moveCounter++;
+  } else if (closetCommands5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.closetTurnTwo5);
+    $("ul#gameLog").append(stageOne.closetTurnTwo5);
+    $("#userInputText").hide();
+  } else if (closetInterior5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.closetTurnTwo5);
+    $("ul#gameLog").append(stageOne.closetTurnTwo5);
+    $("#userInputText").hide();
+  } else if (dresserCommands5.contains(input)) {
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.dresserDescript);
+    $("ul#gameLog").append(stageOne.dresserDescript);
+    $("#userInputText").hide();
   } else if (hitWindow.contains(input)) {
     $("body").removeClass();
     $("#gameTextPanel").hide();
@@ -493,17 +553,100 @@ var stage5 = function(input) {
     $("#userInputText").val("");
     moveCounter++;
   } else if (run.contains(input)) {
-    $("h5").text(stageFive.run);
+    $("body").removeClass();
+    $("#gameTextPanel").hide();
+    $("#gameOverPanel").show();
+    $("#gameOverText").text(stageFive.run);
+    $("ul#gameLog").append(stageFive.run);
+    $("#userInputText").hide();
   } else {
       $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
       $("#userInputText").val("");
     }
-  } else if (moveCounter > 4) {
-    $("body").removeClass();
-    $("#gameTextPanel").hide();
-    $("#gameOverPanel").show();
-    $("#gameOverText").text("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
-    $("ul#gameLog").append("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
-    $("#userInputText").hide();
+  } else if (moveCounter = 4) {
+      if (killWith.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#winPanel").show();
+      $("#winText").text(stageFive.killWith5Turn2);
+      $("ul#gameLog").append(stageFive.killWith5Turn2);
+      $("#userInputText").hide();
+      moveCounter++;
+    } else if (help5.contains(intput)) {
+      $("h5").text(stageFive.helpDescript);
+      $("ul#gameLog").append(stageFive.helpDescript);
+      $("#userInputText").val("");
+      moveCounter++;
+    } else if (syringeStage5.contains(input)) {
+      $("h5").text(stageFive.syringeGrab5 + "// TWO MORE MOVES UNTIL DEATH //");
+      $("ul#gameLog").append(stageFive.syringeGrab5);
+      $("#userInputText").val("");
+      moveCounter++;
+    } else if (useSyringeStage5.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.syringeUse);
+      $("ul#gameLog").append(stageOne.syringeUse);
+      $("#userInputText").hide();
+      moveCounter++;
+    } else if (kill.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#winPanel").show();
+      $("#winText").text(stageFive.killWith5Turn2);
+      $("ul#gameLog").append(stageFive.killWith5Turn2);
+      $("#userInputText").hide();
+    } else if (closetCommands5.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.closetTurnTwo5);
+      $("ul#gameLog").append(stageOne.closetTurnTwo5);
+      $("#userInputText").hide();
+    } else if (closetInterior5.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.closetTurnTwo5);
+      $("ul#gameLog").append(stageOne.closetTurnTwo5);
+      $("#userInputText").hide();
+    } else if (dresserCommands5.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.dresserDescript);
+      $("ul#gameLog").append(stageOne.dresserDescript);
+      $("#userInputText").hide();
+    } else if (hitWindow.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageOne.windowHit);
+      $("ul#gameLog").append(stageOne.windowHit);
+      $("#userInputText").hide();
+    } else if (bedCommands5Turn2.contains(input)) {
+      $("h5").text(stageFive.bedDescript5Turn2 + "// THREE MORE MOVES UNTIL DEATH //");
+      $("ul#gameLog").append(stageFive.bedDescript5Turn2);
+      $("#userInputText").val("");
+      moveCounter++;
+    } else if (run.contains(input)) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.run);
+      $("ul#gameLog").append(stageFive.run);
+      $("#userInputText").hide();
+    } else {
+        $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
+        $("#userInputText").val("");
+      }
+    } else if (moveCounter > 4) {
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
+      $("ul#gameLog").append("In your frantic attempt to fight the alien, you seem to have forgotten to actually kill it. You were too slow and it swallowed you whole.");
+      $("#userInputText").hide();
 }
 }
