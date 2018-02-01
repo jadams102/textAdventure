@@ -12,16 +12,18 @@ A website created with JavaScript, jQuery, Boostrap, CSS, and HTML, where a user
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **User Presses Enter to Start Game** | Input: User presses "Enter" key | Output: Program Displays Story Prologue |
-| **User Enters Their Name to Begin Game** | Input: "User Name" | Output: Program Displays User Name and Begins at Level One. |
-| **User Enters a Command: "Walk to Desk"**| Input: "walk to desk" | Output: Program Displays "Desk Description" command describing the desk in the story. |
-| **User Clicks on "Log" Button for Additional Information on the Game**| Input: User clicks "Log" Button | Output: Program Displays User's Command History Entered Through the Input Field. |
-| **User Enters the Command, "Go To Sleep" to Progress to the Next Level**| Input: User Enters "Go To Sleep" | Output: The Background of the Game Changes to Indicate the Next Level and Displays Narrative for that Level. |
-| **User Clicks on "Restart" Button to Start the Game Over**| Input: User clicks "Restart" Button | Output: Program Returns to the Main Page. |
-| **User Clicks on "Credits" Button to View Game Credits**| Input: User clicks "Credits" Button | Output: Program Returns the Names of Individuals Who Created the Game. |
-| **User Clicks on "Map" Button to View Map of the Game** | Input: User clicks "Map" Button | Output: Program Displays Map of the Room the Game Takes Place In. |
+| **User Presses Enter to Start Game** | Input: User presses "Enter" key. | Output: Program Displays Story Prologue |
+| **User Enters Their Name to Begin Game** | Input: "User Name". | Output: Program Displays User Name and Begins at Level One. |
+| **User Enters a Command: "Walk to Desk"**| Input: "walk to desk". | Output: Program Displays "Desk Description" command describing the desk in the story. |
+| **User Enters the Command, "Go To Sleep" to Progress to the Next Level**| Input: User Enters "Go To Sleep". | Output: The Background of the Game Changes to Indicate the Next Level and Displays Narrative for that Level. |
+| **User Clicks on "Log" Button for Additional Information on the Game**| Input: User clicks "Log" Button. | Output: Program Displays User's Command History Entered Through the Input Field. |
+| **User Clicks on "Restart" Button to Start the Game Over**| Input: User Clicks "Restart" Button. | Output: Program Returns to the Main Page. |
+| **User Clicks on "Credits" Button to View Game Credits**| Input: User Clicks "Credits" Button. | Output: "Credits: Alienoid was created by: Chris Swanner, Hannah Lee, Joel Adams, and Mariah Shipley." |
+| **User Clicks on "Map" Button to View Map of the Game** | Input: User Clicks "Map" Button. | Output: Program Displays Map of the Room the Game Takes Place In. |
 | **Program Displays "Win" State**| Input: User Kills Alien on Level Five. | Output: Program Displays "Congratulations" Screen. |
 | **Program Displays "Lose" State**| Input: User Enters an Input that Triggers the Lose State. | Output: Program Displays "Game Over" Screen. |
+| **Program Plays Background Audio** | Input: User Loads Game to Browser. | Output: Program Plays Background Audio. |
+| **Program Plays Audio of Sliding Door"**| Input: "open closet". | Output: Program Plays Audio of Sliding Door. |
 
 ## Setup/Installation Requirements
 
@@ -35,11 +37,12 @@ A website created with JavaScript, jQuery, Boostrap, CSS, and HTML, where a user
 ## Technologies Used
   * JavaScript, jQuery, Bootstrap, CSS, HTML
   * Photoshop
+  * WAV audio
   
 
 ## Support and contact details
 
-_Email no one with any questions, comments, or concerns._
+_Please contact any of the creators through Github.com: ChrisSwanner, mshipley57, joelaphoto, or RunHannah_
 
 ### License
 
