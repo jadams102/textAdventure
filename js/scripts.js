@@ -22,6 +22,7 @@ $("#logBtn").click(function() {
   $("#restartBtn").toggle();
   $("#commandsBtn").toggle();
   $("#creditsBtn").toggle();
+  $("#mapBtn").toggle();
   $("#textBox").toggle();
   $("ul#credits").hide();
 }
@@ -32,15 +33,16 @@ $("#restartBtn").click(function() {
 $("#creditsBtn").click(function() {
   $("ul#credits").slideToggle();
   $("#restartBtn").toggle();
-  $("#creditsBtn").toggle();
+  $("#mapBtn").toggle();
   $("#logBtn").toggle();
   $("#textBox").toggle();
 })
 $("#mapBtn").click(function() {
-  $("ul#credits").slideToggle();
+  $("#mapDiv").slideToggle();
   $("#restartBtn").toggle();
   $("#comandsBtn").toggle();
   $("#commandsBtn").toggle();
+  $("#creditsBtn").toggle();
   $("#logBtn").toggle();
   $("#textBox").toggle();
   $("ul#gameLog").hide();
