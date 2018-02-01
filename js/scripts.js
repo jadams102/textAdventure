@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  backgroundTwoSound.play();
   $('form:first *:input[type!=hidden]:first').focus();
   $("form#startGameForm").submit(function(event) {
   event.preventDefault();

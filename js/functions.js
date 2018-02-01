@@ -48,6 +48,7 @@ var stage1 = function(input) {
   $("h5").text(stageOne.closetButton);
   $("ul#gameLog").append(stageOne.closetButton);
   $("#userInputText").val("");
+  airSound.play();
   } else if (closetInterior.contains(input)) {
   $("h5").text(stageOne.closetInteriorDescript);
   $("ul#gameLog").append(stageOne.closetInteriorDescript);
@@ -103,6 +104,8 @@ var stage2 = function(input) {
   $("ul#gameLog").append(stageTwo.bedDescript);
   $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
+  wilhelmSound.play();
+  ambientSound.pause();
   $("body").removeClass();
   $("#gameTextPanel").hide();
   $("#gameOverPanel").show();
@@ -116,6 +119,7 @@ var stage2 = function(input) {
   $("h5").text(stageTwo.closetExteriorDescript);
   $("ul#gameLog").append(stageTwo.closetExteriorDescript);
   $("#userInputText").val("");
+  airSound.play();
 } else if (dresserCommands.contains(input)) {
   $("h5").text(stageTwo.dresserDescript);
   $("ul#gameLog").append(stageTwo.dresserDescript);
@@ -196,6 +200,8 @@ var stage3 = function(input) {
   $("h5").text(stageThree.helpDescript);
   $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
+  wilhelmSound.play();
+  ambientSound.pause();
   $("body").removeClass();
   $("#gameTextPanel").hide();
   $("#gameOverPanel").show();
@@ -263,6 +269,7 @@ var stage3 = function(input) {
   $("ul#gameLog").append(stageThree.stageThreeSleep);
   $("#userInputText").val("");
   level++;
+  alertSound.play();
   } else {
     $("h5").text("COMMAND NOT RECOGNIZED");
     $("#userInputText").val("");
@@ -273,10 +280,14 @@ var stage3 = function(input) {
 //
 
 
+
 //
 // Stage 4 if statement //
 //
 var stage4 = function(input) {
+  if (level === 4) {
+    alertSound.pause();
+  }
   if (wakeUp.contains(input)) {
   $("h5").text(stageFour.wakeUpDescript);
   $("#userInputText").val("");
@@ -289,6 +300,8 @@ var stage4 = function(input) {
   $("h5").text(stageFour.helpDescript);
   $("#userInputText").val("");
 } else if (hitWindow.contains(input)) {
+  wilhelmSound.play();
+  ambientSound.pause();
   $("body").removeClass();
   $("#gameTextPanel").hide();
   $("#gameOverPanel").show();
@@ -371,6 +384,7 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageFive.deskDescript5Turn1);
     $("ul#gameLog").append(stageFive.deskDescript5Turn1);
     $("#userInputText").hide();
+    alienRoarSound.play();
   } else if (help.contains(input)) {
     $("h5").text(stageFive.helpDescript + "// FOUR MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
@@ -379,6 +393,8 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageOne.dresserInt);
     $("#userInputText").val("");
   } else if (hitWindow.contains(input)) {
+    wilhelmSound.play();
+    ambientSound.pause();
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
@@ -392,6 +408,7 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
     $("#userInputText").hide();
+    alienRoarSound.play();
   } else if (windowCommands.contains(input)) {
     $("h5").text(stageFive.windowTurn1Descript + "// FOUR MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.windowTurn1Descript);
@@ -404,6 +421,7 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageFive.closetTurnOne5);
     $("ul#gameLog").append(stageFive.closetTurnOne5);
     $("#userInputText").hide();
+    alienRoarSound.play();
     moveCounter++;
   } else if (run.contains(input)) {
     $("body").removeClass();
@@ -430,7 +448,7 @@ var stage5 = function(input) {
       $("ul#gameLog").append(stageFive.bedDescript5Turn2);
       $("#userInputText").hide();
     $("#userInputText").val("");
-    moveCounter++;
+    alienRoarSound.play();
   } else if (help.contains(input)) {
     $("h5").text(stageFive.helpDescript);
     $("#userInputText").val("");
@@ -442,12 +460,15 @@ var stage5 = function(input) {
       $("ul#gameLog").append(stageFive.windowTurn2Descript);
       $("#userInputText").hide();
     $("#userInputText").val("");
+    alienRoarSound.play();
     } else if (kill.contains(input)) {
     $("h5").text(stageFive.kill5);
     $("ul#gameLog").append(stageFive.kill5);
     $("#userInputText").val("");
     moveCounter++;
   } else if (hitWindow.contains(input)) {
+    wilhelmSound.play();
+    ambientSound.pause();
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
@@ -461,6 +482,7 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageFive.dresserDescript);
     $("ul#gameLog").append(stageOne.dresserDescript);
     $("#userInputText").hide();
+    alienRoarSound.play();
   } else if (pickUpSyringe.contains(input)) {
     $("h5").text(stageFive.syringeGrab5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.syringeGrab5);
@@ -473,6 +495,7 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageFive.closetTurnTwo5);
     $("ul#gameLog").append(stageOne.closetTurnTwo5);
     $("#userInputText").hide();
+    alienRoarSound.play();
   } else if (closetInterior.contains(input)) {
     $("h5").text(stageFive.closetTurnTwo5 + "// THREE MORE MOVES UNTIL DEATH //");
     $("ul#gameLog").append(stageFive.closetTurnTwo5);
@@ -484,6 +507,7 @@ var stage5 = function(input) {
     $("#gameOverText").text(stageFive.run);
     $("ul#gameLog").append(stageFive.run);
     $("#userInputText").hide();
+    alienRoarSound.play();
   } else {
     $("h5").text("COMMAND NOT RECOGNIZED // THREE MORE MOVES UNTIL DEATH //");
     $("#userInputText").val("");
@@ -546,6 +570,8 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageOne.dresserDescript);
     $("#userInputText").hide();
   } else if (hitWindow.contains(input)) {
+    wilhelmSound.play();
+    ambientSound.pause();
     $("body").removeClass();
     $("#gameTextPanel").hide();
     $("#gameOverPanel").show();
@@ -619,6 +645,8 @@ var stage5 = function(input) {
       $("ul#gameLog").append(stageOne.dresserDescript);
       $("#userInputText").hide();
     } else if (hitWindow.contains(input)) {
+      wilhelmSound.play();
+      ambientSound.pause();
       $("body").removeClass();
       $("#gameTextPanel").hide();
       $("#gameOverPanel").show();

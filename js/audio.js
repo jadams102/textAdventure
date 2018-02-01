@@ -8,7 +8,7 @@ const wakeupSound = new Audio("./audio/wakeup.wav");
 const airSound = new Audio("./audio/air.wav");
 
 const alertSound = new Audio ("./audio/alert.wav");
-
+alertSound.loop = true;
 const alienRoarSound = new Audio("./audio/alienRoar.mp3");
 
 const beepingSound = new Audio("./audio/beeping.mp3");
@@ -26,3 +26,4 @@ const wilhelmSound = new Audio("./audio/wilhelm.wav");
 const backgroundOneSound = new Audio("./audio/backgroundOne.aiff");
 
 const backgroundTwoSound = new Audio("./audio/backgroundTwo.wav")
+backgroundTwoSound.loop = true;
