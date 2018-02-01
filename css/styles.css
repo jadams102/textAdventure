@@ -13,7 +13,24 @@ body {
   -webkit-animation: flicker3 3.5s infinite;
 }
 
-#userNamePanel, #userInputSubmit, #userNameBtn, #gameTextPanel, #startGameBtn, #gameLog, #credits, #commandsList, #gameOverPanel, #winPanel  {
+.mapTitle {
+  text-align: center;
+}
+
+#bed {
+  position: relative;
+  right: 100px;
+}
+
+#map {
+  display: block;
+  max-width: 600px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#userNamePanel, #userInputSubmit, #userNameBtn, #startGameBtn, #gameLog, #credits, #commandsList, #gameOverPanel, #winPanel, #mapDiv, #gameTextPanel   {
   display: none;
 }
 
