@@ -20,8 +20,7 @@ var stageOne = {
 
 };
 var stageTwo = {
-  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall where the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is traveling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
-  bedDescript: "The bed is messy because you didn't make it when you got up.",
+  helpDescript: "Congratulations! You finished your first day aboard the SSE Woodpecker. We hope you enjoyed exploring your room, and had time to check out your personal window, closet, dresser and bed. As the ship is still traveling at lightspeed, stay in your room for today and explore more to see if anything has changed.",
   closetExteriorDescript: "The closet glints in the light. The button on the left side is especially shiny today.",
   closetButton: "You press the button and the closet door slides open.",
   closetInteriorDescript: "You decide to dig around. Luckily you did so delicately, as you find a medical kit with an encased syringe in a glowing tube.",
@@ -30,7 +29,7 @@ var stageTwo = {
   doorDescript: "The door seems as tight and sealed as ever.",
   doorButton: "You fumble around with the buttons. They seem to all control equally terrible sounds.",
   deskDescript: "You stare at the desk waiting for some computer games and mountain dew to appear, but alas...",
-  screenDescript: "You pick up the tablet and open the most recent notification: 'Dear passengers, I know there has been talk of something crawling around the vents. As your Captain I can assure you that you are not in danger. The SSE Woodpecker is inspected daily and nothing of the sort has been detected. Have a good day and thank you for choosing New Stellar Inc.'",
+  screenDescript: "You pick up the tablet and open the most recent notification: 'Dear passengers, I know there has been talk of something crawling around the vents. As your Captain I can assure you that you are not in danger. The SSE Woodpecker is inspected daily and nothing of the sort has been detected. On a separate matter, the ship's medical staff are missing a medical kit. If found please return to the Captain's quarters. Have a good day and thank you for choosing New Stellar Inc.'",
   medKitDescript: "You get closer to the small steel case. The syringe inside seems to being slowly dripping an orange liquid.",
   syringeDescript: "The syringe looks so large in your hand. You're careful to not touch any of the orange liquid. You store it under your bed for safe keeping.",
   syringeUseDescript: "You jam the syringe in your jugular. You suddenly become painfully aware of an organism that had been living on the back of your neck. It detaches itself and watches as the syringes contents slowly drain into your bloodstream. As you feel the last drop fill your veins, the creature starts moving towards you. 'Could this really be how it ends?' you think, as your vision goes dark.",
@@ -42,7 +41,7 @@ var stageTwo = {
 // Stage 3 object //
 //
 var stageThree = {
-  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall where the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
+  helpDescript: "This is your third day aboard the SSE Woodpecker. Despite the Captain's mention of a potential infestation, and going to bed with some pain last night, today can still be a great day for you. Hopefully if you didn't fully explore the room yesterday, you will today. Don't forget to check your dresser, bed, closet, tablet, and desk.",
   bedDescript: "The sheets are destroyed from your night time injury. You notice a slime trail leading off the bed onto the floor.",
   closetExteriorDescript: "You see the steel is scratched and chipping away on the floor and at the door opening.",
   closetButton: "You reach for the button, but hear a rustling in the closet. Probably best to keep it closed for now.",
@@ -66,8 +65,7 @@ var stageThree = {
 //
 var stageFour = {
   wakeUpDescript: "You wake up to the screeching of an alarm. You notice that your tablet is vibrating with notifications.",
-  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
-  bedDescript: "The old blood is the color of rust. You notice a black goo right around the pillow.",
+  helpDescript: "This is day four, and the rustling in the closet hasn't stopped. Though your enter/exit door has completely stopped working, you sense you're not alone. You get the impression that if you don't go handle it, it will come for you.",
   closetExteriorDescript: "The closet has the same goo as was on the bed, but now around the perimeter of the door.",
   closetButton: "You smash buttons and nothing changes. You begin to push them calmly and methodically. You hear the whoosh sound, and again the door opens.",
   closetInteriorDescript: "The door slides open and you see a snake-like creature on the ground ready to strike. You smash buttons on the wall again and the door shuts just in time. You hear it hit the door and a small indent forms. As you back away, the door to your room is blown off its hinges and a larger snake-like alien slithers under your desk.",
@@ -83,7 +81,7 @@ var stageFour = {
 }
 
 var stageFive = {
-  helpDescript: "You are in your cabin on the SSE Woodpecker. On the west wall is your closet. On the south wall is your small desk with a tablet on top of it. Beside the desk is the slit in the wall were the door opens. It is several feet beyond the foot of the bed, and is currently unable to be opened because the ship is travelling at light speed. Tucked away in the southwest corner is a small desk. There is a tablet sitting on it. Your dresser is on the east wall with a small porthole beside it for viewing the stars.",
+  helpDescript: "With a snake on the loose, your best option is to kill it before it kills you. If only there was something in the room that could help you...",
   bedDescript5: "You move toward the bloody bed and remember the syringe stashed underneath.",
   bedDescript5Turn2: "You step over to take a look under the bed, but before you can look down your legs are bound tightly by the creature's massive tail.",
   syringeGrab5: "You pick up the syringe and turn back towards the room.",
