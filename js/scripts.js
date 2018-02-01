@@ -12,12 +12,14 @@ $("form#user").submit(function(event) {
     console.log(userName);
     $("#userNamePanel").hide();
     $("#gameTextPanel").show();
+    $(".logBox").hide();
     $("#nameDisplay").text("Hello " + userName + ", Welcome to Alienoid!");
     $("#textBox").text(stageOne.roomDescript);
     level++;
 });
 $("#logBtn").click(function() {
   if (level >= 1) {
+  $(".logBox").toggle();
   $("ul#gameLog").slideToggle();
   $("#restartBtn").toggle();
   $("#commandsBtn").toggle();
@@ -31,6 +33,7 @@ $("#restartBtn").click(function() {
   reset();
 })
 $("#creditsBtn").click(function() {
+  $(".logBox").toggle();
   $("ul#credits").slideToggle();
   $("#restartBtn").toggle();
   $("#mapBtn").toggle();
@@ -38,6 +41,7 @@ $("#creditsBtn").click(function() {
   $("#textBox").toggle();
 })
 $("#mapBtn").click(function() {
+  $(".logBox").toggle();
   $("#mapDiv").slideToggle();
   $("#restartBtn").toggle();
   $("#comandsBtn").toggle();
@@ -46,6 +50,7 @@ $("#mapBtn").click(function() {
   $("#logBtn").toggle();
   $("#textBox").toggle();
   $("ul#gameLog").hide();
+
 })
 
 $("form#userInput").submit(function(event) {
