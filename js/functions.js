@@ -64,7 +64,8 @@ var stage1 = function(input) {
   $("#userInputText").val("");
   } else if (dresserInt.contains(input)) {
   $("h5").text(stageOne.dresserInt);
-  $("ul#gameLog").append(stageOne.dresserInt);    $("#userInputText").val("");
+  $("ul#gameLog").append(stageOne.dresserInt);
+  $("#userInputText").val("");
   } else if (screenCommands.contains(input)) {
   $("h5").text(stageOne.screenDescript);
   $("ul#gameLog").append(stageOne.screenDescript);
@@ -415,8 +416,12 @@ var stage5 = function(input) {
   ///////////
 } else if (moveCounter === 2) {
     if (bedCommands5Turn2.contains(input)) {
-    $("h5").text(stageFive.bedDescript5Turn2 + "// THREE MORE MOVES UNTIL DEATH //");
-    $("ul#gameLog").append(stageFive.bedDescript5Turn2);
+      $("body").removeClass();
+      $("#gameTextPanel").hide();
+      $("#gameOverPanel").show();
+      $("#gameOverText").text(stageFive.bedDescript5Turn2);
+      $("ul#gameLog").append(stageFive.bedDescript5Turn2);
+      $("#userInputText").hide();
     $("#userInputText").val("");
     moveCounter++;
   } else if (help.contains(input)) {
@@ -489,7 +494,7 @@ var stage5 = function(input) {
     $("ul#gameLog").append(stageFive.killWith5Turn2);
     $("#userInputText").hide();
     moveCounter++;
-  } else if (help.contains(intput)) {
+  } else if (help.contains(input)) {
     $("h5").text(stageFive.helpDescript);
     $("ul#gameLog").append(stageFive.helpDescript);
     $("#userInputText").val("");

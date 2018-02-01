@@ -21,6 +21,7 @@ var stageOne = {
 };
 var stageTwo = {
   helpDescript: "Congratulations! You finished your first day aboard the SSE Woodpecker. We hope you enjoyed exploring your room, and had time to check out your personal window, closet, dresser and bed. As the ship is still traveling at lightspeed, stay in your room for today and explore more to see if anything has changed.",
+  bedDescript: "The sheets are strewn about from your restful sleep.",
   closetExteriorDescript: "The closet glints in the light. The button on the left side is especially shiny today.",
   closetButton: "You press the button and the closet door slides open.",
   closetInteriorDescript: "You decide to dig around. Luckily you did so delicately, as you find a medical kit with an encased syringe in a glowing tube.",
