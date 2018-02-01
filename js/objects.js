@@ -85,7 +85,7 @@ var stageFive = {
   bedDescript5: "You move toward the bloody bed and remember the syringe stashed underneath.",
   bedDescript5Turn2: "You step over to take a look under the bed, but before you can look down your legs are bound tightly by the creature's massive tail.",
   syringeGrab5: "You pick up the syringe and turn back towards the room.",
-  syringeUse: "You run towards the monster but slip on the trail of sludge and in your flailing inject yourself with the orange liquid. Luckily it paralyzes you so you won't feel what the alien is about to do to you."
+  syringeUse: "You run towards the monster but slip on the trail of sludge and in your flailing inject yourself with the orange liquid. Luckily it paralyzes you so you won't feel what the alien is about to do to you.",
   kill5: "You heroically jump onto the snake, but are quickly bested by the snake's strength. It wraps its tail around your body and squeezes till your lights go out.",
   killWith5Turn2: "You heroically jump onto the snake, and plunge the syringe into the snake's thick skin. The snake recoils and slithers away. It starts to violently pulse, it makes an awful screeching noise and begins to spew a thick black ooze. The more ooze that comes out of the snake the thinner the snake becomes until the snake is paper thin on the ground. The room, and yourself are coated with the warm, rancid smelling sludge. After regaining your composure, you step out of the now open door ready to assist the other passengers of the SSE Woodpecker against this alien menace.",
   deskDescript5Turn1: "You move towards the desk to investigate the creature. You stick your head down to take a look and are greeted with thousands of needle like teeth.",
