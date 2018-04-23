@@ -8,6 +8,9 @@
 
 A website created with JavaScript, jQuery, Boostrap, CSS, and HTML, where a user enters text commands to progress through a sci-fi themed text adventure story.
 
+*Github Repo:* https://github.com/joelaphoto/textAdventure/
+*Hosted Site:* https://joelaphoto.github.io/textAdventure/
+
 
 ### Specs
 | Spec | Input | Output |
